@@ -3,123 +3,88 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Seção de Serviços</title>
+    <title>Menu de Navegação</title>
     <style>
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
+            font-family: Arial, sans-serif;
         }
-
-        body, html {
-            width: 100%;
-            height: auto;
+        body {
+            background-color: #f4f4f4;
         }
-
-        .servicos-section {
+        .navbar {
             display: flex;
             justify-content: space-between;
-            align-items: stretch;
-            flex-wrap: wrap;
-            width: 100%;
-            min-height: 100%;
-            height: fit-content;
-            padding: 20px;
-            background: #f8f9fa;
+            align-items: center;
+            background-color: #333;
+            padding: 15px;
         }
-
-        .servico {
-            flex: 1 1 calc(33.33% - 20px);
-            background: #fff;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            border-radius: 12px;
-            padding: 20px;
+        .logo {
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .nav-links {
+            list-style: none;
             display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            text-align: center;
-            margin: 10px;
         }
-
-        .servico img {
-            max-width: 100%;
-            border-radius: 8px;
-            height: auto;
+        .nav-links li {
+            margin: 0 15px;
         }
-
-        .servico h3 {
-            margin: 15px 0;
-            font-size: 1.5rem;
-            color: #333;
+        .nav-links a {
+            text-decoration: none;
+            color: white;
+            font-size: 16px;
+            transition: 0.3s;
         }
-
-        .servico p {
-            font-size: 1rem;
-            color: #555;
-            margin-bottom: 20px;
+        .nav-links a:hover {
+            color: #ff9800;
         }
-
-        .servico button {
-            padding: 10px 20px;
-            background: #007bff;
-            color: #fff;
-            border: none;
-            border-radius: 8px;
+        .menu-toggle {
+            display: none;
             cursor: pointer;
-            transition: background 0.3s;
+            font-size: 24px;
+            color: white;
         }
-
-        .servico button:hover {
-            background: #0056b3;
-        }
-
         @media (max-width: 768px) {
-            .servico {
-                flex: 1 1 100%;
+            .nav-links {
+                display: none;
+                flex-direction: column;
+                width: 100%;
+                position: absolute;
+                top: 60px;
+                left: 0;
+                background-color: #333;
+            }
+            .nav-links li {
+                text-align: center;
+                padding: 10px;
+            }
+            .menu-toggle {
+                display: block;
             }
         }
     </style>
 </head>
 <body>
-
-<section id="servicos-section" class="servicos-section">
-    <div class="servico">
-        <img src="https://via.placeholder.com/300" alt="Serviço 1">
-        <h3>Serviço 1</h3>
-        <p>Descrição do primeiro serviço oferecido.</p>
-        <button>Saiba Mais</button>
-    </div>
-
-    <div class="servico">
-        <img src="https://via.placeholder.com/300" alt="Serviço 2">
-        <h3>Serviço 2</h3>
-        <p>Descrição do segundo serviço oferecido.</p>
-        <button>Saiba Mais</button>
-    </div>
-
-    <div class="servico">
-        <img src="https://via.placeholder.com/300" alt="Serviço 3">
-        <h3>Serviço 3</h3>
-        <p>Descrição do terceiro serviço oferecido.</p>
-        <button>Saiba Mais</button>
-    </div>
-</section>
-
-<script>
-    // Ajusta a altura do iframe automaticamente
-    function ajustarAltura() {
-        const section = document.getElementById('servicos-section');
-        const altura = section.scrollHeight;
-        parent.postMessage({ 'height': altura }, '*');
-    }
-
-    // Observa mudanças no conteúdo
-    const observer = new ResizeObserver(ajustarAltura);
-    observer.observe(document.getElementById('servicos-section'));
-
-    // Ajusta ao carregar
-    window.addEventListener('load', ajustarAltura);
-</script>
-
+    <nav class="navbar">
+        <div class="logo">Effective Design</div>
+        <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#">Effective Design</a></li>
+            <li><a href="#">Portfólio</a></li>
+            <li><a href="#">Equipe</a></li>
+            <li><a href="#">Blog Universo Effective</a></li>
+            <li><a href="#">Contato</a></li>
+        </ul>
+    </nav>
+    <script>
+        function toggleMenu() {
+            var menu = document.getElementById("navLinks");
+            menu.style.display = (menu.style.display === "flex") ? "none" : "flex";
+        }
+    </script>
 </body>
 </html>
