@@ -5,12 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Effective Design</title>
     <meta name="description" content="Transformamos ideias em soluções personalizadas para impulsionar seu negócio.">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
     <style>
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            font-family: Arial, sans-serif;
+            font-family: 'Lato', sans-serif; /* Alterado para Lato */
         }
         body {
             display: flex;
@@ -45,16 +46,19 @@
         .content {
             flex: 1;
             min-width: 300px;
-            text-align: center;
+            text-align: justify; /* Justificando o texto */
         }
         h1 {
-            font-size: 36px;
+            font-size: 64px; /* Tamanho ajustado para 64px */
+            font-weight: normal; /* Estilo do título ajustado para normal */
             color: #333;
+            margin-bottom: 20px; /* Espaçamento ajustado */
         }
         p {
-            font-size: 18px;
+            font-size: 27px; /* Tamanho do subtítulo ajustado para 27px */
             color: #555;
             margin: 10px 0;
+            line-height: 1.5; /* Ajuste no espaçamento entre textos */
         }
         #bt_pulse {
             display: inline-block;
@@ -67,11 +71,13 @@
             border-radius: 5px;
             text-decoration: none;
             animation: pulse 1.0s infinite;
-            transition: background 0.3s;
+            transition: background 0.3s, transform 0.3s; /* Suavização do efeito */
+            margin-top: 20px; /* Margin-top adicionada ao botão */
         }
         #bt_pulse:hover {
             animation: none;
             background: #478cbf; /* Cor ao passar o mouse */
+            transform: scale(1.05); /* Efeito de leve aumento ao passar o mouse */
         }
         @keyframes pulse {
             0% { transform: scale(0.9); }
@@ -127,7 +133,7 @@
         </div>
         <div class="content">
             <h1>Effective Design</h1>
-            <p><strong>Transformamos ideias em soluções personalizadas para impulsionar seu negócio.</strong></p>
+            <p>Transformamos ideias em soluções personalizadas para impulsionar seu negócio.</p>
             <p>No marketing digital, tecnologia e impressão gráfica, oferecemos estratégias inovadoras para destacar sua marca. Nossa equipe entende suas necessidades e cria soluções personalizadas para maximizar resultados.</p>
             <p>Potencialize sua presença no mercado com soluções inteligentes e eficazes.</p>
             <p>📩 Entre em contato e descubra como podemos ajudar o seu negócio!</p>
