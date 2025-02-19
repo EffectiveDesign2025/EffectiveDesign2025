@@ -18,8 +18,10 @@
             flex-direction: column;
             align-items: center;
         }
-        nav {
+        header {
             width: 100%;
+        }
+        nav {
             background: #333;
             padding: 15px 0;
             text-align: center;
@@ -30,56 +32,59 @@
             margin: 0 15px;
             font-size: 18px;
         }
-        .container {
+        main {
             display: flex;
             flex-wrap: wrap;
             width: 100%;
             max-width: 1200px;
             align-items: center;
-            justify-content: center; /* Alinhamento centralizado */
+            justify-content: center;
             padding: 50px 20px;
         }
         .content {
             flex: 1;
             min-width: 300px;
-            text-align: center; /* Alinhamento centralizado */
-            margin-bottom: 20px; /* Espaço entre os blocos */
+            text-align: center;
+            margin-bottom: 20px;
         }
         h1 {
-            font-size: 48px; /* Ajustado para 48px */
+            font-size: 48px;
             color: #333;
-            margin-bottom: 20px; /* Margem inferior adicionada ao título */
+            margin-bottom: 20px;
         }
         h2 {
-            font-size: 20px; /* Tamanho do subtítulo */
-            color: #0b5394; /* Cor do subtítulo */
+            font-size: 20px;
+            color: #0b5394;
         }
         p {
             font-size: 18px;
             color: #555;
             margin: 10px 0;
-            text-align: justify; /* Texto justificado */
+            text-align: justify;
         }
         #bt_pulse {
             display: inline-block;
             padding: 15px 30px;
             font-size: 18px;
             color: white;
-            background: #28a745; /* Cor do botão verde */
+            background: #28a745;
             border: none;
             cursor: pointer;
             border-radius: 5px;
             text-decoration: none;
-            margin-top: 20px; /* Margem superior adicionada ao botão */
-            transition: background 0.3s ease, transform 0.3s ease; /* Efeitos de transição */
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para o botão */
+            margin-top: 20px;
+            transition: background 0.3s ease, transform 0.3s ease;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
         #bt_pulse:hover {
-            background: #218838; /* Cor do botão ao passar o mouse */
-            transform: translateY(-2px); /* Efeito de levantar ao passar o mouse */
+            background: #218838;
+            transform: translateY(-2px);
+        }
+        #bt_pulse:active {
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
         }
         #bt_pulse i {
-            margin-right: 8px; /* Espaçamento entre o ícone e o texto */
+            margin-right: 8px;
         }
         .section-break {
             width: 100%;
@@ -96,7 +101,7 @@
             color: #555;
             max-width: 800px;
             margin: 10px auto;
-            text-align: justify; /* Texto justificado */
+            text-align: justify;
         }
 
         /* Media Queries para Responsividade */
@@ -109,7 +114,7 @@
                 font-size: 24px;
             }
             h2 {
-                font-size: 16px; /* Tamanho do subtítulo para pequenas telas */
+                font-size: 16px;
             }
             .section-break h2 {
                 font-size: 20px;
@@ -124,7 +129,7 @@
                 font-size: 26px;
             }
             h2 {
-                font-size: 18px; /* Tamanho do subtítulo para pequenas telas */
+                font-size: 18px;
             }
             .section-break h2 {
                 font-size: 22px;
@@ -139,7 +144,7 @@
                 font-size: 28px;
             }
             h2 {
-                font-size: 18px; /* Tamanho do subtítulo para pequenas telas */
+                font-size: 18px;
             }
             .section-break h2 {
                 font-size: 24px;
@@ -154,7 +159,7 @@
                 font-size: 30px;
             }
             h2 {
-                font-size: 18px; /* Tamanho do subtítulo para pequenas telas */
+                font-size: 18px;
             }
             .section-break h2 {
                 font-size: 26px;
@@ -169,7 +174,7 @@
                 font-size: 32px;
             }
             h2 {
-                font-size: 20px; /* Tamanho do subtítulo para pequenas telas */
+                font-size: 20px;
             }
             .section-break h2 {
                 font-size: 28px;
@@ -184,7 +189,7 @@
                 font-size: 34px;
             }
             h2 {
-                font-size: 20px; /* Tamanho do subtítulo para pequenas telas */
+                font-size: 20px;
             }
             .section-break h2 {
                 font-size: 30px;
@@ -199,7 +204,7 @@
                 font-size: 36px;
             }
             h2 {
-                font-size: 20px; /* Tamanho do subtítulo para pequenas telas */
+                font-size: 20px;
             }
             .section-break h2 {
                 font-size: 32px;
@@ -208,15 +213,17 @@
     </style>
 </head>
 <body>
-    <nav>
-        <a href="#">Effective Design</a>
-        <a href="#">Portfólio</a>
-        <a href="#">Equipe</a>
-        <a href="#">Blog Universo Effective</a>
-        <a href="#">Contato</a>
-    </nav>
+    <header>
+        <nav>
+            <a href="#">Effective Design</a>
+            <a href="#">Portfólio</a>
+            <a href="#">Equipe</a>
+            <a href="#">Blog Universo Effective</a>
+            <a href="#">Contato</a>
+        </nav>
+    </header>
     
-    <div class="container">
+    <main>
         <div class="content">
             <creattie-embed
                 src="https://d1jj76g3lut4fe.cloudfront.net/saved_colors/113316/Zujw3V7aAPEqbYz3.json"
@@ -227,15 +234,15 @@
         </div>
         <div class="content">
             <h1>Effective Design</h1>
-            <h2>Transformamos ideias em soluções personalizadas para impulsionar seu negócio.</h2> <!-- Subtítulo atualizado -->
+            <h2>Transformamos ideias em soluções personalizadas para impulsionar seu negócio.</h2>
             <p>No marketing digital, tecnologia e impressão gráfica, oferecemos estratégias inovadoras para destacar sua marca. Nossa equipe entende suas necessidades e cria soluções personalizadas para maximizar resultados.</p>
             <p>Potencialize sua presença no mercado com soluções inteligentes e eficazes.</p>
             <p>📩 Entre em contato e descubra como podemos ajudar o seu negócio!</p>
-            <a id="bt_pulse" href="https://wa.me/5567984530160?text=Ol%C3%A1,%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20a%20Effective%20Design." target="_blank">
+            <a id="bt_pulse" href="https://wa.me/5567984530160?text=Ol%C3%A1,%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20a%20Effective%20Design." target="_blank" aria-label="Fale Conosco pelo WhatsApp">
                 <i class="fab fa-whatsapp"></i> Fale Conosco
             </a>
         </div>
-    </div>
+    </main>
     
     <div class="section-break">
         <h2>Serviços</h2>
