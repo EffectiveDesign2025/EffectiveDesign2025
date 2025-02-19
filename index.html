@@ -80,12 +80,13 @@
             flex: 1;
             min-width: 300px;
             text-align: center;
+            padding: 20px; /* Adicionando padding ao bloco da animação */
         }
         .hero-content {
             flex: 1;
             min-width: 300px;
             text-align: center;
-            padding: 20px;
+            padding: 20px; /* Adicionando padding ao bloco de conteúdo */
         }
         .hero-content h1 {
             font-size: 48px; /* Aumentando o tamanho do título */
@@ -107,64 +108,4 @@
             display: inline-block;
             padding: 10px 20px;
             font-size: 18px;
-            background-color: #28a745; /* Cor verde para o botão */
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
-            box-shadow: 0 0 10px rgba(40, 167, 69, 0.7);
-            transition: background-color 0.3s, transform 0.3s; /* Efeitos no botão */
-            margin-top: 20px; /* Adicionando margem na parte de cima do botão */
-        }
-        .cta:hover {
-            background-color: #218838; /* Cor mais escura no hover */
-            transform: scale(1.05); /* Efeito de aumento no hover */
-        }
-        .cta:before {
-            content: '📞'; /* Ícone do WhatsApp */
-            margin-right: 8px;
-        }
-        @keyframes pulse {
-            0% { box-shadow: 0 0 10px rgba(255, 152, 0, 0.7); }
-            50% { box-shadow: 0 0 20px rgba(255, 152, 0, 1); }
-            100% { box-shadow: 0 0 10px rgba(255, 152, 0, 0.7); }
-        }
-    </style>
-</head>
-<body>
-    <header>
-        <nav class="navbar">
-            <div class="logo">Effective Design</div>
-            <div class="menu-toggle" onclick="toggleMenu()" aria-label="Menu Toggle">☰</div>
-            <ul class="nav-links" id="navLinks">
-                <li><a href="#">Effective Design</a></li>
-                <li><a href="#">Portfólio</a></li>
-                <li><a href="#">Equipe</a></li>
-                <li><a href="#">Blog Universo Effective</a></li>
-                <li><a href="#">Contato</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section class="hero">
-            <div class="hero-animation">
-                <creattie-embed src="https://d1jj76g3lut4fe.cloudfront.net/saved_colors/113316/Zujw3V7aAPEqbYz3.json" delay="1" speed="100" frame_rate="24" trigger="loop" style="width:100%; height:100%; margin-bottom:-100px;"></creattie-embed>
-                <script src="https://creattie.com/js/embed.js?id=3f6954fde297cd31b441" defer></script>
-            </div>
-            <div class="hero-content">
-                <h1>Effective Design</h1>
-                <h2>Transformamos ideias em soluções personalizadas para impulsionar seu negócio.</h2>
-                <p>No marketing digital, tecnologia e impressão gráfica, oferecemos estratégias inovadoras para destacar sua marca. Nossa equipe entende suas necessidades e cria soluções personalizadas para maximizar resultados.</p>
-                <p>Potencialize sua presença no mercado com soluções inteligentes e eficazes.</p>
-                <p>📩 Entre em contato e descubra como podemos ajudar o seu negócio!</p>
-                <a href="#" class="cta">Fale Conosco</a>
-            </div>
-        </section>
-    </main>
-    <script>
-        function toggleMenu() {
-            var menu = document.getElementById("navLinks");
-            menu.style.display = (menu.style.display === "flex") ? "none" : "flex";
-        }
-    </script>
-</body>
-</html>
+            background-color: #28
