@@ -124,10 +124,46 @@
             content: '📞'; /* Ícone do WhatsApp */
             margin-right: 8px;
         }
-        @keyframes pulse {
-            0% { box-shadow: 0 0 10px rgba(255, 152, 0, 0.7); }
-            50% { box-shadow: 0 0 20px rgba(255, 152, 0, 1); }
-            100% { box-shadow: 0 0 10px rgba(255, 152, 0, 0.7); }
+        @media (max-width: 416px) {
+            .hero {
+                padding: 20px; /* Ajustando o padding da seção hero para telas menores */
+                flex-direction: column; /* Alterando a direção do flex para coluna */
+            }
+            .hero-animation, .hero-content {
+                min-width: 100%; /* Garantindo que os blocos ocupem 100% da largura */
+                padding: 10px; /* Reduzindo o padding nos blocos */
+            }
+            .hero-content h1 {
+                font-size: 32px; /* Reduzindo o tamanho do título em telas pequenas */
+            }
+            .hero-content h2 {
+                font-size: 24px; /* Reduzindo o tamanho do subtítulo em telas pequenas */
+            }
+            .hero-content p {
+                font-size: 18px; /* Reduzindo o tamanho da fonte do parágrafo em telas pequenas */
+            }
+            .cta {
+                font-size: 16px; /* Reduzindo o tamanho da fonte do botão em telas pequenas */
+                padding: 8px 16px; /* Ajustando o padding do botão */
+            }
+        }
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+                flex-direction: column;
+                width: 100%;
+                position: absolute;
+                top: 60px;
+                left: 0;
+                background-color: #333;
+            }
+            .nav-links li {
+                text-align: center;
+                padding: 10px;
+            }
+            .menu-toggle {
+                display: block;
+            }
         }
     </style>
 </head>
