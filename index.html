@@ -1,192 +1,154 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Effective Design</title>
+    <meta name="description" content="Transformamos ideias em soluções personalizadas para impulsionar seu negócio.">
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
-
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            font-family: 'Lato', sans-serif;
+            font-family: Arial, sans-serif;
         }
         body {
-            background-color: #ffffff;
-        }
-        .navbar {
             display: flex;
-            justify-content: space-between;
+            flex-direction: column;
             align-items: center;
-            background-color: #333;
-            padding: 15px;
         }
-        .logo {
+        nav {
+            width: 100%;
+            background: #333;
+            padding: 15px 0;
+            text-align: center;
+        }
+        nav a {
             color: white;
-            font-size: 24px;
-            font-weight: bold;
-        }
-        .nav-links {
-            list-style: none;
-            display: flex;
-        }
-        .nav-links li {
-            margin: 0 15px;
-        }
-        .nav-links a {
             text-decoration: none;
-            color: white;
-            font-size: 16px;
-            transition: 0.3s;
+            margin: 0 15px;
+            font-size: 18px;
+            transition: color 0.3s;
         }
-        .nav-links a:hover {
-            color: #ff9800;
+        nav a:hover, nav a.active {
+            color: #5A99D4; /* Cor de destaque para o link ativo */
         }
-        .menu-toggle {
-            display: none;
-            cursor: pointer;
-            font-size: 24px;
-            color: white;
-        }
-
-        @media (max-width: 768px) {
-            .nav-links {
-                display: none;
-                flex-direction: column;
-                width: 100%;
-                position: absolute;
-                top: 60px;
-                left: 0;
-                background-color: #333;
-            }
-            .nav-links li {
-                text-align: center;
-                padding: 10px;
-            }
-            .menu-toggle {
-                display: block;
-            }
-        }
-
-        .hero {
+        .container {
             display: flex;
             flex-wrap: wrap;
-            justify-content: center;
+            width: 100%;
+            max-width: 1200px;
             align-items: center;
-            padding: 50px;
-            background-color: #ffffff;
-            color: black;
+            justify-content: space-around;
+            padding: 50px 20px;
         }
-        .hero-animation,
-        .hero-content {
+        .content {
             flex: 1;
             min-width: 300px;
             text-align: center;
-            padding: 20px;
         }
-        .hero-content h1 {
-            font-size: 42px;
-            font-weight: bold;
-            margin-bottom: 10px;
+        h1 {
+            font-size: 36px;
+            color: #333;
         }
-        .hero-content h2 {
-            font-size: 24px;
-            color: #0b5394;
-            margin-bottom: 15px;
-        }
-        .hero-content p {
-            font-size: 20px;
-            text-align: justify;
-            margin-bottom: 20px;
-            line-height: 1.6;
-        }
-
-        .cta {
-            display: inline-flex;
-            align-items: center;
-            padding: 12px 24px;
+        p {
             font-size: 18px;
-            background-color: #25D366;
+            color: #555;
+            margin: 10px 0;
+        }
+        #bt_pulse {
+            display: inline-block;
+            padding: 15px 30px;
+            font-size: 18px;
             color: white;
-            text-decoration: none;
+            background: #5A99D4;
+            border: none;
+            cursor: pointer;
             border-radius: 5px;
-            box-shadow: 0 0 10px rgba(37, 211, 102, 0.7);
-            margin-top: 20px;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            text-decoration: none;
+            animation: pulse 1.0s infinite;
+            transition: background 0.3s;
         }
-        .cta i {
-            margin-right: 10px;
-            font-size: 22px;
+        #bt_pulse:hover {
+            animation: none;
+            background: #478cbf; /* Cor ao passar o mouse */
         }
-        .cta:hover {
-            transform: scale(1.05);
-            box-shadow: 0 0 20px rgba(37, 211, 102, 1);
+        @keyframes pulse {
+            0% { transform: scale(0.9); }
+            70% { transform: scale(1); box-shadow: 0 0 0 50px rgba(90, 153, 212, 0); }
+            100% { transform: scale(0.9); box-shadow: 0 0 0 0 rgba(90, 153, 212, 0); }
         }
-
-        @media (max-width: 768px) {
-            .hero {
-                flex-direction: column;
-                padding: 20px;
-            }
-            .hero-content {
-                padding-top: 30px;
-            }
+        .section-break {
+            width: 100%;
+            background: #f4f4f4;
+            text-align: center;
+            padding: 40px 20px;
         }
-
-        @media (max-width: 417px) {
-            .hero-content h1 {
-                font-size: 28px;
-                margin-top: 20px; /* Adiciona margem superior ao título */
-            }
-            .hero-content h2 {
-                font-size: 20px;
-            }
-            .hero-content p {
-                font-size: 16px;
-            }
-          }
+        .section-break h2 {
+            font-size: 30px;
+            color: #333;
+        }
+        .section-break p {
+            font-size: 18px;
+            color: #555;
+            max-width: 800px;
+            margin: 10px auto;
+        }
+        .services-list {
+            list-style: none;
+            padding: 0;
+            max-width: 800px;
+            margin: 20px auto;
+            text-align: left;
+        }
+        .services-list li {
+            margin: 10px 0;
+            font-size: 18px;
+        }
     </style>
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
-
-    <nav class="navbar">
-        <div class="logo">Effective Design</div>
-        <div class="menu-toggle" onclick="toggleMenu()">☰</div>
-        <ul class="nav-links" id="navLinks">
-            <li><a href="#">Effective Design</a></li>
-            <li><a href="#">Portfólio</a></li>
-            <li><a href="#">Equipe</a></li>
-            <li><a href="#">Blog Universo Effective</a></li>
-            <li><a href="#">Contato</a></li>
-        </ul>
+    <nav>
+        <a href="#" class="active">Effective Design</a>
+        <a href="#">Portfólio</a>
+        <a href="#">Equipe</a>
+        <a href="#">Blog Universo Effective</a>
+        <a href="#">Contato</a>
     </nav>
-
-    <section class="hero">
-        <div class="hero-animation">
-            <creattie-embed src="https://d1jj76g3lut4fe.cloudfront.net/saved_colors/113316/Zujw3V7aAPEqbYz3.json" delay="1" speed="100" frame_rate="24" trigger="loop" style="width:100%; height:100%; margin-bottom:-100px;"></creattie-embed>
+    
+    <div class="container">
+        <div class="content">
+            <creattie-embed
+                src="https://d1jj76g3lut4fe.cloudfront.net/saved_colors/113316/Zujw3V7aAPEqbYz3.json"
+                delay="1" speed="100" frame_rate="24" trigger="loop"
+                style="width:100%; height:100%; margin-bottom:-100px">
+            </creattie-embed>
             <script src="https://creattie.com/js/embed.js?id=3f6954fde297cd31b441" defer></script>
         </div>
-        <div class="hero-content">
+        <div class="content">
             <h1>Effective Design</h1>
-            <h2>Transformamos ideias em soluções personalizadas para impulsionar seu negócio.</h2>
+            <p><strong>Transformamos ideias em soluções personalizadas para impulsionar seu negócio.</strong></p>
             <p>No marketing digital, tecnologia e impressão gráfica, oferecemos estratégias inovadoras para destacar sua marca. Nossa equipe entende suas necessidades e cria soluções personalizadas para maximizar resultados.</p>
             <p>Potencialize sua presença no mercado com soluções inteligentes e eficazes.</p>
             <p>📩 Entre em contato e descubra como podemos ajudar o seu negócio!</p>
-            <a href="#" class="cta">
-                <i class="fab fa-whatsapp"></i> Fale Conosco
-            </a>
+            <a id="bt_pulse" href="#">Fale Conosco</a>
         </div>
-    </section>
-
-    <script>
-        function toggleMenu() {
-            var menu = document.getElementById("navLinks");
-            menu.style.display = (menu.style.display === "flex") ? "none" : "flex";
-        }
-    </script>
-
+    </div>
+    
+    <div class="section-break">
+        <h2>Serviços</h2>
+        <p>Descubra as soluções personalizadas que oferecemos para alavancar sua presença no mercado. Conheça nossos serviços e veja como podemos ajudar sua marca a se destacar.</p>
+        <ul class="services-list">
+            <li>Consultoria em Marketing Digital</li>
+            <li>Gestão de Google Meu Negócio</li>
+            <li>Campanhas de Tráfego Pago no Google Ads</li>
+            <li>Criação de Sites e Landing Pages</li>
+            <li>Gerenciamento de Redes Sociais</li>
+            <li>Impressão de Material Gráfico</li>
+            <li>Serviços de Tecnologia da Informação</li>
+            <li>Análise de Métricas e Resultados</li>
+            <li>Monetização de Blogs</li>
+        </ul>
+    </div>
 </body>
 </html>
