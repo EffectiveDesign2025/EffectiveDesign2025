@@ -4,12 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Effective Design</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
     <style>
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            font-family: Arial, sans-serif;
+            font-family: 'Lato', sans-serif;
         }
         body {
             display: flex;
@@ -40,7 +41,7 @@
         .content {
             flex: 1;
             min-width: 300px;
-            text-align: center;
+            text-align: justify; /* Alinhamento justificado */
             margin-bottom: 20px; /* Adicionado espaço entre os blocos */
         }
         h1 {
@@ -63,6 +64,7 @@
             border-radius: 5px;
             text-decoration: none;
             animation: pulse 1.0s infinite;
+            margin-top: 20px; /* Margem superior adicionada ao botão */
         }
         #bt_pulse:hover {
             animation: none;
