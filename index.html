@@ -4,16 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Effective Design</title>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet"> <!-- Importando a fonte Lato -->
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            font-family: 'Lato', sans-serif; /* Aplicando a fonte Lato */
+            font-family: 'Lato', sans-serif;
         }
         body {
-            background-color: #ffffff; /* Alterando o background do body para branco */
+            background-color: #ffffff;
         }
         .navbar {
             display: flex;
@@ -49,6 +50,7 @@
             font-size: 24px;
             color: white;
         }
+
         @media (max-width: 768px) {
             .nav-links {
                 display: none;
@@ -67,144 +69,123 @@
                 display: block;
             }
         }
+
         .hero {
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
             align-items: center;
             padding: 50px;
-            background-color: #ffffff; /* Alterando o background da seção hero para branco */
-            color: black; /* Definindo a cor do texto como preto */
+            background-color: #ffffff;
+            color: black;
         }
-        .hero-animation {
-            flex: 1;
-            min-width: 300px;
-            text-align: center;
-            padding: 20px; /* Adicionando padding ao bloco de animação */
-        }
+        .hero-animation,
         .hero-content {
             flex: 1;
             min-width: 300px;
             text-align: center;
-            padding: 20px; /* Adicionando padding ao bloco de conteúdo */
+            padding: 20px;
         }
         .hero-content h1 {
-            font-size: 48px; /* Aumentando o tamanho do título */
+            font-size: 42px;
+            font-weight: bold;
             margin-bottom: 10px;
-            color: black; /* Definindo a cor do título como preto */
         }
         .hero-content h2 {
-            font-size: 28px; /* Aumentando o tamanho do subtítulo */
-            color: #0b5394; /* Cor do subtítulo ajustada */
-            margin-bottom: 20px; /* Aumentando o espaçamento abaixo do subtítulo */
+            font-size: 24px;
+            color: #0b5394;
+            margin-bottom: 15px;
         }
         .hero-content p {
-            font-size: 20px; /* Ajustando o tamanho da fonte do parágrafo para 20px */
-            margin: 20px 0; /* Aumentando o espaçamento entre os parágrafos */
-            text-align: justify; /* Justificando o texto dos parágrafos */
-            color: black; /* Definindo a cor dos parágrafos como preto */
+            font-size: 20px;
+            text-align: justify;
+            margin-bottom: 20px;
+            line-height: 1.6;
         }
+
         .cta {
-            display: inline-block;
-            padding: 10px 20px;
+            display: inline-flex;
+            align-items: center;
+            padding: 12px 24px;
             font-size: 18px;
-            background-color: #28a745; /* Cor verde para o botão */
+            background-color: #25D366;
             color: white;
             text-decoration: none;
             border-radius: 5px;
-            box-shadow: 0 0 10px rgba(40, 167, 69, 0.7);
-            transition: background-color 0.3s, transform 0.3s; /* Efeitos no botão */
-            margin-top: 20px; /* Adicionando margem na parte de cima do botão */
+            box-shadow: 0 0 10px rgba(37, 211, 102, 0.7);
+            margin-top: 20px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .cta i {
+            margin-right: 10px;
+            font-size: 22px;
         }
         .cta:hover {
-            background-color: #218838; /* Cor mais escura no hover */
-            transform: scale(1.05); /* Efeito de aumento no hover */
+            transform: scale(1.05);
+            box-shadow: 0 0 20px rgba(37, 211, 102, 1);
         }
-        .cta:before {
-            content: '📞'; /* Ícone do WhatsApp */
-            margin-right: 8px;
-        }
-        @media (max-width: 767px) {
+
+        @media (max-width: 768px) {
             .hero {
-                padding: 20px; /* Ajustando o padding da seção hero para telas menores */
-                flex-direction: column; /* Alterando a direção do flex para coluna */
-            }
-            .hero-animation, .hero-content {
-                min-width: 100%; /* Garantindo que os blocos ocupem 100% da largura */
-                padding: 10px; /* Reduzindo o padding nos blocos */
+                flex-direction: column;
+                padding: 20px;
             }
             .hero-content {
-                padding-top: 30px; /* Adicionando padding-top ao segundo bloco */
-            }
-            .hero-content h1 {
-                font-size: 32px; /* Reduzindo o tamanho do título em telas pequenas */
-            }
-            .hero-content h2 {
-                font-size: 24px; /* Reduzindo o tamanho do subtítulo em telas pequenas */
-            }
-            .hero-content p {
-                font-size: 18px; /* Reduzindo o tamanho da fonte do parágrafo em telas pequenas */
-            }
-            .cta {
-                font-size: 16px; /* Reduzindo o tamanho da fonte do botão em telas pequenas */
-                padding: 8px 16px; /* Ajustando o padding do botão */
+                padding-top: 30px;
             }
         }
-        @media (max-width: 768px) {
-            .nav-links {
-                display: none;
-                flex-direction: column;
-                width: 100%;
-                position: absolute;
-                top: 60px;
-                left: 0;
-                background-color: #333;
+
+        @media (max-width: 416px) {
+            .hero-content h1 {
+                font-size: 28px;
             }
-            .nav-links li {
-                text-align: center;
-                padding: 10px;
+            .hero-content h2 {
+                font-size: 20px;
             }
-            .menu-toggle {
-                display: block;
+            .hero-content p {
+                font-size: 16px;
             }
         }
     </style>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header>
-        <nav class="navbar">
-            <div class="logo">Effective Design</div>
-            <div class="menu-toggle" onclick="toggleMenu()" aria-label="Menu Toggle">☰</div>
-            <ul class="nav-links" id="navLinks">
-                <li><a href="#">Effective Design</a></li>
-                <li><a href="#">Portfólio</a></li>
-                <li><a href="#">Equipe</a></li>
-                <li><a href="#">Blog Universo Effective</a></li>
-                <li><a href="#">Contato</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section class="hero">
-            <div class="hero-animation">
-                <creattie-embed src="https://d1jj76g3lut4fe.cloudfront.net/saved_colors/113316/Zujw3V7aAPEqbYz3.json" delay="1" speed="100" frame_rate="24" trigger="loop" style="width:100%; height:100%; margin-bottom:-100px;"></creattie-embed>
-                <script src="https://creattie.com/js/embed.js?id=3f6954fde297cd31b441" defer></script>
-            </div>
-            <div class="hero-content">
-                <h1>Effective Design</h1>
-                <h2>Transformamos ideias em soluções personalizadas para impulsionar seu negócio.</h2>
-                <p>No marketing digital, tecnologia e impressão gráfica, oferecemos estratégias inovadoras para destacar sua marca. Nossa equipe entende suas necessidades e cria soluções personalizadas para maximizar resultados.</p>
-                <p>Potencialize sua presença no mercado com soluções inteligentes e eficazes.</p>
-                <p>📩 Entre em contato e descubra como podemos ajudar o seu negócio!</p>
-                <a href="#" class="cta">Fale Conosco</a>
-            </div>
-        </section>
-    </main>
+
+    <nav class="navbar">
+        <div class="logo">Effective Design</div>
+        <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#">Effective Design</a></li>
+            <li><a href="#">Portfólio</a></li>
+            <li><a href="#">Equipe</a></li>
+            <li><a href="#">Blog Universo Effective</a></li>
+            <li><a href="#">Contato</a></li>
+        </ul>
+    </nav>
+
+    <section class="hero">
+        <div class="hero-animation">
+            <creattie-embed src="https://d1jj76g3lut4fe.cloudfront.net/saved_colors/113316/Zujw3V7aAPEqbYz3.json" delay="1" speed="100" frame_rate="24" trigger="loop" style="width:100%; height:100%; margin-bottom:-100px;"></creattie-embed>
+            <script src="https://creattie.com/js/embed.js?id=3f6954fde297cd31b441" defer></script>
+        </div>
+        <div class="hero-content">
+            <h1>Effective Design</h1>
+            <h2>Transformamos ideias em soluções personalizadas para impulsionar seu negócio.</h2>
+            <p>No marketing digital, tecnologia e impressão gráfica, oferecemos estratégias inovadoras para destacar sua marca. Nossa equipe entende suas necessidades e cria soluções personalizadas para maximizar resultados.</p>
+            <p>Potencialize sua presença no mercado com soluções inteligentes e eficazes.</p>
+            <p>📩 Entre em contato e descubra como podemos ajudar o seu negócio!</p>
+            <a href="#" class="cta">
+                <i class="fab fa-whatsapp"></i> Fale Conosco
+            </a>
+        </div>
+    </section>
+
     <script>
         function toggleMenu() {
             var menu = document.getElementById("navLinks");
             menu.style.display = (menu.style.display === "flex") ? "none" : "flex";
         }
     </script>
+
 </body>
 </html>
