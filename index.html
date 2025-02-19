@@ -88,16 +88,17 @@
             padding: 20px;
         }
         .hero-content h1 {
-            font-size: 36px;
+            font-size: 48px; /* Aumentando o tamanho do título */
             margin-bottom: 10px;
         }
         .hero-content h2 {
-            font-size: 20px;
-            margin-bottom: 15px;
+            font-size: 28px; /* Aumentando o tamanho do subtítulo */
+            margin-bottom: 20px; /* Aumentando o espaçamento abaixo do subtítulo */
         }
         .hero-content p {
             font-size: 16px;
-            margin-bottom: 20px;
+            margin: 20px 0; /* Aumentando o espaçamento entre os parágrafos */
+            text-align: justify; /* Justificando o texto dos parágrafos */
         }
         .cta {
             display: inline-block;
@@ -137,4 +138,21 @@
                 <creattie-embed src="https://d1jj76g3lut4fe.cloudfront.net/saved_colors/113316/Zujw3V7aAPEqbYz3.json" delay="1" speed="100" frame_rate="24" trigger="loop" style="width:100%; height:100%; margin-bottom:-100px;"></creattie-embed>
                 <script src="https://creattie.com/js/embed.js?id=3f6954fde297cd31b441" defer></script>
             </div>
-            <div class="hero-conten
+            <div class="hero-content">
+                <h1>Effective Design</h1>
+                <h2>Transformamos ideias em soluções personalizadas para impulsionar seu negócio.</h2>
+                <p>No marketing digital, tecnologia e impressão gráfica, oferecemos estratégias inovadoras para destacar sua marca. Nossa equipe entende suas necessidades e cria soluções personalizadas para maximizar resultados.</p>
+                <p>Potencialize sua presença no mercado com soluções inteligentes e eficazes.</p>
+                <p>📩 Entre em contato e descubra como podemos ajudar o seu negócio!</p>
+                <a href="#" class="cta">Fale Conosco</a>
+            </div>
+        </section>
+    </main>
+    <script>
+        function toggleMenu() {
+            var menu = document.getElementById("navLinks");
+            menu.style.display = (menu.style.display === "flex") ? "none" : "flex";
+        }
+    </script>
+</body>
+</html>
