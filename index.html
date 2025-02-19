@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Effective Design</title>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-k6RqeWeci5ZR/Lv4MR0sA0FfDOMgx8aNTEcJ4mRpqkA03HeWr91eZL+L1Ue4UB2" crossorigin="anonymous">
     <style>
         * {
             margin: 0;
@@ -35,17 +36,17 @@
             width: 100%;
             max-width: 1200px;
             align-items: center;
-            justify-content: space-around;
+            justify-content: center; /* Alinhamento centralizado */
             padding: 50px 20px;
         }
         .content {
             flex: 1;
             min-width: 300px;
-            text-align: justify; /* Alinhamento justificado */
-            margin-bottom: 20px; /* Adicionado espaço entre os blocos */
+            text-align: center; /* Alinhamento centralizado */
+            margin-bottom: 20px; /* Espaço entre os blocos */
         }
         h1 {
-            font-size: 48px; /* Tamanho do título atualizado */
+            font-size: 48px; /* Tamanho do título */
             color: #333;
         }
         h2 {
@@ -62,21 +63,18 @@
             padding: 15px 30px;
             font-size: 18px;
             color: white;
-            background: #5A99D4;
+            background: #28a745; /* Cor do botão verde */
             border: none;
             cursor: pointer;
             border-radius: 5px;
             text-decoration: none;
-            animation: pulse 1.0s infinite;
             margin-top: 20px; /* Margem superior adicionada ao botão */
         }
         #bt_pulse:hover {
-            animation: none;
+            background: #218838; /* Cor do botão ao passar o mouse */
         }
-        @keyframes pulse {
-            0% { transform: scale(0.9); }
-            70% { transform: scale(1); box-shadow: 0 0 0 50px rgba(90, 153, 212, 0); }
-            100% { transform: scale(0.9); box-shadow: 0 0 0 0 rgba(90, 153, 212, 0); }
+        #bt_pulse i {
+            margin-right: 8px; /* Espaçamento entre o ícone e o texto */
         }
         .section-break {
             width: 100%;
@@ -227,7 +225,9 @@
             <p>No marketing digital, tecnologia e impressão gráfica, oferecemos estratégias inovadoras para destacar sua marca. Nossa equipe entende suas necessidades e cria soluções personalizadas para maximizar resultados.</p>
             <p>Potencialize sua presença no mercado com soluções inteligentes e eficazes.</p>
             <p>📩 Entre em contato e descubra como podemos ajudar o seu negócio!</p>
-            <a id="bt_pulse" href="#">Fale Conosco</a>
+            <a id="bt_pulse" href="https://wa.me/5567984530160?text=Ol%C3%A1,%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20a%20Effective%20Design." target="_blank">
+                <i class="fab fa-whatsapp"></i> Fale Conosco
+            </a>
         </div>
     </div>
     
