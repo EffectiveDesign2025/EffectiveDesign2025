@@ -15,8 +15,6 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            font-size: 18px; /* Tamanho padrão */
-            line-height: 1.5em; /* Espaçamento padrão */
         }
         nav {
             width: 100%;
@@ -36,7 +34,7 @@
             width: 100%;
             max-width: 1200px;
             align-items: center;
-            justify-content: space-around;
+            justify-content: center;
             padding: 50px 20px;
         }
         .content {
@@ -45,15 +43,15 @@
             text-align: center;
         }
         h1 {
-            font-size: 32px; /* Tamanho padrão */
+            font-size: 36px;
             color: #333;
         }
         h2 {
-            font-size: 28px; /* Tamanho padrão */
+            font-size: 30px;
             color: #333;
         }
         h3 {
-            font-size: 26px; /* Tamanho padrão */
+            font-size: 28px;
             color: #333;
         }
         p {
@@ -87,10 +85,6 @@
             text-align: center;
             padding: 40px 20px;
         }
-        .section-break h2 {
-            font-size: 30px;
-            color: #333;
-        }
         .section-break p {
             font-size: 18px;
             color: #555;
@@ -98,81 +92,88 @@
             margin: 10px auto;
         }
 
-        /* 320px (smartphones pequenos) */
-        @media (max-width: 320px) {
-            body {
+        /* Estilos Responsivos */
+        @media (max-width: 767px) {
+            .container {
+                flex-direction: column; /* Colunas */
+            }
+            h1 {
+                font-size: 24px;
+            }
+            h2 {
+                font-size: 20px;
+            }
+            h3 {
+                font-size: 18px;
+            }
+            p {
                 font-size: 14px;
                 line-height: 1.2em;
             }
-            h1 { font-size: 24px; }
-            h2 { font-size: 20px; }
-            h3 { font-size: 18px; }
         }
 
-        /* 480px (smartphones maiores) */
-        @media (min-width: 321px) and (max-width: 480px) {
-            body {
-                font-size: 15px;
-                line-height: 1.3em;
+        @media (min-width: 768px) and (max-width: 1024px) {
+            h1 {
+                font-size: 28px;
             }
-            h1 { font-size: 26px; }
-            h2 { font-size: 22px; }
-            h3 { font-size: 20px; }
-        }
-
-        /* 768px (tablets retrato) */
-        @media (min-width: 481px) and (max-width: 768px) {
-            body {
+            h2 {
+                font-size: 24px;
+            }
+            h3 {
+                font-size: 22px;
+            }
+            p {
                 font-size: 16px;
                 line-height: 1.4em;
             }
-            h1 { font-size: 28px; }
-            h2 { font-size: 24px; }
-            h3 { font-size: 22px; }
         }
 
-        /* 1024px (tablets paisagem e laptops pequenos) */
-        @media (min-width: 769px) and (max-width: 1024px) {
-            body {
+        @media (min-width: 1025px) and (max-width: 1280px) {
+            h1 {
+                font-size: 30px;
+            }
+            h2 {
+                font-size: 26px;
+            }
+            h3 {
+                font-size: 24px;
+            }
+            p {
                 font-size: 17px;
                 line-height: 1.5em;
             }
-            h1 { font-size: 30px; }
-            h2 { font-size: 26px; }
-            h3 { font-size: 24px; }
         }
 
-        /* 1280px (laptops e desktops pequenos) */
-        @media (min-width: 1025px) and (max-width: 1280px) {
-            body {
+        @media (min-width: 1281px) and (max-width: 1440px) {
+            h1 {
+                font-size: 32px;
+            }
+            h2 {
+                font-size: 28px;
+            }
+            h3 {
+                font-size: 26px;
+            }
+            p {
                 font-size: 18px;
                 line-height: 1.5em;
             }
-            h1 { font-size: 32px; }
-            h2 { font-size: 28px; }
-            h3 { font-size: 26px; }
         }
 
-        /* 1440px (desktops médios) */
-        @media (min-width: 1281px) and (max-width: 1440px) {
-            body {
+        @media (min-width: 1441px) {
+            h1 {
+                font-size: 34px;
+            }
+            h2 {
+                font-size: 30px;
+            }
+            h3 {
+                font-size: 28px;
+            }
+            p {
                 font-size: 19px;
                 line-height: 1.6em;
             }
-            h1 { font-size: 34px; }
-            h2 { font-size: 30px; }
-            h3 { font-size: 28px; }
-        }
-
-        /* 1920px (desktops grandes) */
-        @media (min-width: 1441px) {
-            body {
-                font-size: 20px;
-                line-height: 1.6em;
-            }
-            h1 { font-size: 36px; }
-            h2 { font-size: 32px; }
-            h3 { font-size: 30px; }
         }
     </style>
 </head>
