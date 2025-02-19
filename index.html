@@ -18,10 +18,8 @@
             flex-direction: column;
             align-items: center;
         }
-        header {
-            width: 100%;
-        }
         nav {
+            width: 100%;
             background: #333;
             padding: 15px 0;
             text-align: center;
@@ -32,59 +30,56 @@
             margin: 0 15px;
             font-size: 18px;
         }
-        main {
+        .container {
             display: flex;
             flex-wrap: wrap;
             width: 100%;
             max-width: 1200px;
             align-items: center;
-            justify-content: center;
+            justify-content: center; /* Alinhamento centralizado */
             padding: 50px 20px;
         }
         .content {
             flex: 1;
             min-width: 300px;
-            text-align: center;
-            margin-bottom: 20px;
+            text-align: center; /* Alinhamento centralizado */
+            margin-bottom: 20px; /* Espaço entre os blocos */
         }
         h1 {
-            font-size: 48px;
+            font-size: 48px; /* Ajustado para 48px */
             color: #333;
-            margin-bottom: 20px;
+            margin-bottom: 20px; /* Margem inferior adicionada ao título */
         }
         h2 {
-            font-size: 20px;
-            color: #0b5394;
+            font-size: 20px; /* Tamanho do subtítulo */
+            color: #0b5394; /* Cor do subtítulo */
         }
         p {
             font-size: 18px;
             color: #555;
             margin: 10px 0;
-            text-align: justify;
+            text-align: justify; /* Texto justificado */
         }
         #bt_pulse {
             display: inline-block;
             padding: 15px 30px;
             font-size: 18px;
             color: white;
-            background: #28a745;
+            background: #28a745; /* Cor do botão verde */
             border: none;
             cursor: pointer;
             border-radius: 5px;
             text-decoration: none;
-            margin-top: 20px;
-            transition: background 0.3s ease, transform 0.3s ease;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            margin-top: 20px; /* Margem superior adicionada ao botão */
+            transition: background 0.3s ease, transform 0.3s ease; /* Efeitos de transição */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para o botão */
         }
         #bt_pulse:hover {
-            background: #218838;
-            transform: translateY(-2px);
-        }
-        #bt_pulse:active {
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            background: #218838; /* Cor do botão ao passar o mouse */
+            transform: translateY(-2px); /* Efeito de levantar ao passar o mouse */
         }
         #bt_pulse i {
-            margin-right: 8px;
+            margin-right: 8px; /* Espaçamento entre o ícone e o texto */
         }
         .section-break {
             width: 100%;
@@ -101,7 +96,7 @@
             color: #555;
             max-width: 800px;
             margin: 10px auto;
-            text-align: justify;
+            text-align: justify; /* Texto justificado */
         }
 
         /* Media Queries para Responsividade */
@@ -114,7 +109,7 @@
                 font-size: 24px;
             }
             h2 {
-                font-size: 16px;
+                font-size: 16px; /* Tamanho do subtítulo para pequenas telas */
             }
             .section-break h2 {
                 font-size: 20px;
@@ -129,7 +124,7 @@
                 font-size: 26px;
             }
             h2 {
-                font-size: 18px;
+                font-size: 18px; /* Tamanho do subtítulo para pequenas telas */
             }
             .section-break h2 {
                 font-size: 22px;
@@ -144,7 +139,7 @@
                 font-size: 28px;
             }
             h2 {
-                font-size: 18px;
+                font-size: 18px; /* Tamanho do subtítulo para pequenas telas */
             }
             .section-break h2 {
                 font-size: 24px;
@@ -159,7 +154,7 @@
                 font-size: 30px;
             }
             h2 {
-                font-size: 18px;
+                font-size: 18px; /* Tamanho do subtítulo para pequenas telas */
             }
             .section-break h2 {
                 font-size: 26px;
@@ -174,7 +169,7 @@
                 font-size: 32px;
             }
             h2 {
-                font-size: 20px;
+                font-size: 20px; /* Tamanho do subtítulo para pequenas telas */
             }
             .section-break h2 {
                 font-size: 28px;
@@ -189,7 +184,7 @@
                 font-size: 34px;
             }
             h2 {
-                font-size: 20px;
+                font-size: 20px; /* Tamanho do subtítulo para pequenas telas */
             }
             .section-break h2 {
                 font-size: 30px;
@@ -204,7 +199,7 @@
                 font-size: 36px;
             }
             h2 {
-                font-size: 20px;
+                font-size: 20px; /* Tamanho do subtítulo para pequenas telas */
             }
             .section-break h2 {
                 font-size: 32px;
@@ -213,17 +208,15 @@
     </style>
 </head>
 <body>
-    <header>
-        <nav>
-            <a href="#">Effective Design</a>
-            <a href="#">Portfólio</a>
-            <a href="#">Equipe</a>
-            <a href="#">Blog Universo Effective</a>
-            <a href="#">Contato</a>
-        </nav>
-    </header>
+    <nav>
+        <a href="#">Effective Design</a>
+        <a href="#">Portfólio</a>
+        <a href="#">Equipe</a>
+        <a href="#">Blog Universo Effective</a>
+        <a href="#">Contato</a>
+    </nav>
     
-    <main>
+    <div class="container">
         <div class="content">
             <creattie-embed
                 src="https://d1jj76g3lut4fe.cloudfront.net/saved_colors/113316/Zujw3V7aAPEqbYz3.json"
@@ -233,20 +226,20 @@
             <script src="https://creattie.com/js/embed.js?id=3f6954fde297cd31b441" defer></script>
         </div>
         <div class="content">
-            <h1>Effective Design</h1>
-            <h2>Transformamos ideias em **soluções personalizadas** para **impulsionar seu negócio**.</h2>
-            <p>No **marketing digital**, **tecnologia** e **impressão gráfica**, oferecemos **estratégias inovadoras** para destacar sua **marca**. Nossa **equipe** entende suas **necessidades** e cria **soluções personalizadas** para maximizar **resultados**.</p>
-            <p>Potencialize sua **presença no mercado** com **soluções inteligentes** e **eficazes**.</p>
-            <p>📩 Entre em contato e descubra como podemos ajudar o seu **negócio**!</p>
-            <a id="bt_pulse" href="https://wa.me/5567984530160?text=Ol%C3%A1,%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20a%20Effective%20Design." target="_blank" aria-label="Fale Conosco pelo WhatsApp">
-                <i class="fab fa-whatsapp"></i> Fale Conosco
+            <h1><strong>Effective Design</strong></h1>
+            <h2><strong>Transformamos ideias em soluções personalizadas</strong> para impulsionar seu <strong>negócio</strong>.</h2> <!-- Subtítulo atualizado -->
+            <p>No <strong>marketing digital</strong>, <strong>tecnologia</strong> e <strong>impressão gráfica</strong>, oferecemos <strong>estratégias inovadoras</strong> para destacar sua <strong>marca</strong>. Nossa <strong>equipe</strong> entende suas <strong>necessidades</strong> e cria <strong>soluções personalizadas</strong> para maximizar <strong>resultados</strong>.</p>
+            <p>Potencialize sua <strong>presença no mercado</strong> com <strong>soluções inteligentes</strong> e <strong>eficazes</strong>.</p>
+            <p>📩 Entre em contato e descubra como podemos ajudar o seu <strong>negócio</strong>!</p>
+            <a id="bt_pulse" href="https://wa.me/5567984530160?text=Ol%C3%A1,%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20a%20Effective%20Design." target="_blank">
+                <i class="fab fa-whatsapp"></i> <strong>Fale Conosco</strong>
             </a>
         </div>
-    </main>
+    </div>
     
     <div class="section-break">
-        <h2>Serviços</h2>
-        <p>Descubra as **soluções personalizadas** que oferecemos para alavancar sua **presença no mercado**. Conheça nossos **serviços** e veja como podemos ajudar sua **marca** a se destacar.</p>
+        <h2><strong>Serviços</strong></h2>
+        <p>Descubra as <strong>soluções personalizadas</strong> que oferecemos para alavancar sua <strong>presença no mercado</strong>. Conheça nossos <strong>serviços</strong> e veja como podemos ajudar sua <strong>marca</strong> a se destacar.</p>
     </div>
 </body>
 </html>
