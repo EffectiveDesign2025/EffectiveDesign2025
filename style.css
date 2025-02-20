@@ -24,7 +24,7 @@ nav ul {
     padding: 0; /* Remove o padding */
     margin: 0; /* Remove a margem */
     display: flex; /* Exibe os itens em linha (horizontal) */
-    justify-content: space-around; /* Distribui os itens com espaço igual */
+    justify-content: flex-end; /* Joga os links para a direita */
 }
 
 nav li {
@@ -45,8 +45,9 @@ nav a:hover {
     border-radius: 5px; /* Bordas arredondadas */
 }
 
+/* Estilo do menu hambúrguer */
 .menu-toggle {
-    display: none; /* Esconde o botão por padrão */
+    display: none; /* Esconde o botão por padrão em telas grandes*/
     flex-direction: column; /* Alinha as barras verticalmente */
     cursor: pointer; /* Muda o cursor para indicar que é clicável */
 }
@@ -166,13 +167,22 @@ nav a:hover {
     }
 
     .menu-toggle {
-        display: flex; /* Agora será exibido */
+        display: flex; /* Agora será exibido em telas menores */
     }
     
     nav ul {
         display: none; /* Esconde a lista de navegação por padrão */
         flex-direction: column; /* Muda para coluna em telas menores */
         width: 100%; /* Largura total */
+        position: absolute;
+        top: 60px;
+        right: 0; /* Agora começa do lado direito */
+        width: 200px; /* Ajuste conforme necessário */
+        background-color: #f8f9fa;
+        text-align: center;
+        padding: 10px 0;
+        border-radius: 8px;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     }
 
     nav ul.active {
