@@ -185,7 +185,7 @@ nav a:hover {
         right: 0; /* Agora começa do lado direito */
         width: 200px; /* Ajuste conforme necessário */
         background-color: #f8f9fa;
-        text-align: center;
+       
         padding: 10px 0;
         border-radius: 8px;
         box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
