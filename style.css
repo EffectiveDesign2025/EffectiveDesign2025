@@ -185,7 +185,6 @@ nav a:hover {
         padding: 15px; /* Aumenta o padding para uma área clicável maior */
         width: 100%; /* Faz os links ocuparem toda a largura */
         text-align: center; /* Centraliza o texto dos links */
-        
     }
 
     .container {
@@ -197,13 +196,29 @@ nav a:hover {
 #lottie-animation {
         max-width: 100%; /* Correção aplicada */
         height: auto;
-
+    }
+    
     .content h1 {
         font-size: 2rem;
     }
 
     .content h2 {
         font-size: 1.3rem;
+    }
+/* ------------------------------------------- MIDIA QUERIES ATÉ 417px --------------------------------------------- */    
+
+    @media (max-width: 417px) {
+    #lottie-animation {
+        max-width: 90%; /* Correção aplicada */
+        height: auto;
+    }
+
+    .content h1 {
+        font-size: 1.8rem;
+    }
+
+    .content h2 {
+        font-size: 1.2rem;
     }
 }
 
