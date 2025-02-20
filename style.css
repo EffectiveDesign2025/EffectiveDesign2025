@@ -19,6 +19,7 @@ nav {
 
 .logo img {
     height: 40px; /* Ajuste conforme necessário */
+    display: flex;
 }
 
 nav ul {
@@ -173,11 +174,9 @@ nav a:hover {
     }
 
     .logo img {
-    display: flex
-        
-}
-    
-    
+        display: flex
+   }
+       
     .menu-toggle {
         display: flex; /* Agora será exibido em telas menores */
     }
@@ -231,6 +230,11 @@ nav a:hover {
 /* ------------------------------------------- MIDIA QUERIES ATÉ 417px --------------------------------------------- */    
 
     @media (max-width: 417px) {
+
+     .logo img {
+        display: flex;
+     }
+        
     #lottie-animation {
         max-width: 90%; /* Correção aplicada */
         height: auto;
