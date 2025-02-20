@@ -73,5 +73,13 @@
             path: "https://raw.githubusercontent.com/EffectiveDesign2025/EffectiveDesign2025/main/animacao/analise%20de%20projeto"
         });
     </script>
+    <script>
+        const mobileMenu = document.getElementById('mobile-menu');
+        const navList = document.querySelector('.nav-list');
+    
+        mobileMenu.addEventListener('click', () => {
+            navList.classList.toggle('active'); // Adiciona ou remove a classe 'active' ao clicar
+        });
+    </script>  
 </body>
 </html>
