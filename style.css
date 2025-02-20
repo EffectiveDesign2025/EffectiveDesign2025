@@ -38,6 +38,7 @@ nav li {
 
 nav a {
     text-decoration: none; /* Remove o sublinhado dos links */
+    text-align: center;
     color: #333; /* Cor do texto dos links */
     font-weight: 700; /* Negrito nos links */
     padding: 10px; /* Adiciona padding para aumentar a área clicável */
