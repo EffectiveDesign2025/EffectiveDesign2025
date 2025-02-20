@@ -56,7 +56,6 @@ nav a:hover {
 /* Bloco de texto */
 
 .content {
-    flex: 1;
     max-width: 100%;
     text-align: center;
 }
