@@ -9,34 +9,37 @@ body {
 
 nav {    
     display: flex;
-    
     justify-content: space-between; /* Alinha logo à esquerda e menu à direita */
     padding: 15px 5%;
     background-color: #f8f9fa;
     color: #333;
     height: 80px; /* Define uma altura fixa para a barra de menu */
+    width: 100%
 }
 
 .logo { 
-   width: 50% 
+    width: 50%;
+    text-align: center;
+}
     
 .logo img {
-    height: 40px; /* Ajuste conforme necessário */
+    height: 80px; /* Ajuste conforme necessário */
 }
 
 nav ul {
     list-style: none; /* Remove os marcadores da lista */
     display: flex;
     justify-content: flex-end; /* Alinha os itens à direita */
-    align-items: center; /* Alinha os itens ao centro verticalmente */
+    text-align: center; /* Alinha o texto ao centro horizontalmente */
     padding: 0; /* Remove o padding */
     margin: 0; /* Remove a margem */
-    gap: 20px; /* Espaçamento entre os itens */
-    
+    gap: 20px; /* Espaçamento entre os itens */ 
+    width: 50%;
 }
 
 nav li {
     margin: 0 15px; /* Adiciona um espaço entre os itens */
+    text-align: center;
 }
 
 nav a {
