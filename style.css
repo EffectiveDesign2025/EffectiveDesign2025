@@ -141,7 +141,7 @@ nav a:hover {
     }
    
     #lottie-animation {
-        max-width: 80%; /* Correção aplicada */
+        max-width: 100%; /* Correção aplicada */
         height: auto;
     }
 
