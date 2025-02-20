@@ -25,6 +25,7 @@ nav {
     
 .logo img {
     height: auto; /* Ajuste conforme necessário */
+    max-height: 70px; 
 }
 
 nav ul {
