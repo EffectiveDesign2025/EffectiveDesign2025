@@ -1,154 +1,16 @@
-body {
-    font-family: 'Lato', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-}
-
-/* ------------------------------------------- MENU DE NAVEGAÇÃO --------------------------------------------- */
-
-nav {    
-    display: flex;
-    justify-content: space-around; /* Espalha os links igualmente */
-    padding: 10px; /* Adiciona padding ao redor da barra de navegação */
-    background-color: #ffffff; /* Cor de fundo da barra de navegação */
-    color: #333;
-}
-
-nav a {
-    padding: 15px 20px; /* Aumenta o espaçamento ao redor dos links */
-    text-decoration: none; /* Remove o sublinhado dos links */
-    color: #333; /* Cor do texto */
-    border-radius: 5px; /* Arredonda os cantos dos links */
-    transition: background-color 0.3s; /* Transição suave para a cor de fundo */
-    margin-right: 20px;
-}
-
-nav a:hover {
-    background-color: #e0e0e0; /* Cor de fundo ao passar o mouse */
-}
-
-/* ------------------------------------------- SEÇÃO INICIAL --------------------------------------------- */
-
-/* Ajuste do Container */
-
-.container {
-    display: flex;
-    align-items: center;
-    justify-content: between;
-    flex-wrap: wrap;
-    padding: 50px 5%;
-    gap: 30px;
-}
-
-/* Ajuste do bloco da animação */
-
-#lottie-animation {
-    display: flex;
-    width: 100%; /* Garante que a animação ocupe toda a largura do contêiner */
-    max-width: 100%; /* Define uma largura máxima para evitar que fique grande demais */
-    height: auto; /* Altura fixa para manter um bom tamanho */
-    margin: 0 auto; /* Centraliza horizontalmente */
-    justify-content: center;
-    align-items: center;
-}
-
-/* Bloco de texto */
-
-.content {
-    max-width: 500px;
-    text-align: center;
-}
-
-.content h1 {
-    font-size: 2.5rem;
-    color: #333;
-    margin-bottom: 10px;
-}
-
-.content h2 {
-    font-size: 1.5rem;
-    color: #555;
-    margin-bottom: 15px;
-}
-
-.content p {
-    font-size: 1rem;
-    color: #666;
-    margin-bottom: 20px;
-}
-/* ------------------------------------------- BOTÃO DO WHATSAPP   --------------------------------------------- */
-
-/* Botão do WhatsApp */
-
-#bt_pulse {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    padding: 12px 20px;
-    background-color: #25d366;
-    color: #fff;
-    font-size: 1rem;
-    font-weight: bold;
-    border-radius: 25px;
-    text-decoration: none;
-    transition: 0.3s;
-}
-
-#bt_pulse i {
-    margin-right: 8px;
-    font-size: 1.2rem;
-}
-
-#bt_pulse:hover {
-    background-color: #1ebe5d;
-}
-
-/* ------------------------------------------- SEÇÃO DE SERVIÇOS  --------------------------------------------- */
-
-.section-break {
-    background-color: #eee;
-    padding: 20px;
-    margin: 20px 0;
-}
-
-.services-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid */
-    gap: 20px; /* Spacing between grid items */
-    padding: 20px; /* Padding around the grid */
-}
-
-.service {
-    border: 1px solid #ccc; /* Example border */
-    padding: 20px;
-    text-align: center; /* Center the content */
-    border-radius: 8px; /* Rounded corners */
-    box-shadow: 2px 2px 5px rgba(0,0,0,0.1); /* Subtle shadow */
-}
-
-.service h3 {
-    margin-bottom: 10px;
-}
-
-/* ------------------------------------------- MIDIA QUERIES --------------------------------------------- */
-
-
-    }
-
 @media (max-width: 767px) {
     nav {
-        flex-direction: column; /* Alinha os links em coluna em dispositivos menores */
+        flex-direction: column;
     }
       
     nav a {
-        width: 100%; /* Faz os links ocuparem 100% da largura */
-        text-align: center; /* Centraliza o texto dos links */
+        width: 100%;
+        text-align: center;
     }
    
     #lottie-animation {
-        max-width: 100%; /* Permite que a animação ocupe toda a largura em dispositivos móveis */
-        height: 300px; /* Define uma altura específica para dispositivos menores */
+        max-width: 100%;
+        height: 300px;
     }
 
     .container {
@@ -165,11 +27,10 @@ nav a:hover {
         font-size: 1.3rem;
     }
 }
-}
 
 @media (max-width: 417px) {
     #lottie-animation {
-        height: 250px; /* Altura ainda menor para telas muito pequenas */
+        height: 250px;
     }
 
     .content h1 {
@@ -179,5 +40,4 @@ nav a:hover {
     .content h2 {
         font-size: 1.2rem;
     }
-}
 }
