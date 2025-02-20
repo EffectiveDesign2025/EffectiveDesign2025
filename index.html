@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Effective Design</title>
     <meta name="description" content="Na Effective Design, transformamos ideias em soluções personalizadas em marketing digital, tecnologia e impressão gráfica para impulsionar seu negócio. Descubra como podemos ajudar você!">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
     <link rel="icon" href="https://raw.githubusercontent.com/EffectiveDesign2025/EffectiveDesign2025/main/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" crossorigin="anonymous">
@@ -12,7 +14,7 @@
 </head>
 <body>
     <header>
-        <nav>
+        <nav role="navigation">
             <ul>
                 <li><a href="#">Effective Design</a></li>
                 <li><a href="#">Portfólio</a></li>
@@ -24,13 +26,13 @@
     </header>
 
     <main class="container">
-        <div id="lottie-animation"></div>
+        <div id="lottie-animation" aria-label="Animação representando análise de projeto"></div>
         <div class="content">
             <h1>Effective Design</h1>
             <h2>Transformamos ideias em soluções personalizadas para impulsionar seu negócio.</h2>
             <p>No <strong>marketing digital</strong>, <strong>tecnologia</strong> e <strong>impressão gráfica</strong>, oferecemos estratégias inovadoras para destacar sua marca.</p>
             <p>📩 Entre em contato e descubra como podemos ajudar o seu <strong>negócio</strong>!</p>
-            <a id="bt_pulse" href="https://wa.me/5567984530160?text=Ol%C3%A1,%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20a%20Effective%20Design." target="_blank" aria-label="Fale Conosco pelo WhatsApp">
+            <a id="bt_pulse" href="https://wa.me/5567984530160?text=Ol%C3%A1,%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20a%20Effective%20Design." target="_blank" aria-label="Fale Conosco pelo WhatsApp" role="button">
                 <i class="fab fa-whatsapp"></i> Fale Conosco
             </a>
         </div>
@@ -63,7 +65,7 @@
             renderer: 'svg',
             loop: true,
             autoplay: true,
-            path: "https://raw.githubusercontent.com/EffectiveDesign2025/EffectiveDesign2025/main/animacao/analise%20de%20projeto.json"
+            path: "https://raw.githubusercontent.com/EffectiveDesign2025/EffectiveDesign2025/main/animacao/analise-de-projeto.json"
         });
     </script>
 </body>
