@@ -1,70 +1,176 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Effective Design</title>
-    <meta name="description" content="Na Effective Design, transformamos ideias em soluções personalizadas em marketing digital, tecnologia e impressão gráfica para impulsionar seu negócio. Descubra como podemos ajudar você!">
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="icon" href="https://raw.githubusercontent.com/EffectiveDesign2025/EffectiveDesign2025/main/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#">Effective Design</a></li>
-                <li><a href="#">Portfólio</a></li>
-                <li><a href="#">Equipe</a></li>
-                <li><a href="#">Blog Universo Effective</a></li>
-                <li><a href="#">Contato</a></li>
-            </ul>
-        </nav>
-    </header>
+body {
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
 
-    <main class="container">
-        <div id="lottie-animation"></div>
-        <div class="content">
-            <h1>Effective Design</h1>
-            <h2>Transformamos ideias em soluções personalizadas para impulsionar seu negócio.</h2>
-            <p>No <strong>marketing digital</strong>, <strong>tecnologia</strong> e <strong>impressão gráfica</strong>, oferecemos estratégias inovadoras para destacar sua marca.</p>
-            <p>📩 Entre em contato e descubra como podemos ajudar o seu <strong>negócio</strong>!</p>
-            <a id="bt_pulse" href="https://wa.me/5567984530160?text=Ol%C3%A1,%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20a%20Effective%20Design." target="_blank" aria-label="Fale Conosco pelo WhatsApp">
-                <i class="fab fa-whatsapp"></i> Fale Conosco
-            </a>
-        </div>
-    </main>
+/* ------------------------------------------- MENU DE NAVEGAÇÃO --------------------------------------------- */
 
-    <div class="section-break">
-        <h2>Serviços</h2>
-        <p>Descubra as <strong>soluções personalizadas</strong> que oferecemos para alavancar sua <strong>presença no mercado</strong>.</p>
+nav {    
+    display: flex;
+    justify-content: space-around; /* Espalha os links igualmente */
+    padding: 10px;
+    background-color: #ffffff;
+    color: #333;
+}
 
-        <div class="services-grid">
-            <div class="service">
-                <h3>Marketing Digital</h3>
-                <p>Criação de estratégias de marketing online, gestão de redes sociais, SEO, campanhas de anúncios e muito mais.</p>
-            </div>
-            <div class="service">
-                <h3>Tecnologia</h3>
-                <p>Desenvolvimento de websites, aplicativos, sistemas personalizados e soluções de tecnologia sob medida.</p>
-            </div>
-            <div class="service">
-                <h3>Impressão Gráfica</h3>
-                <p>Impressão de materiais promocionais, cartões de visita, flyers, banners e outros materiais gráficos.</p>
-            </div>
-        </div>
-    </div>
+nav a {
+    padding: 15px 20px;
+    text-decoration: none;
+    color: #333;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    margin-right: 20px;
+}
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.9.6/lottie.min.js"></script>
-    <script>
-        var animation = lottie.loadAnimation({
-            container: document.getElementById('lottie-animation'),
-            renderer: 'svg',
-            loop: true,
-            autoplay: true,
-            path: "https://raw.githubusercontent.com/EffectiveDesign2025/EffectiveDesign2025/main/animacao/analise%20de%20projeto"
-        });
-    </script>
-</body>
-</html>
+nav a:hover {
+    background-color: #e0e0e0;
+}
+
+/* ------------------------------------------- SEÇÃO INICIAL --------------------------------------------- */
+
+/* Ajuste do Container */
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Correção aplicada */
+    flex-wrap: wrap;
+    padding: 50px 5%;
+    gap: 30px;
+}
+
+/* Ajuste do bloco da animação */
+
+#lottie-animation {
+    display: flex;
+    width: 100%;
+    max-width: 500px; /* Correção aplicada */
+    height: 350px; /* Ajuste de tamanho */
+    margin: 0 auto;
+}
+
+/* Bloco de texto */
+
+.content {
+    max-width: 500px;
+    text-align: center;
+}
+
+.content h1 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.content h2 {
+    font-size: 1.5rem;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.content p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+/* ------------------------------------------- BOTÃO DO WHATSAPP --------------------------------------------- */
+
+#bt_pulse {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 20px;
+    background-color: #25d366;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 25px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+#bt_pulse i {
+    margin-right: 8px;
+    font-size: 1.2rem;
+}
+
+#bt_pulse:hover {
+    background-color: #1ebe5d;
+}
+
+/* ------------------------------------------- SEÇÃO DE SERVIÇOS --------------------------------------------- */
+
+.section-break {
+    background-color: #eee;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.service {
+    border: 1px solid #ccc;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+}
+
+.service h3 {
+    margin-bottom: 10px;
+}
+
+/* ------------------------------------------- MIDIA QUERIES --------------------------------------------- */
+
+@media (max-width: 767px) {
+    nav {
+        flex-direction: column;
+    }
+      
+    nav a {
+        width: 100%;
+        text-align: center;
+    }
+   
+    #lottie-animation {
+        max-width: 80%; /* Correção aplicada */
+        height: auto;
+    }
+
+    .container {
+        flex-direction: column;
+        text-align: center;
+        padding: 40px 5%;
+    }
+
+    .content h1 {
+        font-size: 2rem;
+    }
+
+    .content h2 {
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 417px) {
+    #lottie-animation {
+        max-width: 90%; /* Correção aplicada */
+        height: auto;
+    }
+
+    .content h1 {
+        font-size: 1.8rem;
+    }
+
+    .content h2 {
+        font-size: 1.2rem;
+    }
+}
