@@ -9,11 +9,16 @@ body {
 
 nav {    
     display: flex;
-    justify-content: space-around; /* Espalha os links igualmente */
+    justify-content: space-between; /* Alinha logo à esquerda e menu à direita */
     padding: 10px;
     background-color: #f8f9fa;
     color: #333;
 }
+
+.logo img {
+    height: 50px; /* Ajuste conforme necessário */
+}
+
 nav ul {
     list-style: none; /* Remove os marcadores da lista */
     padding: 0; /* Remove o padding */
@@ -24,13 +29,6 @@ nav ul {
 
 nav li {
     margin: 0 15px; /* Adiciona um espaço entre os itens */
-}
-nav a {
-    text-decoration: none; /* Remove o sublinhado dos links */
-    color: #333; /* Cor do texto dos links */
-    font-weight: 700; /* Negrito nos links */
-    padding: 10px; /* Adiciona padding para aumentar a área clicável */
-    transition: background-color 0.3s; /* Animação suave para a mudança de cor */
 }
 
 nav a {
