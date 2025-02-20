@@ -172,6 +172,12 @@ nav a:hover {
         flex-direction: column;
     }
 
+    .logo img {
+    display: flex
+        
+}
+    
+    
     .menu-toggle {
         display: flex; /* Agora será exibido em telas menores */
     }
