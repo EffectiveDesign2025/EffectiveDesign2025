@@ -207,17 +207,3 @@ nav a:hover {
     }
 }
 
-@media (max-width: 417px) {
-    #lottie-animation {
-        max-width: 90%; /* Correção aplicada */
-        height: auto;
-    }
-
-    .content h1 {
-        font-size: 1.8rem;
-    }
-
-    .content h2 {
-        font-size: 1.2rem;
-    }
-}
