@@ -9,7 +9,7 @@ body {
 
 nav {    
     display: flex;
-    align-items: center; /* Centraliza Verticalmente */ 
+    
     justify-content: space-between; /* Alinha logo à esquerda e menu à direita */
     padding: 15px 5%;
     background-color: #f8f9fa;
