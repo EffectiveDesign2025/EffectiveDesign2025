@@ -168,7 +168,7 @@ nav a:hover {
     }
 
     nav ul {
-        display: none; /* Esconde a lista de navegação por padrão */
+        display: flex; /* Esconde a lista de navegação por padrão */
         flex-direction: column; /* Muda para coluna em telas menores */
         width: 100%; /* Largura total */
     }
