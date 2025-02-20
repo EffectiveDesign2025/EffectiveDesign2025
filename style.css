@@ -35,7 +35,7 @@ nav a:hover {
 .container {
     display: flex;
     align-items: center;
-    justify-content: space-between; /* Correção aplicada */
+    justify-content: space-around; /* Correção aplicada */
     flex-wrap: wrap;
     padding: 50px 5%;
     gap: 30px;
