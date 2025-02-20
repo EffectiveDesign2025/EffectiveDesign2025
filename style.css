@@ -45,12 +45,19 @@ nav a:hover {
 
 #lottie-animation {
     width: 100%; /* Garante que a animação ocupe toda a largura do contêiner */
-    max-width: 100%; /* Define uma largura máxima para evitar que fique grande demais */
+    max-width: 500px; /* Define uma largura máxima para evitar que fique grande demais */
     height: auto; /* Altura fixa para manter um bom tamanho */
     margin: 0 auto; /* Centraliza horizontalmente */
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+/* Bloco de texto */
+
+.content {
+    max-width: 500px;
+    text-align: center;
 }
 
 .content {
