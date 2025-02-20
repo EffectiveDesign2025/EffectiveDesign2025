@@ -202,7 +202,6 @@ nav a:hover {
     nav a {
         padding: 15px; /* Aumenta o padding para uma área clicável maior */
         width: 100%; /* Faz os links ocuparem toda a largura */
-        text-align: center; /* Centraliza o texto dos links */
     }
 
     .container {
