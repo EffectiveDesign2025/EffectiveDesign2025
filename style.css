@@ -60,6 +60,23 @@ nav a:hover {
     text-align: center;
 }
 
+.content h1 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.content h2 {
+    font-size: 1.5rem;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.content p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 20px;
+}
 /* ------------------------------------------- SEÇÃO DE SERVIÇOS  --------------------------------------------- */
 
 .section-break {
