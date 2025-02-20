@@ -9,10 +9,12 @@ body {
 
 nav {    
     display: flex;
+    align-items: center; /* Centraliza Verticalmente */ 
     justify-content: space-between; /* Alinha logo à esquerda e menu à direita */
-    padding: 10px;
+    padding: 15px 5%;
     background-color: #f8f9fa;
     color: #333;
+    height: 80px; /* Define uma altura fixa para a barra de menu */
 }
 
 .logo img {
@@ -21,10 +23,13 @@ nav {
 
 nav ul {
     list-style: none; /* Remove os marcadores da lista */
+    display: flex;
+    justify-content: flex-end; /* Alinha os itens à direita */
+    align-items: center; /* Alinha os itens ao centro verticalmente */
     padding: 0; /* Remove o padding */
     margin: 0; /* Remove a margem */
-    display: flex; /* Exibe os itens em linha (horizontal) */
-    justify-content: flex-end; /* Joga os links para a direita */
+    gap: 20px; /* Espaçamento entre os itens */
+    height: 100%; /* Ocupa toda a altura da navbar */
 }
 
 nav li {
