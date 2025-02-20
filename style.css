@@ -77,6 +77,33 @@ nav a:hover {
     color: #666;
     margin-bottom: 20px;
 }
+/* ------------------------------------------- BOTÃO DO WHATSAPP   --------------------------------------------- */
+
+/* Botão do WhatsApp */
+
+#bt_pulse {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 20px;
+    background-color: #25d366;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 25px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+#bt_pulse i {
+    margin-right: 8px;
+    font-size: 1.2rem;
+}
+
+#bt_pulse:hover {
+    background-color: #1ebe5d;
+}
+
 /* ------------------------------------------- SEÇÃO DE SERVIÇOS  --------------------------------------------- */
 
 .section-break {
@@ -106,12 +133,14 @@ nav a:hover {
 
 /* ------------------------------------------- MIDIA QUERIES --------------------------------------------- */
 
+
+    }
+
 @media (max-width: 767px) {
     nav {
         flex-direction: column; /* Alinha os links em coluna em dispositivos menores */
-        
     }
-
+      
     nav a {
         width: 100%; /* Faz os links ocuparem 100% da largura */
         text-align: center; /* Centraliza o texto dos links */
@@ -121,6 +150,20 @@ nav a:hover {
         max-width: 100%; /* Permite que a animação ocupe toda a largura em dispositivos móveis */
         height: 300px; /* Define uma altura específica para dispositivos menores */
     }
+
+    .container {
+        flex-direction: column;
+        text-align: center;
+        padding: 40px 5%;
+    }
+
+    .content h1 {
+        font-size: 2rem;
+    }
+
+    .content h2 {
+        font-size: 1.3rem;
+    }
 }
 }
 
@@ -128,4 +171,13 @@ nav a:hover {
     #lottie-animation {
         height: 250px; /* Altura ainda menor para telas muito pequenas */
     }
+
+    .content h1 {
+        font-size: 1.8rem;
+    }
+
+    .content h2 {
+        font-size: 1.2rem;
+    }
+}
 }
