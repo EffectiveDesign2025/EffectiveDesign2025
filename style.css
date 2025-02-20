@@ -29,7 +29,7 @@ nav ul {
     padding: 0; /* Remove o padding */
     margin: 0; /* Remove a margem */
     gap: 20px; /* Espaçamento entre os itens */
-    height: 100%; /* Ocupa toda a altura da navbar */
+    
 }
 
 nav li {
