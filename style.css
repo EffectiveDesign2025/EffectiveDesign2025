@@ -11,21 +11,35 @@ nav {
     display: flex;
     justify-content: space-around; /* Espalha os links igualmente */
     padding: 10px;
-    background-color: #ffffff;
+    background-color: #f8f9fa;
     color: #333;
+}
+
+nav ul { 
+    list-style: none; /* Remove os marcadores da lista */
+    padding: 0; /* Remove o padding */
+    margin: 0; /* Remove a margem */
+    display: flex; /* Exibe os itens em linha (horizontal) */
+    justify-content: space-around; /* Distribui os itens com espaço igual */
+}
+
+nav li {
+    margin: 0 15px; /* Adiciona um espaço entre os itens */
 }
 
 nav a {
-    padding: 15px 20px;
-    text-decoration: none;
-    color: #333;
-    border-radius: 5px;
-    transition: background-color 0.3s;
+    text-decoration: none; /* Remove o sublinhado dos links */
+    color: #333; /* Cor do texto dos links */
+    font-weight: 700; /* Negrito nos links */
+    padding: 10px; /* Adiciona padding para aumentar a área clicável */
     margin-right: 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s; /* Animação suave para a mudança de cor */
 }
 
 nav a:hover {
-    background-color: #e0e0e0;
+    background-color: #e2e6ea; /* Cor de fundo ao passar o mouse */
+    border-radius: 5px; /* Bordas arredondadas */
 }
 
 /* ------------------------------------------- SEÇÃO INICIAL --------------------------------------------- */
