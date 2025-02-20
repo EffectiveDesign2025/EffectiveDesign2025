@@ -5,9 +5,7 @@ body {
     background-color: #f4f4f4;
 }
 
-
 nav {    
-
     display: flex;
     justify-content: space-around; /* Espalha os links igualmente */
     padding: 10px; /* Adiciona padding ao redor da barra de navegação */
