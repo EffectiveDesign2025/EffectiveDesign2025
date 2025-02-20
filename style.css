@@ -169,14 +169,11 @@ nav a:hover {
 /* ------------------------------------------- MIDIA QUERIES ATÉ 767px --------------------------------------------- */
 
 @media (max-width: 767px) {
+    
     nav {
         flex-direction: column;
     }
-
-    .logo img {
-        display: flex
-   }
-       
+   
     .menu-toggle {
         display: flex; /* Agora será exibido em telas menores */
     }
@@ -190,7 +187,6 @@ nav a:hover {
         right: 0; /* Agora começa do lado direito */
         width: 200px; /* Ajuste conforme necessário */
         background-color: #f8f9fa;
-       
         padding: 10px 0;
         border-radius: 8px;
         box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
@@ -210,12 +206,12 @@ nav a:hover {
     }
 
     .container {
-        flex-direction: column;
+        align-items: center;
         text-align: center;
         padding: 40px 5%;
     }
 
-#lottie-animation {
+    #lottie-animation {
         max-width: 100%; /* Correção aplicada */
         height: auto;
     }
@@ -227,14 +223,12 @@ nav a:hover {
     .content h2 {
         font-size: 1.3rem;
     }
+
+}
 /* ------------------------------------------- MIDIA QUERIES ATÉ 417px --------------------------------------------- */    
 
-    @media (max-width: 417px) {
-
-     .logo img {
-        display: flex;
-     }
-        
+@media (max-width: 417px) {
+     
     #lottie-animation {
         max-width: 90%; /* Correção aplicada */
         height: auto;
