@@ -167,6 +167,10 @@ nav a:hover {
         flex-direction: column;
     }
 
+    .menu-toggle {
+        display: flex; /* Agora será exibido */
+    }
+    
     nav ul {
         display: none; /* Esconde a lista de navegação por padrão */
         flex-direction: column; /* Muda para coluna em telas menores */
