@@ -35,7 +35,7 @@ nav a:hover {
 
 #lottie-animation {
     width: 100%; /* Ocupa 100% da largura do contêiner */
-    max-width: 800px; /* Largura máxima da animação */
+    max-width: 100%; /* Largura máxima da animação */
     height: auto; /* Altura automática para manter a proporção */
     margin: 0 auto; /* Centraliza a animação na página */
     display: flex; /* Flexbox para centralização */
