@@ -20,7 +20,7 @@ nav ul {
     padding: 0; /* Remove o padding */
     margin: 0; /* Remove a margem */
     display: flex; /* Exibe os itens em linha (horizontal) */
-    justify-content: space-around; /* Distribui os itens com espaço igual */
+    
 }
 
 nav li {
