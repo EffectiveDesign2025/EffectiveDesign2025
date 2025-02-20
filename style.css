@@ -45,9 +45,9 @@ nav a:hover {
 
 #lottie-animation {
     display: flex;
-    width: 100%;
-    max-width: 500px; /* Correção aplicada */
-    height: 350px; /* Ajuste de tamanho */
+    width: auto;
+    max-width: 100%; /* Correção aplicada */
+    height: auto; /* Ajuste de tamanho */
     margin: 0 auto;
 }
 
