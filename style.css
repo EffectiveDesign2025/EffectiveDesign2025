@@ -30,11 +30,27 @@ nav a:hover {
 
 /* ------------------------------------------- SEÇÃO INICIAL --------------------------------------------- */
 
+/* Ajuste do Container */
+
 .container {
     display: flex;
-    justify-content: space-between;
-    padding: 20px;
-    backtround: green;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 50px 5%;
+    gap: 30px;
+}
+
+/* Ajuste do bloco da animação */
+
+/* Ajuste do bloco da animação */
+#lottie-animation {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #lottie-animation {
@@ -51,6 +67,7 @@ nav a:hover {
     flex: 1;
     margin: 10px;
     background: red;
+    
 }
 
 /* ------------------------------------------- SEÇÃO DE SERVIÇOS  --------------------------------------------- */
