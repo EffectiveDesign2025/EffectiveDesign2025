@@ -47,6 +47,19 @@ nav a:hover {
     border-radius: 5px; /* Bordas arredondadas */
 }
 
+.menu-toggle {
+    display: none; /* Esconde o botão por padrão */
+    flex-direction: column; /* Alinha as barras verticalmente */
+    cursor: pointer; /* Muda o cursor para indicar que é clicável */
+}
+
+.menu-toggle .bar {
+    height: 3px; /* Altura das barras do menu */
+    width: 25px; /* Largura das barras do menu */
+    background-color: #333; /* Cor das barras */
+    margin: 4px 0; /* Espaçamento entre as barras */
+}
+
 /* ------------------------------------------- SEÇÃO INICIAL --------------------------------------------- */
 
 /* Ajuste do Container */
@@ -147,7 +160,7 @@ nav a:hover {
     margin-bottom: 10px;
 }
 
-/* ------------------------------------------- MIDIA QUERIES --------------------------------------------- */
+/* ------------------------------------------- MIDIA QUERIES ATÉ 767px --------------------------------------------- */
 
 @media (max-width: 767px) {
     nav {
@@ -155,8 +168,13 @@ nav a:hover {
     }
 
     nav ul {
+        display: none; /* Esconde a lista de navegação por padrão */
         flex-direction: column; /* Muda para coluna em telas menores */
-        align-items: center; /* Centraliza os itens */
+        width: 100%; /* Largura total */
+    }
+
+    nav ul.active {
+        display: flex; /* Mostra a lista quando ativa */
     }
 
     nav li {
@@ -169,17 +187,16 @@ nav a:hover {
         text-align: center; /* Centraliza o texto dos links */
         
     }
-   
-    #lottie-animation {
-        max-width: 100%; /* Correção aplicada */
-        height: auto;
-    }
 
     .container {
         flex-direction: column;
         text-align: center;
         padding: 40px 5%;
     }
+
+#lottie-animation {
+        max-width: 100%; /* Correção aplicada */
+        height: auto;
 
     .content h1 {
         font-size: 2rem;
