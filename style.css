@@ -32,6 +32,7 @@ nav a:hover {
     display: flex;
     justify-content: space-between;
     padding: 20px;
+    backtround: green;
 }
 
 #lottie-animation {
@@ -44,10 +45,10 @@ nav a:hover {
     align-items: center; /* Centraliza verticalmente */
 }
 
-
 .content {
     flex: 1;
     margin: 10px;
+    background: red;
 }
 
 .section-break {
