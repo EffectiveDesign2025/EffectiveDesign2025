@@ -24,7 +24,7 @@ nav {
 }
     
 .logo img {
-    height: 80px; /* Ajuste conforme necessário */
+    height: auto; /* Ajuste conforme necessário */
 }
 
 nav ul {
@@ -35,7 +35,7 @@ nav ul {
     padding: 0; /* Remove o padding */
     margin: 0; /* Remove a margem */
     gap: 20px; /* Espaçamento entre os itens */ 
-    width: 50%;
+    width: 70%;
 }
 
 nav li {
