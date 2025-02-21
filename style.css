@@ -20,7 +20,6 @@ nav {
 
 nav logo {
     display: flex;
-    justify-self: right;
     height: 80px;
     width:auto;
 }
