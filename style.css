@@ -84,7 +84,6 @@ nav a:hover {
 
 .container {
     display: flex;
-    align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
     padding: 50px 5%;
