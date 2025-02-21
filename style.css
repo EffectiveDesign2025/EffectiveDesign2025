@@ -8,7 +8,7 @@ body {
 /* ------------------------------------------- MENU DE NAVEGAÇÃO --------------------------------------------- */
 
 nav {    
-    display: flex;
+    display: block;
     justify-content: space-between;
     align-items: center;
     background-color: #f8f9fa;
