@@ -23,6 +23,11 @@ nav {
     width: auto; /* Mantém a proporção */
 }
 
+#icone { 
+    display: none;
+    max-heigth: 70px;
+    width: auto;
+
 nav ul {
     list-style: none; /* Remove os marcadores da lista */
     display: flex;
@@ -172,20 +177,25 @@ nav a:hover {
 
 @media (max-width: 767px) {
     
-    nav {
+   nav {
         flex-direction: column;
-    }
+   }
 
-    .logo img {
-        max-hight: 40px;
-        width: auto;
-        
-   
-    .menu-toggle {
-        display: flex; /* Agora será exibido em telas menores */
-    }
+    #logo {
+        display: none;
+   }
     
-    nav ul {
+   #icone { 
+        display: flex;
+        max-heigth: 70px;
+        width: auto;
+   }
+   
+   .menu-toggle {
+        display: flex; /* Agora será exibido em telas menores */
+   }
+    
+   nav ul {
         display: none; /* Esconde a lista de navegação por padrão */
         flex-direction: column; /* Muda para coluna em telas menores */
         width: 50%; /* Largura total */
