@@ -11,7 +11,7 @@ nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: #ffffff;
+    background-color: #FEFCFD;
     color: #000000;
     height: 80px;
     width: 100%;
@@ -62,7 +62,7 @@ nav a {
 }
 
 nav a:hover {
-    background-color:  ;
+    background-color: #C7A8CE;
     border-radius: 5px;
 }
 
@@ -89,7 +89,7 @@ nav a:hover {
     flex-wrap: wrap;
     padding: 50px 5%;
     gap: 30px;
-    background-color: #FEFCFD;    
+    background-color: #ffffff;    
     color: #000000;
 }
 
