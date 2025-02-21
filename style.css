@@ -89,6 +89,7 @@ nav a:hover {
     flex-wrap: wrap;
     padding: 50px 5%;
     gap: 30px;
+    background-color: EDE6EF;
 }
 
 #lottie-animation {
