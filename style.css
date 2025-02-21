@@ -32,7 +32,8 @@ nav logo {
 
 #icone { 
     display: none;
-    max-height: 0px;
+    max-height: 80px;
+    height: 70px;
     width: auto;
 }
 
@@ -61,7 +62,7 @@ nav a {
 }
 
 nav a:hover {
-    background-color: #e2e6ea;
+    background-color:  ;
     border-radius: 5px;
 }
 
@@ -88,7 +89,7 @@ nav a:hover {
     flex-wrap: wrap;
     padding: 50px 5%;
     gap: 30px;
-    background-color: #EDE6EF;
+    background-color: #FEFCFD;    
     color: #000000;
 }
 
