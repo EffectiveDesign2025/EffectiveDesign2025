@@ -18,14 +18,9 @@ nav {
     text-align: center;
 }
 
-.logo {
-    width: 25%;
-    text-align: center;
-}
-    
-.logo img {
-    height: auto; /* Ajuste conforme necessário */
-    max-height: 70px; 
+#logo {
+    max-height: 70px; /* Garante que a imagem não ultrapasse a altura da <nav> */
+    width: auto; /* Mantém a proporção */
 }
 
 nav ul {
