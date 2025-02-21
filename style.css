@@ -112,7 +112,6 @@ nav a:hover {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    padding: 50px 5%;
     gap: 30px;
     background-color: #FEFCFD;    
     color: #000000;
