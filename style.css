@@ -34,7 +34,7 @@ nav logo {
 
 #icone { 
     display: none;
-    max-height: 70px;
+    max-height: 0px;
     width: auto;
 }
 
