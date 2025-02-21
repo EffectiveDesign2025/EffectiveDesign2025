@@ -85,7 +85,7 @@ nav a:hover {
 .container {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     flex-wrap: wrap;
     padding: 50px 5%;
     gap: 30px;
@@ -95,13 +95,13 @@ nav a:hover {
 
 #lottie-animation {
     display: flex;
-    width: 50%;
+    width: 48%;
     height: auto;
     margin: 0 auto;
 }
 
 .content {
-    width: 50%;
+    width: 48%;
     text-align: center;
 }
 
