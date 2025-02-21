@@ -12,7 +12,7 @@ nav {
     justify-content: space-around;
     align-items: center;
     background-color: #ffffff;
-    color: #333;
+    color: #EFE6F0;
     height: 80px;
     width: 100%;
     text-align: center;
@@ -54,7 +54,7 @@ nav li {
 
 nav a {
     text-decoration: none;
-    color: #333;
+    color: #EFE6F0;
     font-weight: 700;
     padding: 10px;
     border-radius: 5px;
@@ -90,6 +90,7 @@ nav a:hover {
     padding: 50px 5%;
     gap: 30px;
     background-color: #EDE6EF;
+    text-color: #EFE6F0;
 }
 
 #lottie-animation {
