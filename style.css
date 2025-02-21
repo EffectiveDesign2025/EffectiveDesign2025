@@ -19,13 +19,14 @@ nav {
 }
 
 nav logo {
-    height: 80px;
+    height: 100%;
     width:auto;
 }
 
 #logo {
-    max-height: 70px;
+    max-height: 100%;
     width: auto;
+    padding: 5%;
 }
 
 #icone { 
