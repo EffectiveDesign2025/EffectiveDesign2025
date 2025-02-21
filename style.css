@@ -154,6 +154,7 @@ nav a:hover {
 
     #icone { 
         display: flex;
+        justify-content: flex-start;
         max-height: 70px;
         width: auto;
     }
