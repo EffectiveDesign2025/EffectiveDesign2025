@@ -27,7 +27,7 @@ nav logo {
 }
 
 #logo {
-    max-height: 70%;
+    max-height: 70px;
     height: auto;
     width: auto;
 }
