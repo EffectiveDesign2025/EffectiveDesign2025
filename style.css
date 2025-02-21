@@ -95,14 +95,13 @@ nav a:hover {
 
 #lottie-animation {
     display: flex;
-    width: auto;
-    max-width: 50%;
+    width: 50%;
     height: auto;
     margin: 0 auto;
 }
 
 .content {
-    max-width: 50%;
+    width: 50%;
     text-align: center;
 }
 
