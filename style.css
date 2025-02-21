@@ -1,3 +1,4 @@
+/*Configurações Gerais do Corpo */
 body {
     font-family: 'Lato', sans-serif;
     margin: 0;
@@ -7,6 +8,7 @@ body {
 
 /* ------------------------------------------- MENU DE NAVEGAÇÃO --------------------------------------------- */
 
+/*Configurações Gerais da Barra de Navegação */
 nav {    
     display: flex;
     justify-content: space-around;
@@ -18,18 +20,32 @@ nav {
     text-align: center;
 }
 
+/* ---------------- CONFIGURAÇÕES DA LOGO------- >>>>>>----- */
+
+/*Configurações do Bloco da Logo */
 nav logo {
     display: flex;
     height: 80px;
     width:auto;
 }
 
+/*Configurações da logo por ID */
 #logo {
     max-height: 70px;
     height: 50px;
     width: auto;
 }
 
+/*Configurações do Efeito Flutuante da Logo */
+@keyframes flutuante {
+    0% { transform: translateY(0px) rotate(0deg); }
+    25% { transform: translateY(-5px) rotate(-1deg); }
+    50% { transform: translateY(0px) rotate(1deg); }
+    75% { transform: translateY(5px) rotate(-1deg); }
+    100% { transform: translateY(0px) rotate(0deg); }
+}
+
+/*Configurações do Icone por ID */
 #icone { 
     display: none;
     max-height: 80px;
@@ -37,6 +53,9 @@ nav logo {
     width: auto;
 }
 
+/* ---------------- CONFIGURAÇÕES DE LISTA DE MENU DE NAVEGÃO ------- >>>>>>----- */
+
+/*Configurações da Lista de Navegação */
 nav ul {
     list-style: none;
     display: flex;
@@ -47,12 +66,13 @@ nav ul {
     gap: 20px;
     width: auto;
 }
-
+/*Configurações das linhas na Lista de Navegação */
 nav li {
     margin: 0 15px;
     text-align: center;
 }
 
+/*Configurações dos Links na Lista de Navegação */
 nav a {
     text-decoration: none;
     font-weight: 700;
@@ -62,10 +82,13 @@ nav a {
     color: #ffffff;
 }
 
+/*Configurações dos Links na Lista e Navegação | Hover */
 nav a:hover {
     background-color: #C7A8CE;
     border-radius: 5px;
 }
+
+/* ---------------- CONFIGURAÇÕES DO MENU AMBURGUER ------- >>>>>>----- */
 
 /* Estilo do menu hambúrguer */
 .menu-toggle {
@@ -73,7 +96,7 @@ nav a:hover {
     flex-direction: column;
     cursor: pointer;
 }
-
+/* Configurações das Barras de Menu Hanmburguer na Horizontal */
 .menu-toggle .bar {
     height: 3px;
     width: 25px;
@@ -83,6 +106,7 @@ nav a:hover {
 
 /* ------------------------------------------- SEÇÃO INICIAL --------------------------------------------- */
 
+/* Configuração Geral de Containers */
 .container {
     display: flex;
     justify-content: space-between;
@@ -93,35 +117,40 @@ nav a:hover {
     color: #000000;
 }
 
+/* Configurações Gerais de Conteúdo */
+.content {
+    width: 48%;
+    text-align: center;
+}
+
+/* Configurações Gerais de Conteúdo h1 */
+.content h1 {
+    font-size: 4rem;
+    margin-bottom: 10px;
+}
+
+/* Configurações Gerais de Conteúdo h2 */
+.content h2 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+/* Configurações Gerais de Conteúdo P */
+.content p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+/* Configuração Específica da animação  por ID */
 #lottie-animation {
     display: flex;
     width: 48%;
     height: auto;
     margin: 0 auto;
 }
-
-.content {
-    width: 48%;
-    text-align: center;
-}
-
-.content h1 {
-    font-size: 4rem;
-    margin-bottom: 10px;
-}
-
-.content h2 {
-    font-size: 1.5rem;
-    margin-bottom: 15px;
-}
-
-.content p {
-    font-size: 1rem;
-    margin-bottom: 20px;
-}
-
 /* ------------------------------------------- BOTÃO DO WHATSAPP --------------------------------------------- */
 
+/*Configurações do efeito do Botão */
 #bt_pulse {
     display: inline-flex;
     align-items: center;
@@ -136,11 +165,13 @@ nav a:hover {
     transition: 0.3s;
 }
 
+/*Configurações do Link do Botão */
 #bt_pulse i {
     margin-right: 8px;
     font-size: 1.2rem;
 }
 
+/*Configurações do Botão | Hover */
 #bt_pulse:hover {
     background-color: #1ebe5d;
 }
@@ -148,6 +179,7 @@ nav a:hover {
 /* ------------------------------------------- RESPONSIVIDADE --------------------------------------------- */
 
 @media (max-width: 767px) {
+    
     nav {
         display flex
         justify-content: space-between;
@@ -194,7 +226,7 @@ nav a:hover {
         box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     }
     
-.nav-list {
+    .nav-list {
         position: absolute;
         top: 60px;
         left: 0;
