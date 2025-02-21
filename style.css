@@ -171,7 +171,7 @@ nav a:hover {
     .menu-toggle {
         position: relative;
         display: flex;
-        flex-direction: colum;
+        flex-direction: column;
         align-items: center;
         cursor: pointer;
     }
