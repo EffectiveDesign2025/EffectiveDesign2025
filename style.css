@@ -9,7 +9,7 @@ body {
 
 nav {    
     display: flex;
-   justify-content: space-around;
+    justify-content: space-around;
     align-items: center;
     background-color: #f8f9fa;
     color: #333;
