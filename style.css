@@ -20,6 +20,7 @@ nav {
 
 nav logo {
     display: block;
+    justify-self: right;
     height: 80px;
     width:auto;
     padding: 10%
