@@ -180,6 +180,11 @@ nav a:hover {
     nav {
         flex-direction: column;
     }
+
+    .logo img {
+        max-hight: 40px;
+        width: auto;
+        
    
     .menu-toggle {
         display: flex; /* Agora será exibido em telas menores */
