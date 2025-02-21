@@ -188,7 +188,7 @@ nav a:hover {
     nav ul {
         display: none; /* Esconde a lista de navegação por padrão */
         flex-direction: column; /* Muda para coluna em telas menores */
-        width: 100%; /* Largura total */
+        width: 50%; /* Largura total */
         position: absolute;
         top: 60px;
         right: 0; /* Agora começa do lado direito */
