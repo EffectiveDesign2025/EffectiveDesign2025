@@ -199,6 +199,7 @@ nav a:hover {
         align-items: center;
         cursor: pointer;
         color: #333;
+        padding-right: 10%;
     }
 
     /* Configuração das Barras do Menu Hamburguer - ATÉ 767px */
@@ -208,7 +209,6 @@ nav a:hover {
         height: 3px;
         margin: 5px auto;
         background-color: #ffffff;
-        padding-right: 10px;
     }
 
     /* Configuração de Lista de Navegação - ATÉ 767px */
@@ -308,6 +308,7 @@ nav a:hover {
         align-items: center;
         cursor: pointer;
         color: #333;
+        padding-right: 10%;
     }
 
     /* Configuração das Barras do Menu Hamburguer - ATÉ 417px */
@@ -317,7 +318,6 @@ nav a:hover {
         height: 3px;
         margin: 5px auto;
         background-color: #ffffff;
-        padding-right: 10%;
     }
 
     /* Configuração de Lista de Navegação - ATÉ 417px */
