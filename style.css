@@ -8,44 +8,37 @@ body {
 
 /* ------------------------------------------- MENU DE NAVEGAÇÃO --------------------------------------------- */
 
-/*Configurações Gerais da Barra de Navegação */
 nav {    
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     background-color: #2E8B8F;
     height: 80px;
     width: 100%;
-    text-align: center;
+    padding: 0 20px;
 }
 
-/* ---------------- CONFIGURAÇÕES DA LOGO------- >>>>>>----- */
+/* ---------------- CONFIGURAÇÕES DA LOGO ------- */
 
-/*Configurações do Bloco da Logo */
-nav logo {
+nav .logo {
     display: flex;
-    height: 80px;
-    width:auto;
+    align-items: center;
 }
 
-/*Configurações da logo por ID */
 #logo {
     max-height: 70px;
     height: 60px;
     width: auto;
-    animation: flutuante 3s ease-in-out infinite; /* Duração e repetição */
+    animation: flutuante 3s ease-in-out infinite;
 }
 
-/*Configurações do Efeito Flutuante da Logo */
 @keyframes flutuante {
-    0% { transform: translateY(0px) rotate(0deg); }
+    0%, 100% { transform: translateY(0px) rotate(0deg); }
     25% { transform: translateY(-4px) rotate(-1deg); }
     50% { transform: translateY(0px) rotate(1deg); }
     75% { transform: translateY(4px) rotate(-1deg); }
-    100% { transform: translateY(0px) rotate(0deg); }
 }
 
-/*Configurações do Icone por ID */
 #icone { 
     display: none;
     max-height: 80px;
@@ -53,26 +46,20 @@ nav logo {
     width: auto;
 }
 
-/* ---------------- CONFIGURAÇÕES DE LISTA DE MENU DE NAVEGÃO ------- >>>>>>----- */
+/* ---------------- CONFIGURAÇÕES DE LISTA DE MENU DE NAVEGAÇÃO ------- */
 
-/*Configurações da Lista de Navegação */
 nav ul {
     list-style: none;
     display: flex;
-    justify-content: space-around;
-    text-align: center;
-    padding: 0;
-    margin: 0;
     gap: 20px;
-    width: auto;
+    margin: 0;
+    padding: 0;
 }
-/*Configurações das linhas na Lista de Navegação */
+
 nav li {
-    margin: 0 15px;
     text-align: center;
 }
 
-/*Configurações dos Links na Lista de Navegação */
 nav a {
     text-decoration: none;
     font-weight: 700;
@@ -82,21 +69,19 @@ nav a {
     color: #ffffff;
 }
 
-/*Configurações dos Links na Lista e Navegação | Hover */
 nav a:hover {
     background-color: #C7A8CE;
     border-radius: 5px;
 }
 
-/* ---------------- CONFIGURAÇÕES DO MENU AMBURGUER ------- >>>>>>----- */
+/* ---------------- CONFIGURAÇÕES DO MENU HAMBÚRGUER ------- */
 
-/* Estilo do menu hambúrguer */
 .menu-toggle {
     display: none;
     flex-direction: column;
     cursor: pointer;
 }
-/* Configurações das Barras de Menu Hanmburguer na Horizontal */
+
 .menu-toggle .bar {
     height: 3px;
     width: 25px;
@@ -106,50 +91,45 @@ nav a:hover {
 
 /* ------------------------------------------- SEÇÃO INICIAL --------------------------------------------- */
 
-/* Configuração Geral de Containers */
 .container {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     gap: 30px;
-    background-color: #EEF9F7;    
+    background-color: #EEF9F7;
+    padding: 40px 5%;
 }
 
-/* Configurações Gerais de Conteúdo */
 .content {
     width: 48%;
     text-align: center;
 }
 
-/* Configurações Gerais de Conteúdo h1 */
 .content h1 {
     font-size: 4rem;
     margin-bottom: 10px;
 }
 
-/* Configurações Gerais de Conteúdo h2 */
 .content h2 {
     font-size: 1.5rem;
     margin-bottom: 15px;
     color: #260132;
 }
 
-/* Configurações Gerais de Conteúdo P */
 .content p {
     font-size: 1rem;
     margin-bottom: 20px;
 }
 
-/* Configuração Específica da animação  por ID */
 #lottie-animation {
     display: flex;
     width: 48%;
     height: auto;
     margin: 0 auto;
 }
+
 /* ------------------------------------------- BOTÃO DO WHATSAPP --------------------------------------------- */
 
-/*Configurações do efeito do Botão */
 #bt_pulse {
     display: inline-flex;
     align-items: center;
@@ -164,13 +144,11 @@ nav a:hover {
     transition: 0.3s;
 }
 
-/*Configurações do Link do Botão */
 #bt_pulse i {
     margin-right: 8px;
     font-size: 1.2rem;
 }
 
-/*Configurações do Botão | Hover */
 #bt_pulse:hover {
     background-color: #1ebe5d;
 }
@@ -178,38 +156,17 @@ nav a:hover {
 /* ------------------------------------------- RESPONSIVIDADE --------------------------------------------- */
 
 @media (max-width: 767px) {
-    
     nav {
-        display flex
-        justify-content: space-between;
-        align-items: center;
         padding: 0 15px;
     }
 
-    #logo {
-        display: flex;
-    }
-    
     .menu-toggle {
-        position: relative;
         display: flex;
-        flex-direction: column;
-        align-items: center;
-        cursor: pointer;
-    }
-
-    .menu-toggle .bar {
-        display: block;
-        width: 25px;
-        height: 3px;
-        margin: 5px auto;
-        background-color: #333;
     }
 
     nav ul {
         display: none;
         flex-direction: column;
-        width: 50%;
         position: absolute;
         top: 80px;
         right: 0;
@@ -219,22 +176,7 @@ nav a:hover {
         border-radius: 8px;
         box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     }
-    
-    .nav-list {
-        position: absolute;
-        top: 60px;
-        left: 0;
-        width: 100%;
-        background: white;
-        display: none;
-        flex-direction: column;
-        text-align: center;
-    }
 
-    .nav-list.active {
-        display: flex;
-    }
-    
     nav ul.active {
         display: flex;
     }
@@ -243,21 +185,10 @@ nav a:hover {
         margin: 10px 0;
     }
 
-    nav a {
-        padding: 15px;
-        width: 100%;
-    }
-
     .container {
-        width: 100%
+        flex-direction: column;
         text-align: center;
         align-items: center;
-        padding: 40px 5%;
-    }
-
-    #lottie-animation {
-        max-width: 100%;
-        height: auto;
     }
 
     .content h1 {
@@ -267,19 +198,22 @@ nav a:hover {
     .content h2 {
         font-size: 1.3rem;
     }
+
+    #lottie-animation {
+        max-width: 100%;
+    }
 }
 
 @media (max-width: 417px) {
-    #lottie-animation {
-        max-width: 90%;
-        height: auto;
-    }
-
     .content h1 {
         font-size: 1.8rem;
     }
 
     .content h2 {
         font-size: 1.2rem;
+    }
+
+    #lottie-animation {
+        max-width: 90%;
     }
 }
