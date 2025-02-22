@@ -183,7 +183,7 @@ nav a:hover {
     /* Configuração da Barra de Navegação - ATÉ 767px */
     nav {
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
         align-items: center;
         padding: 0 15px;
     }
@@ -200,6 +200,7 @@ nav a:hover {
         flex-direction: column;
         align-items: center;
         cursor: pointer;
+        color: #333;
     }
 
     /* Configuração das Barras do Menu Hamburguer - ATÉ 767px */
