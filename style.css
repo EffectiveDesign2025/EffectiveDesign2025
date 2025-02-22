@@ -291,7 +291,7 @@ nav a:hover {
         -webkit-background-clip: text;
         background-clip: text;
         animation: animateGradient 5s infinite linear
-        font-size: 3rem;
+        font-size: 2.3rem;
         margin-top: -25px;
     }
 
@@ -399,7 +399,7 @@ nav a:hover {
 
     /* Configuração e Título Principal - ATÉ 417px */
     #effective-design {
-        font-size: 3rem;
+        font-size: 2.3rem;
     }
         
     /* Configurações de Conteúdo h1 - ATÉ 417px */
