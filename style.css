@@ -66,6 +66,7 @@ nav ul {
     gap: 20px;
     width: auto;
 }
+
 /*Configurações das linhas na Lista de Navegação */
 nav li {
     margin: 0 15px;
@@ -113,13 +114,18 @@ nav a:hover {
     justify-content: space-between;
     flex-wrap: wrap;
     gap: 30px;
-    background-color: #EEF9F7;    
+    background-color: #EEF9F7;
+    background-image: url('https://raw.githubusercontent.com/EffectiveDesign2025/EffectiveDesign2025/main/imagens/Background%20Effective%20Design.webp'); /* Substitua pelo caminho da sua imagem */
+    background-size: cover; /* Para cobrir todo o container */
+    background-position: center; /* Centraliza a imagem de fundo */
+    background-repeat: no-repeat; /* Impede a repetição da imagem */
 }
 
 /* Configurações Gerais de Conteúdo */
 .content {
     width: 48%;
     text-align: center;
+    
 }
 
 /* Configurações Gerais de Conteúdo h1 */
