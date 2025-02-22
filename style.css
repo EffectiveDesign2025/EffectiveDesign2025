@@ -176,10 +176,11 @@ nav a:hover {
     background-color: #1ebe5d;
 }
 
-/* ------------------------------------------- RESPONSIVIDADE --------------------------------------------- */
+/* ------------------------------------------- RESPONSIVIDADE| MEDIAS QUERIES ATÉ 767px --------------------------------------------- */
 
 @media (max-width: 767px) {
-    
+
+    /* Configuração da Barra de Navegação - ATÉ 767px */
     nav {
         display: flex;
         justify-content: space-between;
@@ -187,10 +188,12 @@ nav a:hover {
         padding: 0 15px;
     }
 
+    /*Configuração da Logo - ATÉ 767px */
     #logo {
         display: flex;
     }
-    
+
+    /* Configuração do Menu Hamburguer - Até 767px */
     .menu-toggle {
         position: relative;
         display: flex;
@@ -199,6 +202,7 @@ nav a:hover {
         cursor: pointer;
     }
 
+    /* Configuração das Barras do Menu Hamburguer - ATÉ 767px */
     .menu-toggle .bar {
         display: block;
         width: 25px;
@@ -207,6 +211,7 @@ nav a:hover {
         background-color: #333;
     }
 
+    /* Configuração de Lista de Navegação - ATÉ 767px */
     nav ul {
         display: none;
         flex-direction: column;
@@ -220,35 +225,24 @@ nav a:hover {
         border-radius: 8px;
         box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     }
-    
-    .nav-list {
-        position: absolute;
-        top: 60px;
-        left: 0;
-        width: 100%;
-        background: white;
-        display: none;
-        flex-direction: column;
-        text-align: center;
-    }
 
-    .nav-list.active {
-        display: flex;
-    }
-    
+    /* Configuração de Ativação de Lista - MENU Hamburguer - ATÉ 767px */
     nav ul.active {
         display: flex;
     }
 
+    /* Configuração de Linha de Lista de Navegação - ATÉ 767px */
     nav li {
         margin: 10px 0;
     }
 
+    /* Configuração de Link de Lista de Navegação - ATÉ 767px */
     nav a {
         padding: 15px;
         width: 100%;
     }
 
+    /* Configuração Geral de Container - ATÉ 767px */
     .container {
         width: 100%
         text-align: center;
@@ -256,19 +250,32 @@ nav a:hover {
         padding: 40px 5%;
     }
 
+    /* Configuração Específica da animação por ID - ATÉ 767px */
     #lottie-animation {
-        max-width: 100%;
+        display: flex;
+        width: 100%;
         height: auto;
+        margin: 0 auto;
+    }
+    
+    /* Configurações de Conteúdo - ATÉ 767px */
+    .content {
+        width: 48%;
+        text-align: center;
     }
 
+    /* Configurações de Conteúdo h1 - ATÉ 767px */
     .content h1 {
         font-size: 2rem;
     }
 
+    /* Configurações de Conteúdo h2 - ATÉ 767px */
     .content h2 {
         font-size: 1.3rem;
     }
 }
+
+/* ------------------------------------------- RESPONSIVIDADE| MEDIAS QUERIES - ATÉ 417px --------------------------------------------- */
 
 @media (max-width: 417px) {
     #lottie-animation {
