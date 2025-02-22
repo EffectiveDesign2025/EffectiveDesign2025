@@ -259,8 +259,10 @@ nav a:hover {
     
     /* Configurações de Conteúdo - ATÉ 767px */
     .content {
-        width: 48%;
+        display: flax;
+        width: 90%;
         text-align: center;
+        align-items: center;
     }
 
     /* Configurações de Conteúdo h1 - ATÉ 767px */
