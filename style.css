@@ -124,7 +124,7 @@ nav a:hover {
         color: transparent;
         -webkit-background-clip: text;
         background-clip: text;
-        animation: animateGradient 5s infinite linear
+        animation: animateGradient 15s infinite linear
     }
 
 /* Configuração da Animação do Gradiente */
@@ -133,7 +133,6 @@ nav a:hover {
             50% { background-position: 100% 50%; }
             100% { background-position: 0% 50%; }
         }
-
 
 /* Configurações Gerais de Conteúdo h1 */
 .content h1 {
