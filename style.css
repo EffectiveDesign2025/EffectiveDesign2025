@@ -264,6 +264,11 @@ nav a:hover {
         align-items: center;
     }
 
+    /* Configuração e Titulo Principal - ATÉ 767px */
+    #effective-design {
+        font-size: 3rem
+    }
+
     /* Configurações de Conteúdo h1 - ATÉ 767px */
     .content h1 {
         font-size: 2rem;
@@ -368,6 +373,7 @@ nav a:hover {
     /* Configuração e Titulo Principal - ATÉ 417px */
     #effective-design {
         font-size: 3rem
+    }
         
         
     }
