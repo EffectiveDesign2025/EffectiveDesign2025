@@ -293,6 +293,7 @@ nav a:hover {
         background-clip: text;
         animation: animateGradient 5s infinite linear
         font-size: 3rem;
+        margin-top: -25px;
     }
 
     /* Configurações de Conteúdo h1 - ATÉ 767px */
