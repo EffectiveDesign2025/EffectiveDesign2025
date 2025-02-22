@@ -187,7 +187,6 @@ nav a:hover {
         display: flex;
         justify-content: space-around;
         align-items: center;
-        padding: 0 15px;
     }
 
     /*Configuração da Logo - ATÉ 767px */
