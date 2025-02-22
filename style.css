@@ -304,6 +304,11 @@ nav a:hover {
     .content h2 {
         font-size: 1.3rem;
     }
+    
+    /* Configração do Botão - ATÉ 767px */
+    #bt_pulse {
+        magin-bottom: 25px;
+    }
 }
 
 /* ------------------------------------------- RESPONSIVIDADE | MEDIAS QUERIES - ATÉ 417px --------------------------------------------- */
@@ -410,5 +415,10 @@ nav a:hover {
     /* Configurações de Conteúdo h2 - ATÉ 417px */
     .content h2 {
         font-size: 1.1rem;
+    }
+
+    /* Configuração do Botão ATÉ - 417px */
+    #bt_pulse {
+        magin-bottom: 25px;
     }
 }
