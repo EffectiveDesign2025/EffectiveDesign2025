@@ -139,6 +139,8 @@ nav a:hover {
 .content p {
     font-size: 1rem;
     margin-bottom: 20px;
+    text-align: justify;
+
 }
 
 /* Configuração Específica da animação  por ID */
@@ -246,7 +248,7 @@ nav a:hover {
     /* Configuração Geral de Container - ATÉ 767px */
     .container {
         width: 100%
-        text-align: center;
+        text-align: justify;
         align-items: center;
     }
 
