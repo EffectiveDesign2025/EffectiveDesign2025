@@ -1,4 +1,4 @@
-/*Configurações Gerais do Corpo */
+/* Configurações Gerais do Corpo */
 body {
     font-family: 'Lato', sans-serif;
     margin: 0;
@@ -8,7 +8,7 @@ body {
 
 /* ------------------------------------------- MENU DE NAVEGAÇÃO --------------------------------------------- */
 
-/*Configurações Gerais da Barra de Navegação */
+/* Configurações Gerais da Barra de Navegação */
 nav {    
     display: flex;
     justify-content: space-around;
@@ -19,16 +19,16 @@ nav {
     text-align: center;
 }
 
-/* ---------------- CONFIGURAÇÕES DA LOGO------- >>>>>>----- */
+/* ---------------- CONFIGURAÇÕES DA LOGO ------- >>>>>>----- */
 
-/*Configurações do Bloco da Logo */
+/* Configurações do Bloco da Logo */
 nav logo {
     display: flex;
     height: 80px;
-    width:auto;
+    width: auto;
 }
 
-/*Configurações da logo por ID */
+/* Configurações da logo por ID */
 #logo {
     max-height: 70px;
     height: 60px;
@@ -36,7 +36,7 @@ nav logo {
     animation: flutuante 3s ease-in-out infinite; /* Duração e repetição */
 }
 
-/*Configurações do Efeito Flutuante da Logo */
+/* Configurações do Efeito Flutuante da Logo */
 @keyframes flutuante {
     0% { transform: translateY(0px) rotate(0deg); }
     25% { transform: translateY(-4px) rotate(-1deg); }
@@ -45,9 +45,9 @@ nav logo {
     100% { transform: translateY(0px) rotate(0deg); }
 }
 
-/* ---------------- CONFIGURAÇÕES DE LISTA DE MENU DE NAVEGÃO ------- >>>>>>----- */
+/* ---------------- CONFIGURAÇÕES DE LISTA DE MENU DE NAVEGAÇÃO ------- >>>>>>----- */
 
-/*Configurações da Lista de Navegação */
+/* Configurações da Lista de Navegação */
 nav ul {
     list-style: none;
     display: flex;
@@ -59,13 +59,13 @@ nav ul {
     width: auto;
 }
 
-/*Configurações das linhas na Lista de Navegação */
+/* Configurações das linhas na Lista de Navegação */
 nav li {
     margin: 0 15px;
     text-align: center;
 }
 
-/*Configurações dos Links na Lista de Navegação */
+/* Configurações dos Links na Lista de Navegação */
 nav a {
     text-decoration: none;
     font-weight: 700;
@@ -75,13 +75,13 @@ nav a {
     color: #ffffff;
 }
 
-/*Configurações dos Links na Lista e Navegação | Hover */
+/* Configurações dos Links na Lista de Navegação | Hover */
 nav a:hover {
     background-color: #C7A8CE;
     border-radius: 5px;
 }
 
-/* ---------------- CONFIGURAÇÕES DO MENU AMBURGUER ------- >>>>>>----- */
+/* ---------------- CONFIGURAÇÕES DO MENU HAMBÚRGUER ------- >>>>>>----- */
 
 /* Estilo do menu hambúrguer */
 .menu-toggle {
@@ -89,7 +89,8 @@ nav a:hover {
     flex-direction: column;
     cursor: pointer;
 }
-/* Configurações das Barras de Menu Hanmburguer na Horizontal */
+
+/* Configurações das Barras de Menu HAMBÚRGUER na Horizontal */
 .menu-toggle .bar {
     height: 3px;
     width: 25px;
@@ -114,7 +115,6 @@ nav a:hover {
     width: 48%;
     text-align: center;
     padding: 0 5%;
-    
 }
 
 /* Configurações Gerais de Conteúdo h1 */
@@ -135,10 +135,9 @@ nav a:hover {
     font-size: 1rem;
     margin-bottom: 20px;
     text-align: justify;
-
 }
 
-/* Configuração Específica da animação  por ID */
+/* Configuração Específica da animação por ID */
 #lottie-animation {
     display: flex;
     width: 48%;
@@ -146,9 +145,10 @@ nav a:hover {
     margin: 0 auto;
     padding: 0 5%;
 }
+
 /* ------------------------------------------- BOTÃO DO WHATSAPP --------------------------------------------- */
 
-/*Configurações do efeito do Botão */
+/* Configurações do efeito do Botão */
 #bt_pulse {
     display: inline-flex;
     align-items: center;
@@ -163,18 +163,18 @@ nav a:hover {
     transition: 0.3s;
 }
 
-/*Configurações do Link do Botão */
+/* Configurações do Link do Botão */
 #bt_pulse i {
     margin-right: 8px;
     font-size: 1.2rem;
 }
 
-/*Configurações do Botão | Hover */
+/* Configurações do Botão | Hover */
 #bt_pulse:hover {
     background-color: #1ebe5d;
 }
 
-/* ------------------------------------------- RESPONSIVIDADE| MEDIAS QUERIES ATÉ 767px --------------------------------------------- */
+/* ------------------------------------------- RESPONSIVIDADE | MEDIAS QUERIES ATÉ 767px --------------------------------------------- */
 
 @media (max-width: 767px) {
 
@@ -185,13 +185,13 @@ nav a:hover {
         align-items: center;
     }
 
-    /*Configuração da Logo - ATÉ 767px */
+    /* Configuração da Logo - ATÉ 767px */
     #logo {
         display: flex;
-        padding-lef: 10%;
+        padding-left: 10%; /* Corrigido de 'padding-lef' para 'padding-left' */
     }
 
-    /* Configuração do Menu Hamburguer - Até 767px */
+    /* Configuração do Menu HAMBÚRGUER - Até 767px */
     .menu-toggle {
         position: relative;
         display: flex;
@@ -202,7 +202,7 @@ nav a:hover {
         padding-right: 10%;
     }
 
-    /* Configuração das Barras do Menu Hamburguer - ATÉ 767px */
+    /* Configuração das Barras do Menu HAMBÚRGUER - ATÉ 767px */
     .menu-toggle .bar {
         display: block;
         width: 25px;
@@ -226,7 +226,7 @@ nav a:hover {
         box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     }
 
-    /* Configuração de Ativação de Lista - MENU Hamburguer - ATÉ 767px */
+    /* Configuração de Ativação de Lista - MENU HAMBÚRGUER - ATÉ 767px */
     nav ul.active {
         display: flex;
     }
@@ -245,7 +245,7 @@ nav a:hover {
 
     /* Configuração Geral de Container - ATÉ 767px */
     .container {
-        width: 100%
+        width: 100%;
         text-align: justify;
         align-items: center;
     }
@@ -260,15 +260,15 @@ nav a:hover {
     
     /* Configurações de Conteúdo - ATÉ 767px */
     .content {
-        display: flax;
+        display: flex; /* Corrigido de 'display: flax' para 'display: flex' */
         width: 100%;
         text-align: center;
         align-items: center;
     }
 
-    /* Configuração e Titulo Principal - ATÉ 767px */
+    /* Configuração e Título Principal - ATÉ 767px */
     #effective-design {
-        font-size: 3rem
+        font-size: 3rem;
     }
 
     /* Configurações de Conteúdo h1 - ATÉ 767px */
@@ -282,10 +282,9 @@ nav a:hover {
     }
 }
 
-/* ------------------------------------------- RESPONSIVIDADE| MEDIAS QUERIES - ATÉ 417px --------------------------------------------- */
+/* ------------------------------------------- RESPONSIVIDADE | MEDIAS QUERIES - ATÉ 417px --------------------------------------------- */
 
 @media (max-width: 417px) {
-    @media (max-width: 767px) {
 
     /* Configuração da Barra de Navegação - ATÉ 417px */
     nav {
@@ -294,13 +293,13 @@ nav a:hover {
         align-items: center;
     }
 
-    /*Configuração da Logo - ATÉ 417px */
+    /* Configuração da Logo - ATÉ 417px */
     #logo {
         display: flex;
         padding-left: 10%;
     }
 
-    /* Configuração do Menu Hamburguer - Até 417px */
+    /* Configuração do Menu HAMBÚRGUER - Até 417px */
     .menu-toggle {
         position: relative;
         display: flex;
@@ -311,7 +310,7 @@ nav a:hover {
         padding-right: 10%;
     }
 
-    /* Configuração das Barras do Menu Hamburguer - ATÉ 417px */
+    /* Configuração das Barras do Menu HAMBÚRGUER - ATÉ 417px */
     .menu-toggle .bar {
         display: block;
         width: 25px;
@@ -335,12 +334,12 @@ nav a:hover {
         box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     }
 
-    /* Configuração de Ativação de Lista - MENU Hamburguer - ATÉ 417 */
+    /* Configuração de Ativação de Lista - MENU HAMBÚRGUER - ATÉ 417px */
     nav ul.active {
         display: flex;
     }
 
-    /* Configuração de Linha de Lista de Navegação - ATÉ 417 */
+    /* Configuração de Linha de Lista de Navegação - ATÉ 417px */
     nav li {
         margin: 10px 0;
     }
@@ -354,7 +353,7 @@ nav a:hover {
 
     /* Configuração Geral de Container - ATÉ 417px */
     .container {
-        width: 100%
+        width: 100%;
         text-align: justify;
         align-items: center;
     }
@@ -369,25 +368,24 @@ nav a:hover {
     
     /* Configurações de Conteúdo - ATÉ 417px */
     .content {
-        display: flax;
+        display: flex; /* Corrigido de 'display: flax' para 'display: flex' */
         width: 100%;
         text-align: center;
         align-items: center;
     }
-    /* Configuração e Titulo Principal - ATÉ 417px */
+
+    /* Configuração e Título Principal - ATÉ 417px */
     #effective-design {
-        font-size: 3rem
+        font-size: 3rem;
     }
         
-        
-    }
     /* Configurações de Conteúdo h1 - ATÉ 417px */
     .content h1 {
-        font-size: 1.8rem;
+        font-size: 1.5rem;
     }
 
     /* Configurações de Conteúdo h2 - ATÉ 417px */
     .content h2 {
-        font-size: 1.2rem;
+        font-size: 1.1rem;
     }
 }
