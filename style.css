@@ -45,14 +45,6 @@ nav logo {
     100% { transform: translateY(0px) rotate(0deg); }
 }
 
-/*Configurações do Icone por ID */
-#icone { 
-    display: none;
-    max-height: 80px;
-    height: 70px;
-    width: auto;
-}
-
 /* ---------------- CONFIGURAÇÕES DE LISTA DE MENU DE NAVEGÃO ------- >>>>>>----- */
 
 /*Configurações da Lista de Navegação */
@@ -115,10 +107,6 @@ nav a:hover {
     flex-wrap: wrap;
     gap: 30px;
     background-color: #EEF9F7;
-    background-image: url('https://raw.githubusercontent.com/EffectiveDesign2025/EffectiveDesign2025/main/imagens/Background%20Effective%20Design.webp'); /* Substitua pelo caminho da sua imagem */
-    background-size: cover; /* Para cobrir todo o container */
-    background-position: center; /* Centraliza a imagem de fundo */
-    background-repeat: no-repeat; /* Impede a repetição da imagem */
 }
 
 /* Configurações Gerais de Conteúdo */
