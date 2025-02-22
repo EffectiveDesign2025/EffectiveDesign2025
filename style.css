@@ -280,19 +280,19 @@ nav a:hover {
 @media (max-width: 417px) {
     @media (max-width: 767px) {
 
-    /* Configuração da Barra de Navegação - ATÉ 767px */
+    /* Configuração da Barra de Navegação - ATÉ 417px */
     nav {
         display: flex;
         justify-content: space-between;
         align-items: center;
     }
 
-    /*Configuração da Logo - ATÉ 767px */
+    /*Configuração da Logo - ATÉ 417px */
     #logo {
         display: flex;
     }
 
-    /* Configuração do Menu Hamburguer - Até 767px */
+    /* Configuração do Menu Hamburguer - Até 417px */
     .menu-toggle {
         position: relative;
         display: flex;
@@ -302,7 +302,7 @@ nav a:hover {
         color: #333;
     }
 
-    /* Configuração das Barras do Menu Hamburguer - ATÉ 767px */
+    /* Configuração das Barras do Menu Hamburguer - ATÉ 417px */
     .menu-toggle .bar {
         display: block;
         width: 25px;
@@ -311,7 +311,7 @@ nav a:hover {
         background-color: #ffffff;
     }
 
-    /* Configuração de Lista de Navegação - ATÉ 767px */
+    /* Configuração de Lista de Navegação - ATÉ 417px */
     nav ul {
         display: none;
         flex-direction: column;
@@ -326,31 +326,31 @@ nav a:hover {
         box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     }
 
-    /* Configuração de Ativação de Lista - MENU Hamburguer - ATÉ 767px */
+    /* Configuração de Ativação de Lista - MENU Hamburguer - ATÉ 417 */
     nav ul.active {
         display: flex;
     }
 
-    /* Configuração de Linha de Lista de Navegação - ATÉ 767px */
+    /* Configuração de Linha de Lista de Navegação - ATÉ 417 */
     nav li {
         margin: 10px 0;
     }
 
-    /* Configuração de Link de Lista de Navegação - ATÉ 767px */
+    /* Configuração de Link de Lista de Navegação - ATÉ 417px */
     nav a {
         padding: 15px;
         width: 100%;
         color: #260132;
     }
 
-    /* Configuração Geral de Container - ATÉ 767px */
+    /* Configuração Geral de Container - ATÉ 417px */
     .container {
         width: 100%
         text-align: justify;
         align-items: center;
     }
 
-    /* Configuração Específica da animação por ID - ATÉ 767px */
+    /* Configuração Específica da animação por ID - ATÉ 417px */
     #lottie-animation {
         display: flex;
         width: 100%;
@@ -358,20 +358,25 @@ nav a:hover {
         margin: 0 auto;
     }
     
-    /* Configurações de Conteúdo - ATÉ 767px */
+    /* Configurações de Conteúdo - ATÉ 417px */
     .content {
         display: flax;
         width: 100%;
         text-align: center;
         align-items: center;
     }
-
-    /* Configurações de Conteúdo h1 - ATÉ 767px */
+    /* Configuração e Titulo Principal - ATÉ 417px */
+    #effective-design {
+        font-size: 3rem
+        
+        
+    }
+    /* Configurações de Conteúdo h1 - ATÉ 417px */
     .content h1 {
         font-size: 1.8rem;
     }
 
-    /* Configurações de Conteúdo h2 - ATÉ 767px */
+    /* Configurações de Conteúdo h2 - ATÉ 417px */
     .content h2 {
         font-size: 1.2rem;
     }
