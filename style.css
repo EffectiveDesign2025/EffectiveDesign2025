@@ -181,7 +181,7 @@ nav a:hover {
     /* Configuração da Barra de Navegação - ATÉ 767px */
     nav {
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
         align-items: center;
     }
 
@@ -283,7 +283,7 @@ nav a:hover {
     /* Configuração da Barra de Navegação - ATÉ 767px */
     nav {
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
         align-items: center;
     }
 
