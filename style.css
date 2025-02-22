@@ -112,7 +112,7 @@ nav a:hover {
     justify-content: space-between;
     flex-wrap: wrap;
     gap: 30px;
-    background-color: #F9FEF9;    
+    background-color: #EEF9F7;    
 }
 
 /* Configurações Gerais de Conteúdo */
@@ -187,14 +187,9 @@ nav a:hover {
     }
 
     #logo {
-        display: none;
+        display: flex;
     }
-
-    #icone { 
-        width: 40px;
-        height: auto;
-    }
-
+    
     .menu-toggle {
         position: relative;
         display: flex;
