@@ -260,7 +260,6 @@ nav a:hover {
     
     /* Configurações de Conteúdo - ATÉ 767px */
     .content {
-        display: flex; /* Corrigido de 'display: flax' para 'display: flex' */
         width: 100%;
         text-align: center;
         align-items: center;
@@ -368,7 +367,6 @@ nav a:hover {
     
     /* Configurações de Conteúdo - ATÉ 417px */
     .content {
-        display: flex; /* Corrigido de 'display: flax' para 'display: flex' */
         width: 100%;
         text-align: center;
         align-items: center;
