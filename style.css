@@ -214,7 +214,7 @@ nav {
 /* Configuração da Logo - ATÉ 767px */
 #logo {
     display: flex;
-    padding-left: 10%; /* Corrigido de 'padding-lef' para 'padding-left' */
+    padding-left: 10%;
 }
 
 /* Configuração do Menu HAMBÚRGUER - Até 767px */
@@ -285,40 +285,34 @@ nav a {
 }
 
 /* Configurações de Conteúdo - ATÉ 767px */
-.content {
+#content {
     width: 100%;
     text-align: center;
     align-items: center;
 }
 
-/* Configuração e Título Principal - ATÉ 767px */
-#effective-design {
-    background-image: linear-gradient(45deg, #ff00ff, #00ffff, #ff0000, #ffff00);
-    background-size: 300% 300%;
-    color: transparent;
-    -webkit-background-clip: text;
-    background-clip: text;
-    animation: animateGradient 5s infinite linear
-    font-size: 2.3rem;
-    margin-top: -25px;
-}
-
 /* Configurações de Conteúdo h1 - ATÉ 767px */
-.content h1 {
+#content h1 {
     font-size: 2rem;
 }
 
 /* Configurações de Conteúdo h2 - ATÉ 767px */
-.content h2 {
+#content h2 {
     font-size: 1.3rem;
 }
 
+/* Configuração e Título Principal - ATÉ 767px */
+#effective-design {
+    font-size: 2.3rem;
+    margin-top: -25px;
+}
+    
 /* Configração do Botão - ATÉ 767px */
 #bt_pulse {
     margin-bottom: 25px;
 }
-}
-
+    
+    
 /* ------------------------------------------- RESPONSIVIDADE | MEDIAS QUERIES - ATÉ 417px --------------------------------------------- */
 
 @media (max-width: 417px) {
@@ -404,7 +398,7 @@ nav a {
 }
 
 /* Configurações de Conteúdo - ATÉ 417px */
-.content {
+#content {
     width: 100%;
     text-align: center;
     align-items: center;
@@ -416,17 +410,16 @@ nav a {
 }
     
 /* Configurações de Conteúdo h1 - ATÉ 417px */
-.content h1 {
+#content h1 {
     font-size: 1.5rem;
 }
 
 /* Configurações de Conteúdo h2 - ATÉ 417px */
-.content h2 {
+#content h2 {
     font-size: 1.1rem;
 }
 
 /* Configuração do Botão ATÉ - 417px */
 #bt_pulse {
     margin-bottom: 25px;
-}
 }
