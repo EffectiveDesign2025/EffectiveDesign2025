@@ -220,7 +220,7 @@ nav {
 /* Configuração de Lista de Navegação - ATÉ 767px */
 nav ul {
     display: none;
-    flex-direction: colum;
+    flex-direction: column;
     width: 50%;
     position: absolute;
     top: 80px;
