@@ -107,7 +107,18 @@ nav a:hover {
     justify-content: space-between;
     flex-wrap: wrap;
     gap: 30px;
-    background-color: #EEF9F7;
+    background-color: #FCFEFD
+}
+
+/* Configuração - Sessão Inicial - Lado Esquedo */
+.secao-inicial-lado-esquerdo {
+    background-color: #B1F3E4;
+}
+
+/* Configuração - Seção Inicial - Lado Direito */
+.secao-inicial-lado-direito; {
+    Background-color: #FCFEFD;
+    
 }
 
 /* Configurações Gerais de Conteúdo */
@@ -116,7 +127,7 @@ nav a:hover {
     text-align: center;
     padding: 0 5%;
     background-color: #2E8B8F;
-    color: #ffffff;
+    color: #000000;
 }
 
 /* Configuração e Título Principal */
