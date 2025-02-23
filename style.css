@@ -77,7 +77,7 @@ nav a {
 
 /* Configurações dos Links na Lista de Navegação | Hover */
 nav a:hover {
-    color: #83ddd0;
+    color: #25d366;
     border-radius: 5px;
 }
 
@@ -179,7 +179,7 @@ nav a:hover {
     align-items: center;
     justify-content: center;
     padding: 12px 20px;
-    background-color:#5c9b92;
+    background-color:#25d366;
     color: #fff;
     font-size: 1rem;
     font-weight: bold;
