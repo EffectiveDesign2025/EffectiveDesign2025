@@ -112,11 +112,13 @@ nav a:hover {
 
 /* Configuração - Sessão Inicial - Lado Esquedo */
 .secao-inicial-lado-esquerdo {
+    display:flex;
     background-color: #B1F3E4;
 }
 
 /* Configuração - Seção Inicial - Lado Direito */
 .secao-inicial-lado-direito; {
+    display:flax:
     Background-color:#FCFEFD;
     
 }
