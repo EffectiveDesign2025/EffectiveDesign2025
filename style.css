@@ -107,7 +107,7 @@ nav a:hover {
     justify-content: space-between;
     flex-wrap: wrap;
     gap: 30px;
-    background-color: #2E8B8F;
+    background-color: #EEF9F7;
 }
 
 /* Configurações Gerais de Conteúdo */
@@ -115,7 +115,8 @@ nav a:hover {
     width: 38%;
     text-align: center;
     padding: 0 5%;
-    background-color: #EEF9F7;
+    background-color: #2E8B8F;
+    color: #ffffff;
 }
 
 /* Configuração e Título Principal */
