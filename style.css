@@ -112,6 +112,7 @@ nav a:hover {
 
 /* Configuração - Sessão Inicial - Lado Esquedo */
 .secao-inicial-lado-esquerdo {
+    display: flex;
     width: 38%;
     height: auto;
     text-align: center;
@@ -121,6 +122,7 @@ nav a:hover {
 
 /* Configuração - Seção Inicial - Lado Direito */
 .secao-inicial-lado-direito {
+    display: flex;
     width: 38%;
     height: auto;
     text-align: center;
