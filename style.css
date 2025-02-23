@@ -13,7 +13,7 @@ nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: #4b0263;
+    background-color: #814e92;
     height: 80px;
     width: 100%;
     text-align: center;
@@ -107,7 +107,7 @@ nav a:hover {
     justify-content: space-between;
     flex-wrap: wrap;
     gap: 30px;
-    background-color: #FCFEFD;
+    background-color: #f3fcfa;
 }
 
 /* Configurações Gerais de Conteúdo */
@@ -141,12 +141,12 @@ nav a:hover {
 
 /* Configuração - Sessão Inicial - Lado Esquedo */
 .secao-inicial-lado-esquerdo {
-    background-color: #B1F3E4;
+    background-color: #cdf1ec;
 }
 
 /* Configuração - Seção Inicial - Lado Direito */
 .secao-inicial-lado-direito {    
-    Background-color: #FCFEFD;    
+    Background-color: #f3fcfa;    
 }
 
 /* Configuração Específica da animação por ID */
