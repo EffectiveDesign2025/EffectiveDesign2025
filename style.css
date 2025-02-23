@@ -113,18 +113,17 @@ nav a:hover {
 /* Configuração - Sessão Inicial - Lado Esquedo */
 .secao-inicial-lado-esquerdo {
     display:flex;
-    width: 38%
+    width: 38%;
     height: auto;
     background-color: #B1F3E4;
 }
 
 /* Configuração - Seção Inicial - Lado Direito */
 .secao-inicial-lado-direito {
-    display:flex:
+    display:flex;
     width: 38%;
     height: auto;
-    Background-color:#FCFEFD;
-    
+    Background-color: #FCFEFD;    
 }
 
 /* Configurações Gerais de Conteúdo */
