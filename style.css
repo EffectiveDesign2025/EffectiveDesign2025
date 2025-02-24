@@ -287,7 +287,12 @@ nav .logo {
         justify-content: flex-start;
         color: #260132;
     }
-
+    
+#sidebar-active:checked ~ .links-container {
+        right: 0;
+    }
+    
+    
     /* Configuração do Menu HAMBÚRGUER - Até 767px */
     .menu-toggle {
         position: relative;
