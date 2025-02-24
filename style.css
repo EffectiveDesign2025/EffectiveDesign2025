@@ -244,7 +244,7 @@ nav .logo {
         width: 80%;
         height: auto;
         top: 80px;
-        left: -100%px;
+        right: -100%;
         background-color: #f8f9fa;
         padding: 10px 0;
         border-radius: 8px;
@@ -256,7 +256,7 @@ nav .logo {
     /* Configuração de Ativação de Lista - MENU HAMBÚRGUER - ATÉ 767px */
     nav ul.active {
         display: block;
-        left: 0;
+        right: 0;
         opacity: 1;     
     }
 
