@@ -1,10 +1,12 @@
+/* Configurações de Fonts */
 @font-face {
     font-family: 'Caviar Dreams';
-    src url:('https://github.com/EffectiveDesign2025/EffectiveDesign2025/blob/98508a626ca7983f1346bb0cfdf1cd4bcc470731/fonts/CaviarDreams.ttf') format('ttf'),
-            ('https://github.com/EffectiveDesign2025/EffectiveDesign2025/blob/98508a626ca7983f1346bb0cfdf1cd4bcc470731/fonts/CaviarDreams_Bold.ttf') format('ttf'),
-            ('https://github.com/EffectiveDesign2025/EffectiveDesign2025/blob/98508a626ca7983f1346bb0cfdf1cd4bcc470731/fonts/CaviarDreams_BoldItalic.ttf') format('ttf'),
-            ('https://github.com/EffectiveDesign2025/EffectiveDesign2025/blob/98508a626ca7983f1346bb0cfdf1cd4bcc470731/fonts/CaviarDreams_Italic.ttf') format('ttf');
+    src: url('https://raw.githubusercontent.com/EffectiveDesign2025/EffectiveDesign2025/main/fonts/CaviarDreams.ttf') format('truetype'),
+         url('https://raw.githubusercontent.com/EffectiveDesign2025/EffectiveDesign2025/main/fonts/CaviarDreams_Bold.ttf') format('truetype'),
+         url('https://raw.githubusercontent.com/EffectiveDesign2025/EffectiveDesign2025/main/fonts/CaviarDreams_BoldItalic.ttf') format('truetype'),
+         url('https://raw.githubusercontent.com/EffectiveDesign2025/EffectiveDesign2025/main/fonts/CaviarDreams_Italic.ttf') format('truetype');
 }
+
 /* Configurações Gerais do Corpo */
 body {
     font-family: 'Lato', sans-serif;
