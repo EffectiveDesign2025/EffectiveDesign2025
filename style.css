@@ -166,21 +166,21 @@ nav a:hover {
     margin: 0 auto;
 }
 
-/* Configuração e Título Principal */
-#effective-design {
-    background-image: linear-gradient(45deg, #ff00ff, #00ffff, #ff0000, #ffff00);
-    background-size: 300% 300%;
-    color: transparent;
-    -webkit-background-clip: text;
-    background-clip: text;
-    animation: animateGradient 15s infinite linear
-}
-
 /* Configuração da Animação do Gradiente */
 @keyframes animateGradient {
     0% { background-position: 0% 50%; }
-    50% { background-position: 100% 50%; }
+    50% { background-position: 200% 50%; }
     100% { background-position: 0% 50%; }
+}
+
+/* Configuração e Título Principal */
+#effective-design {
+    background-image: linear-gradient(45deg, #ff00ff, #00ffff, #ff0000, #ffff00);
+    background-size: 200% 200%;
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    animation: animateGradient 6s infinite linear
 }
 
 /* Configurações do efeito do Botão */
@@ -282,17 +282,12 @@ nav a {
 
 /* Configuração Geral de Container - ATÉ 767px */
 .container {
-    width: 100%;
-    text-align: justify;
-    align-items: center;
-}
-
-/* Configuração Específica da animação por ID - ATÉ 767px */
-#lottie-animation {
     display: flex;
+    flex-direction: column;
     width: 100%;
     height: auto;
-    margin: 0 auto;
+    text-align: justify;
+    align-items: center;
 }
 
 /* Configurações de Conteúdo - ATÉ 767px */
@@ -311,17 +306,24 @@ nav a {
 #content h2 {
     font-size: 1.3rem;
 }
-
-/* Configuração e Título Principal - ATÉ 767px */
-#effective-design {
-    font-size: 2.3rem;
-}
     
 /* Configração do Botão - ATÉ 767px */
 #bt_pulse {
     margin-bottom: 25px;
 }
-    
+
+/* Configuração Específica da animação por ID - ATÉ 767px */
+#lottie-animation {
+    display: flex;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+
+/* Configuração e Título Principal - ATÉ 767px */
+#effective-design {
+    font-size: 2.3rem;
+}
     
 /* ------------------------------------------- RESPONSIVIDADE | MEDIAS QUERIES - ATÉ 417px --------------------------------------------- */
 
