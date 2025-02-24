@@ -199,10 +199,11 @@ nav a:hover {
     color: #fff;
     font-size: 1rem;
     font-weight: bold;
-    border-radius: 25px;
+    border-radius: 5px;
     text-decoration: none;
     transition: 0.3s;
     margin-top: 30px;
+    width: 30%;
 }
 
 /* Configurações do Link do Botão */
@@ -306,7 +307,6 @@ nav a:hover {
 
     /* Configuração do Botão - ATÉ 767px */
     #bt_pulse {
-        width: 100%;
         margin-top: 20px;
     }
 }
