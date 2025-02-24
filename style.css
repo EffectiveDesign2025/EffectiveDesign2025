@@ -337,5 +337,6 @@ nav a:hover {
     /* Configurações do Texto com Gradiente - ATÉ 417px */
     #effective-design {
         font-size: 50px; /* Reduzir a fonte para tamanhos menores */
+        margin-top: -25px;
     }
 }
