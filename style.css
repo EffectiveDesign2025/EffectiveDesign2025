@@ -18,70 +18,27 @@ body {
 /* ------------------------------------------- MENU DE NAVEGAÇÃO --------------------------------------------- */
 
 /* Configurações Gerais da Barra de Navegação */
-height: 60px;
-    
-    display: flex;
-    justify-content: space-between; /* Para espaçar logo e menu */
-    align-items: center;
-}
-
 nav {    
     display: flex;
+    height: 80px;
+    width: 100%;
     justify-content: space-around;
-    font-family: "Caviar Dreams";
     align-items: center;
     text-align: center;
+    font-family: "Caviar Dreams";   
     background-color: var(--color-1);
-    height: 80px;
-    width: 100%;    
 }
-
-.links-container {
-    display: flex;
-    align-items: center;
-}
-
-nav .nav-list {
-    display: flex;
-}
-/* ---------------- CONFIGURAÇÕES DA LOGO ------- >>>>>>----- */
-
-/* Configurações do Bloco da Logo */
-nav .logo {
-    display: flex;
-    height: 80px;
-    width: auto;
-}
-
-/* Configurações da logo por ID */
-#logo {
-    max-height: 70px;
-    height: 60px;
-    width: auto;
-    animation: flutuante 3s ease-in-out infinite; /* Duração e repetição */
-}
-
-/* Configurações do Efeito Flutuante da Logo */
-@keyframes flutuante {
-    0% { transform: translateY(0px) rotate(0deg); }
-    25% { transform: translateY(-4px) rotate(-1deg); }
-    50% { transform: translateY(0px) rotate(1deg); }
-    75% { transform: translateY(4px) rotate(-1deg); }
-    100% { transform: translateY(0px) rotate(0deg); }
-}
-
-/* ---------------- CONFIGURAÇÕES DE LISTA DE MENU DE NAVEGAÇÃO ------- >>>>>>----- */
 
 /* Configurações da Lista de Navegação */
 nav ul {
-    list-style: none;
     display: flex;
+    width: 100%;
     justify-content: space-around;
+    list-style: none;
     text-align: center;
     padding: 0;
     margin: 0;
-    gap: 20px;
-    width: auto;
+    gap: 20px; 
 }
 
 /* Configurações das linhas na Lista de Navegação */
@@ -119,9 +76,38 @@ nav a:hover {
 .menu-toggle .bar {
     height: 3px;
     width: 25px;
-    background-color: #16011e;
     margin: 4px 0;
+    background-color: #16011e;  
 }
+/* ---------------- CONFIGURAÇÕES DA LOGO ------- >>>>>>----- */
+
+/* Configurações do Bloco da Logo */
+nav .logo {
+    display: flex;
+    height: 80px;
+    width: auto;
+}
+
+/* Configurações da logo por ID */
+#logo {
+    max-height: 70px;
+    height: 60px;
+    width: auto;
+    animation: flutuante 3s ease-in-out infinite; /* Duração e repetição */
+}
+
+/* Configurações do Efeito Flutuante da Logo */
+@keyframes flutuante {
+    0% { transform: translateY(0px) rotate(0deg); }
+    25% { transform: translateY(-4px) rotate(-1deg); }
+    50% { transform: translateY(0px) rotate(1deg); }
+    75% { transform: translateY(4px) rotate(-1deg); }
+    100% { transform: translateY(0px) rotate(0deg); }
+}
+
+/* ---------------- CONFIGURAÇÕES DE LISTA DE MENU DE NAVEGAÇÃO ------- >>>>>>----- */
+
+
 
 /* ------------------------------------------- SEÇÃO INICIAL --------------------------------------------- */
 
