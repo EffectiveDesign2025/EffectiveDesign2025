@@ -1,6 +1,6 @@
 /* -------------------------------------JAVA SCRIPT GRADIENTE --------------------------- >>>>>>>>>>>>>> */
 
-/* Configuração de Gradiente | Alternar gradiente em 5 segundos. */
+/* Configuração de Gradiente | Alternar gradiente em 15 segundos. */
     const gradients = [
         'linear-gradient(45deg, #ff0000, #0000ff)',
         'linear-gradient(45deg, #00ff00, #ffff00)',
@@ -19,7 +19,7 @@
     window.onload = setRandomGradient;
 
     // Opcional: Alterar o gradiente a cada 5 segundos
-    setInterval(setRandomGradient, 5000);
+    setInterval(setRandomGradient, 15000);
 
 /* ----------------------------------------JAVA SCRIPT LOTTIE ANIMATION ----------------------------------------- >>>>>>>>>>>>>> */    
     
