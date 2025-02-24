@@ -35,24 +35,14 @@
 /* -------------------------------------------JAVA SCRIPT MENU HAMBÚGUER --------------------------- >>>>>>>>>>>>>> */    
 
 /* Configuração de Ativação do Menu Hambúguer */    
+   document.addEventListener("DOMContentLoaded", function() {
     const menuToggle = document.querySelector('.menu-toggle');
-    const navMenu = document.querySelector('nav ul'); // O menu principal
-    const navLinks = document.querySelectorAll('nav ul li a'); // Links dentro do menu
-    
-    if (menuToggle && navMenu) {
-        // Ativa ou desativa o menu ao clicar no botão hambúrguer
-        menuToggle.addEventListener('click', () => {
-            navMenu.classList.toggle('active'); // Abre/fecha o menu
-            menuToggle.classList.toggle('active'); // Ativa animação do ícone hambúrguer
-        });
-    
-        // Fecha o menu ao clicar em qualquer link
-        navLinks.forEach(link => {
-            link.addEventListener('click', () => {
-                navMenu.classList.remove('active');
-                menuToggle.classList.remove('active'); // Reseta animação do ícone
-            });
-        });
+    const navList = document.querySelector('nav ul');
+
+    menuToggle.addEventListener('click', function() {
+        navList.classList.toggle('active');
+    });
+});
 }
 
 /* ------------------------------------------------------------------------------------------------------- >>>>>>>>>>>>>> */
