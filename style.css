@@ -299,7 +299,7 @@ nav a:hover {
 
     /* Configuração do Conteúdo - ATÉ 767px */
     .content {
-        width: 100%;
+        width: 90%;
         padding: 0 5%;
         text-align: center;
     }
@@ -312,7 +312,7 @@ nav a:hover {
 }
 
 #effective-design {
-    font-size: 40px;
+    font-size: 60px;
 }
 /* ------------------------------------------- RESPONSIVIDADE | MEDIAS QUERIES ATÉ 417px --------------------------------------------- */
 
@@ -335,6 +335,6 @@ nav a:hover {
 
     /* Configurações do Texto com Gradiente - ATÉ 417px */
     #effective-design {
-        font-size: 30px; /* Reduzir a fonte para tamanhos menores */
+        font-size: 50px; /* Reduzir a fonte para tamanhos menores */
     }
 }
