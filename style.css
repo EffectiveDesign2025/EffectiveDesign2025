@@ -166,17 +166,20 @@ nav a:hover {
     margin: 0 auto;
 }
 
-/* Configuração do Contêiner */
+/* Configuração do Texto com Gradiente */
 #effective-design {
-    width: 800px;
-    height: 800px;
-    background: linear-gradient(45deg, #ff0000, #0000ff, #00ff00, #ffff00, #8a2be2, #ff00ff);
-    background-size: 400% 400%;
-    animation: animateSpectrum 12s infinite linear;
-    border-radius: 50%; /* Opcional, caso queira um efeito circular */
+    font-size: 80px;
+    font-weight: bold;
+    text-align: center;
+    background-image: linear-gradient(45deg, #ff0000, #0000ff, #00ff00, #ffff00, #8a2be2, #ff00ff);
+    background-size: 300% 300%;
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    animation: animateSpectrum 15s infinite linear;
 }
 
-/* Animação do Gradiente Percorrendo os Eixos */
+/* Animação do Gradiente */
 @keyframes animateSpectrum {
     0%   { background-position: 0% 0%; }
     25%  { background-position: 100% 0%; }
