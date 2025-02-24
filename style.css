@@ -202,7 +202,6 @@ nav .logo {
     font-weight: bold;
     border-radius: 5px;
     text-decoration: none;
-    transition: 0.3s;
     margin-top: 30px;
     width: 30%;
 }
@@ -336,10 +335,6 @@ nav .logo {
         padding: 10 30px;
         margin-top: 20px;
     }
-}
-
-#effective-design {
-    font-size: 60px;
 }
 /* ------------------------------------------- RESPONSIVIDADE | MEDIAS QUERIES ATÉ 417px --------------------------------------------- */
 
