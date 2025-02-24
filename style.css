@@ -176,11 +176,11 @@ nav a:hover {
 /* Configuração e Título Principal */
 #effective-design {
     background-image: linear-gradient(45deg, #ff00ff, #00ffff, #ff0000, #ffff00);
-    background-size: 200% 200%;
+    background-size: 800% 800%;
     color: transparent;
     -webkit-background-clip: text;
     background-clip: text;
-    animation: animateGradient 6s infinite linear
+    animation: animateGradient 30s infinite linear
 }
 
 /* Configurações do efeito do Botão */
