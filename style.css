@@ -244,20 +244,20 @@ nav .logo {
         width: 100%;
         height: auto;
         top: 80px;
-        right: -100%;
         background-color: #f8f9fa;
         padding: 10px 0;
         border-radius: 8px;
         box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        transform: translateX(100%);
         transition: right 5s ease-in-out, opacity 1.3s ease-in-out;
         z-index: 1000; /* 🔥 Garante que fique sobre os outros elementos */
     }
 
     /* Configuração de Ativação de Lista - MENU HAMBÚRGUER - ATÉ 767px */
     nav ul.active {
-        display: flex;
-        right: 0;
-        opacity: 1;     
+        transform: translateX(0); /* Faz o menu deslizar para dentro da tela */
+        opacity: 1;
+        visibility: visible;
     }
 
     /* Configuração de Linha de Lista de Navegação - ATÉ 767px */
