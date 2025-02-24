@@ -240,8 +240,8 @@ nav a:hover {
         position: fixed;
         display: none;
         flex-direction: column;
-        width: 100%;
-        height: 100vh;
+        width: 50%;
+        height: auto;;
         top: 0px;
         right: 0;
         background-color: #f8f9fa;
@@ -254,7 +254,7 @@ nav a:hover {
 
     /* Configuração de Ativação de Lista - MENU HAMBÚRGUER - ATÉ 767px */
     nav ul.active {
-         display: flex;
+         display: block;
          transform: translateY(0);
          opacity: 1;
     }
