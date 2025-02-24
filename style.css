@@ -307,7 +307,7 @@ nav a:hover {
 
     /* Configuração do Botão - ATÉ 767px */
     #bt_pulse {
-        width: 20%;
+        width: 50%;
         padding: 0 30px;
         margin-top: 20px;
     }
