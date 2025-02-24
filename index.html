@@ -33,69 +33,46 @@
             </div> 
         </nav>
     </header>
-    <main class="container">
-        <section class="secao-inicial-lado-esquerdo" id="content">
-            <div id="lottie-animation" aria-label="Animação representando análise de projeto"></div>
-        </section>
-        <section class="secao-inicial-lado-direito" id="content">
-            <h1 id="effective-design">Effective Design</h1>
-            <h2>Transformamos ideias em soluções personalizadas para impulsionar seu negócio.</h2>         
-            <p>No <strong>marketing digital</strong>, <strong>tecnologia</strong> e <strong>impressão gráfica</strong>, oferecemos estratégias inovadoras para destacar sua marca. Nossa equipe <strong>entende suas necessidades</strong> e <strong>cria soluções personalizadas</strong> para <strong>maximizar resultados.</strong></p>
-            <p>Potencialize sua presença no mercado com <strong>soluções inteligentes</strong> e <strong>eficazes.</strong> </p>
-            <p>📩 <strong>Entre em contato</strong> e descubra como podemos ajudar o seu negócio!</p> 
-            <a id="bt_pulse" href="https://wa.me/5567984530160?text=Ol%C3%A1,%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20a%20Effective%20Design." target="_blank" aria-label="Fale Conosco pelo WhatsApp">
-                <i class="fab fa-whatsapp"></i> Fale Conosco
-            </a>
+    <secttion class="secao-inicial">
+        <main class="container">        
+                <div class="secao-inicial-lado-esquerdo content">
+                    <div id="lottie-animation" aria-label="Animação representando análise de projeto"></div>
+                </div>
+                <div class="secao-inicial-lado-direito content">
+                    <h1 id="effective-design">Effective Design</h1>
+                    <h2>Transformamos ideias em soluções personalizadas para impulsionar seu negócio.</h2>         
+                    <p>No <strong>marketing digital</strong>, <strong>tecnologia</strong> e <strong>impressão gráfica</strong>, oferecemos estratégias inovadoras para destacar sua marca. Nossa equipe <strong>entende suas necessidades</strong> e <strong>cria soluções personalizadas</strong> para <strong>maximizar resultados.</strong></p>
+                    <p>Potencialize sua presença no mercado com <strong>soluções inteligentes</strong> e <strong>eficazes.</strong> </p>
+                    <p>📩 <strong>Entre em contato</strong> e descubra como podemos ajudar o seu negócio!</p> 
+                    <a id="bt_pulse" href="https://wa.me/5567984530160?text=Ol%C3%A1,%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20a%20Effective%20Design." target="_blank" aria-label="Fale Conosco pelo WhatsApp">
+                        <i class="fab fa-whatsapp"></i> Fale Conosco
+                    </a>
+                </div>
             </section>
-    </main>
-
-    <div class="section-break">
-        <h2>Serviços</h2>
-        <p>Descubra as <strong>soluções personalizadas</strong> que oferecemos para alavancar sua <strong>presença no mercado</strong>.</p>
-
-        <div class="services-grid">
-            <div class="service">
-                <h3>Marketing Digital</h3>
-                <p>Criação de estratégias de marketing online, gestão de redes sociais, SEO, campanhas de anúncios e muito mais.</p>
-            </div>
-            <div class="service">
-                <h3>Tecnologia</h3>
-                <p>Desenvolvimento de websites, aplicativos, sistemas personalizados e soluções de tecnologia sob medida.</p>
-            </div>
-            <div class="service">
-                <h3>Impressão Gráfica</h3>
-                <p>Impressão de materiais promocionais, cartões de visita, flyers, banners e outros materiais gráficos.</p>
+        </main>
+    <section class="servicos">
+        <div class="section-break">
+            <h2>Serviços</h2>
+            <p>Descubra as <strong>soluções personalizadas</strong> que oferecemos para alavancar sua <strong>presença no mercado</strong>.</p>
+    
+            <div class="services-grid">
+                <div class="service">
+                    <h3>Marketing Digital</h3>
+                    <p>Criação de estratégias de marketing online, gestão de redes sociais, SEO, campanhas de anúncios e muito mais.</p>
+                </div>
+                <div class="service">
+                    <h3>Tecnologia</h3>
+                    <p>Desenvolvimento de websites, aplicativos, sistemas personalizados e soluções de tecnologia sob medida.</p>
+                </div>
+                <div class="service">
+                    <h3>Impressão Gráfica</h3>
+                    <p>Impressão de materiais promocionais, cartões de visita, flyers, banners e outros materiais gráficos.</p>
+                </div>
             </div>
         </div>
-    </div>
 
     <script src="https://raw.githubusercontent.com/EffectiveDesign2025/EffectiveDesign2025/main/script.js"></script>
     
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.9.6/lottie.min.js"></script>
-    <script>
-        var animation = lottie.loadAnimation({
-            container: document.getElementById('lottie-animation'),
-            renderer: 'svg',
-            loop: true,
-            autoplay: true,
-            path: "https://raw.githubusercontent.com/EffectiveDesign2025/EffectiveDesign2025/main/animacao/analise%20de%20projeto"
-        });
-    </script>
-    <script>
-        const mobileMenu = document.getElementById('mobile-menu');
-        const navList = document.querySelector('.nav-list');
-        const navLinks = document.querySelectorAll('.nav-list a');
-
-        mobileMenu.addEventListener('click', () => {
-            navList.classList.toggle('active'); // Adiciona ou remove a classe 'active' ao clicar
-        });
-
-        // Fecha o menu ao clicar em um link no mobile
-        navLinks.forEach(link => {
-            link.addEventListener('click', () => {
-                navList.classList.remove('active');
-            });
-        });
     </script>  
 </body>
 </html>
