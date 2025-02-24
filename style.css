@@ -77,7 +77,7 @@ nav a {
 
 /* Configurações dos Links na Lista de Navegação | Hover */
 nav a:hover {
-    color: #f3fcfa;
+    color: #4b0263; 
     border-radius: 5px;
 }
 
@@ -107,7 +107,7 @@ nav a:hover {
     justify-content: space-between;
     flex-wrap: wrap;
     gap: 30px;
-    background-color: #f3fcfa;
+    background-color: #FFFFFF;
 }
 
 /* Configurações Gerais de Conteúdo */
@@ -141,12 +141,12 @@ nav a:hover {
 
 /* Configuração - Sessão Inicial - Lado Esquedo */
 .secao-inicial-lado-esquerdo {
-    background-color: #cdf1ec;
+    background-color: ##f3fcfa;
 }
 
 /* Configuração - Seção Inicial - Lado Direito */
 .secao-inicial-lado-direito {    
-    Background-color: #f3fcfa;    
+    Background-color: #FFFFFF;    
 }
 
 /* Configuração Específica da animação por ID */
