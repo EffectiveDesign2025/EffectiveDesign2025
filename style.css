@@ -240,7 +240,7 @@ nav a:hover {
         position: fixed;
         display: none;
         flex-direction: column;
-        width: 50%;
+        width: 100%;
         height: auto;;
         top: 0px;
         right: 0;
@@ -250,6 +250,7 @@ nav a:hover {
         box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
         transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
         transform: translateY(-100%);
+        z-index: 1000; /* 🔥 Garante que fique sobre os outros elementos */
     }
 
     /* Configuração de Ativação de Lista - MENU HAMBÚRGUER - ATÉ 767px */
