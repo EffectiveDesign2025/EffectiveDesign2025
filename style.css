@@ -18,21 +18,36 @@ body {
 /* ------------------------------------------- MENU DE NAVEGAÇÃO --------------------------------------------- */
 
 /* Configurações Gerais da Barra de Navegação */
+height: 60px;
+    
+    display: flex;
+    justify-content: space-between; /* Para espaçar logo e menu */
+    align-items: center;
+}
+
 nav {    
     display: flex;
     justify-content: space-around;
     font-family: "Caviar Dreams";
     align-items: center;
-    background-color: #FFFFFF;
-    height: 80px;
-    width: 100%;
     text-align: center;
+    background-color: var(--color-1);
+    height: 80px;
+    width: 100%;    
 }
 
+.links-container {
+    display: flex;
+    align-items: center;
+}
+
+nav .nav-list {
+    display: flex;
+}
 /* ---------------- CONFIGURAÇÕES DA LOGO ------- >>>>>>----- */
 
 /* Configurações do Bloco da Logo */
-nav logo {
+nav .logo {
     display: flex;
     height: 80px;
     width: auto;
@@ -229,6 +244,19 @@ nav a:hover {
         align-items: center;
     }
 
+    .links-container {
+        flex-direction: column;
+        align-items: flex-start;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        z-index: 10;
+        width: 300px;
+        background-color: var(--color-1);
+        box-shadow: -5px 0 5px rgba(0, 0, 0, 0.25);
+        transition: 0.75s ease-out;
+    }
+
     /* Configuração da Logo - ATÉ 767px */
     #logo {
         display: flex;
@@ -267,16 +295,22 @@ nav a:hover {
 
     /* Configuração de Link de Lista de Navegação - ATÉ 767px */
     nav a {
-        padding: 15px;
+
         width: 100%;
+        padding: 20px 30px;
+        justify-content: flex-start;
         color: #260132;
+    }
+
+    #sidebar-active:checked ~ .links-container {
+        right: 0;
     }
 
     /* Configuração do Menu HAMBÚRGUER - Até 767px */
     .menu-toggle {
         position: relative;
         z-index: 10; /* Aumente o z-index para garantir que fique acima */
-        display: flex;
+        display: block;
         flex-direction: column;
         align-items: center;
         cursor: pointer;
