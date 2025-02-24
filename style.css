@@ -255,7 +255,7 @@ nav .logo {
 
     /* Configuração de Ativação de Lista - MENU HAMBÚRGUER - ATÉ 767px */
     nav ul.active {
-        display: block;
+        display: flex;
         right: 0;
         opacity: 1;     
     }
