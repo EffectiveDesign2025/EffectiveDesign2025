@@ -1,4 +1,10 @@
--/* Configurações Gerais do Corpo */
+@font-face {
+    font-family: 'Caviar Dreams';
+    src url:('https://github.com/EffectiveDesign2025/EffectiveDesign2025/blob/98508a626ca7983f1346bb0cfdf1cd4bcc470731/fonts/CaviarDreams.ttf') format('ttf'),
+            ('https://github.com/EffectiveDesign2025/EffectiveDesign2025/blob/98508a626ca7983f1346bb0cfdf1cd4bcc470731/fonts/CaviarDreams_Bold.ttf') format('ttf'),
+            ('https://github.com/EffectiveDesign2025/EffectiveDesign2025/blob/98508a626ca7983f1346bb0cfdf1cd4bcc470731/fonts/CaviarDreams_BoldItalic.ttf') format('ttf'),
+            ('https://github.com/EffectiveDesign2025/EffectiveDesign2025/blob/98508a626ca7983f1346bb0cfdf1cd4bcc470731/fonts/CaviarDreams_Italic.ttf') format('ttf');
+/* Configurações Gerais do Corpo */
 body {
     font-family: 'Lato', sans-serif;
     margin: 0;
@@ -12,6 +18,7 @@ body {
 nav {    
     display: flex;
     justify-content: space-around;
+    font-family: "Caviar Dreams";
     align-items: center;
     background-color: #FFFFFF;
     height: 80px;
