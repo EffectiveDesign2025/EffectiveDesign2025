@@ -1,7 +1,6 @@
 /* -------------------------------------JAVA SCRIPT GRADIENTE --------------------------- >>>>>>>>>>>>>> */
 
 /* Configuração de Gradiente | Alternar gradiente em 5 segundos. */
-<script>
     const gradients = [
         'linear-gradient(45deg, #ff0000, #0000ff)',
         'linear-gradient(45deg, #00ff00, #ffff00)',
@@ -21,13 +20,10 @@
 
     // Opcional: Alterar o gradiente a cada 5 segundos
     setInterval(setRandomGradient, 5000);
-</script>
 
 /* ----------------------------------------JAVA SCRIPT LOTTIE ANIMATION ----------------------------------------- >>>>>>>>>>>>>> */    
     
 /* Configurações de Lottie Animation  */
-<script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.9.6/lottie.min.js"></script>
-<script>
     var animation = lottie.loadAnimation({
         container: document.getElementById('lottie-animation'),
         renderer: 'svg',
@@ -35,12 +31,10 @@
         autoplay: true,
         path: "https://raw.githubusercontent.com/EffectiveDesign2025/EffectiveDesign2025/main/animacao/analise%20de%20projeto"
     });
-</script>
 
 /* -------------------------------------------JAVA SCRIPT MENU HAMBÚGUER --------------------------- >>>>>>>>>>>>>> */    
 
 /* Configuração de Ativação do Menu Hambúguer */    
-<script>
     const mobileMenu = document.getElementById('mobile-menu');
     const navList = document.querySelector('.nav-list');
     const navLinks = document.querySelectorAll('.nav-list a');
