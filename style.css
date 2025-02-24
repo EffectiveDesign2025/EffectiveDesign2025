@@ -121,7 +121,7 @@ nav a:hover {
 }
 
 /* Configurações Gerais de Conteúdo */
-#content {
+.content {
     width: 38%;
     height: auto;
     padding: 0 5%;
@@ -130,20 +130,20 @@ nav a:hover {
 }
 
 /* Configurações Gerais de Conteúdo h1 */
-#content h1 {
+.content h1 {
     font-size: 4rem;
     margin-bottom: 10px;
 }
 
 /* Configurações Gerais de Conteúdo h2 */
-#content h2 {
+.content h2 {
     font-size: 1.5rem;
     margin-bottom: 15px;
     color: #260132;
 }
 
 /* Configurações Gerais de Conteúdo P */
-#content p {
+.content p {
     font-size: 1rem;
     margin-bottom: 20px;
     text-align: justify;
@@ -298,19 +298,19 @@ nav a {
 }
 
 /* Configurações de Conteúdo - ATÉ 767px */
-#content {
+.content {
     width: 100%;
     text-align: center;
     align-items: center;
 }
 
 /* Configurações de Conteúdo h1 - ATÉ 767px */
-#content h1 {
+.content h1 {
     font-size: 2rem;
 }
 
 /* Configurações de Conteúdo h2 - ATÉ 767px */
-#content h2 {
+.content h2 {
     font-size: 1.3rem;
 }
     
@@ -418,7 +418,7 @@ nav a {
 }
 
 /* Configurações de Conteúdo - ATÉ 417px */
-#content {
+.content {
     width: 100%;
     text-align: center;
     align-items: center;
@@ -430,12 +430,12 @@ nav a {
 }
     
 /* Configurações de Conteúdo h1 - ATÉ 417px */
-#content h1 {
+.content h1 {
     font-size: 1.5rem;
 }
 
 /* Configurações de Conteúdo h2 - ATÉ 417px */
-#content h2 {
+.content h2 {
     font-size: 1.1rem;
 }
 
