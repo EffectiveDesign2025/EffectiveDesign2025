@@ -81,6 +81,9 @@ nav a:hover {
 }
 /* ---------------- CONFIGURAÇÕES DA LOGO ------- >>>>>>----- */
 
+
+
+
 /* Configurações do Bloco da Logo */
 nav .logo {
     display: flex;
@@ -229,11 +232,8 @@ nav .logo {
         align-items: center;
     }
 
-    /* Configuração da Logo - ATÉ 767px */
-    #logo {
-        display: flex;
-        padding-left: 10%;
-    }
+    
+
 
     /* Configuração de Lista de Navegação - ATÉ 767px */
     nav ul {
@@ -304,6 +304,13 @@ nav .logo {
         height: auto;
         gap: 30px;
     }
+
+        /* Configuração da Logo - ATÉ 767px */
+    #logo {
+        display: flex;
+        padding-left: 10%;
+    }
+
 
     /* Configuração do Conteúdo - ATÉ 767px */
     .content {
