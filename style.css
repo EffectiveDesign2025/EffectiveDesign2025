@@ -30,6 +30,12 @@ nav {
     background-color: #ffffff;
 }
 
+nav logo img {
+    max-height: 70px;
+    width: auto;
+}
+  
+
 .links-container{
 display: flex;
 justify-content: space-around;
