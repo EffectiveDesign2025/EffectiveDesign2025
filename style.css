@@ -25,7 +25,7 @@ nav {
     justify-content: space-around;
     align-items: center;
     text-align: center;
-    padding: 0 20px;
+    padding: 20px, 20px;
     font-family: "Caviar Dreams";   
     background-color: #ffffff;
 }
