@@ -44,6 +44,9 @@ align-items: center;
     display: none;
 }
 
+nav img {
+    text-color: #16011e; 
+
 /* Configurações da Lista de Navegação */
 nav ul {
     display: flex;
