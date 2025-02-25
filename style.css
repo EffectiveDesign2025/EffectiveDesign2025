@@ -59,7 +59,6 @@ nav .logo {
 nav a {
     text-decoration: none;
     font-weight: 700;
-    font-size: 30px;
     padding: 10px;
     border-radius: 5px;
     transition: background-color 0.3s;
@@ -214,6 +213,7 @@ height: auto;
 
     nav a {
     box-sizing: border-box;
+    font-size: 30px;
     padding: 20px 30px;
     justify-content: flex-start;
     align-items: flex-start;
