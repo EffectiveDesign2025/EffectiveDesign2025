@@ -236,12 +236,20 @@ height: auto;
     transition: 0.75s ease-out;
     }
 
-    .open-sidebar-button, .close-sidebar-button {
+    .close-sidebar-button {
+        display: none;
+    }
+    
+    .open-sidebar-button{
     display: block;
 }
 
     #sidebar-active:checked ~ .links-container{
         right: 0;
+
+        .close-sidebar-button {
+        display: block;
+    }
 }
     
     .container {
