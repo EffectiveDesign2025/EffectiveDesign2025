@@ -237,6 +237,7 @@ height: auto;
     }
 
     .open-sidebar-button, .close-sidebar-button {
+    z-index: 11;
     display: block;
 }
 
