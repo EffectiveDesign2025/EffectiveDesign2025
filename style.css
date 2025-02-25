@@ -88,60 +88,7 @@ width: 60%;
 height: auto;
 }
 
-
-
-
-    /* Configurações dos Links na Lista de Navegação */
-
-
-/* Configurações da Lista de Navegação *
-nav ul {
-    display: flex;
-    width: 100%;
-    justify-content: space-around;
-    list-style: none;
-    text-align: center;
-    padding: 0;
-    margin: 0;
-    gap: 20px; 
-}
-
-/* Configurações das linhas na Lista de Navegação */
-nav li {
-    margin: 0 15px;
-    text-align: center;
-}
-
-
-
-/* ---------------- CONFIGURAÇÕES DO MENU HAMBÚRGUER ------- >>>>>>----- */
-
-/* Estilo do menu hambúrguer */
-.menu-toggle {
-    display: none;
-    flex-direction: column;
-    cursor: pointer;
-}
-
-/* Configurações das Barras de Menu HAMBÚRGUER na Horizontal */
-.menu-toggle .bar {
-    height: 3px;
-    width: 25px;
-    margin: 4px 0;
-    background-color: #16011e;  
-}
-/* ---------------- CONFIGURAÇÕES DA LOGO ------- >>>>>>----- */
-
-
-
-
-
-
-/* ---------------- CONFIGURAÇÕES DE LISTA DE MENU DE NAVEGAÇÃO ------- >>>>>>----- */
-
-
-
-/* ------------------------------------------- SEÇÃO INICIAL --------------------------------------------- */
+/* ----------------------------------------------- CONFIGURAÇÃO DE SESSÃO INICIAL -------------------------------------- >>>>>>>>>>>>>>>>>>>>>>
 
 /* Configuração Geral de Containers */
 .container {
@@ -261,12 +208,12 @@ nav li {
     nav a {
     box-sizing: border-box;
     hight: auto;
-    width: 100%;
+    width: 300px;
     padding: 20px 30px;
     justify-content: flex-start;
     align-items: flex-start;
     }
-    
+
     
     .links-container{
     flex-direction: column;
@@ -291,64 +238,7 @@ nav li {
     #sidebar-active:checked ~ .links-container{
         right: 0;
 }
-        
-    /* Configuração de Lista de Navegação - ATÉ 767px *
-    nav ul {
-        display: none;
-        position: absolute;
-        flex-direction: column;
-        align-items: flex-start;
-        width: 90%;
-        height: 100%;
-        top: 80px;
-        background-color: #f8f9fa;
-        padding: 10px 0;
-        border-radius: 8px;
-        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-        transform: translateX(100%);
-        transition: right 0,75s ease-in-out, opacity 0.3s ease-in-out;
-        z-index: 10; /* 🔥 Garante que fique sobre os outros elementos */
-    }
-
-    /* Configuração de Ativação de Lista - MENU HAMBÚRGUER - ATÉ 767px *
-    nav ul.active {
-        display: flex;
-        flex-direction: column;
-        transform: translateX(0); /* Faz o menu deslizar para dentro da tela *
-        opacity: 1;
-        visibility: visible;
-    }
-
-    /* Configuração de Linha de Lista de Navegação - ATÉ 767px *
-    nav li {
-       margin: 15px 0;
-    }
-
-    /* Configuração de Link de Lista de Navegação - ATÉ 767px */
-
     
-    /* Configuração do Menu HAMBÚRGUER - Até 767px *
-    .menu-toggle {
-        position: relative;
-        z-index: 10; /* Aumente o z-index para garantir que fique acima *
-        display: block;
-        flex-direction: column;
-        align-items: center;
-        cursor: pointer;
-        color: #333;
-        padding-right: 10%;
-    }
-
-    /* Configuração das Barras do Menu HAMBÚRGUER - ATÉ 767px *
-    .menu-toggle .bar {
-        display: block;
-        width: 25px;
-        height: 3px;
-        margin: 5px auto;
-        background-color: #16011e;
-    }
-
-    /* Configuração Geral de Container - ATÉ 767px */
     .container {
         display: flex;
         flex-direction: column;
@@ -356,13 +246,6 @@ nav li {
         height: auto;
         gap: 30px;
     }
-
-        /* Configuração da Logo - ATÉ 767px */
-    #logo {
-        display: flex;
-        padding-left: 10%;
-    }
-
 
     /* Configuração do Conteúdo - ATÉ 767px */
     .content {
