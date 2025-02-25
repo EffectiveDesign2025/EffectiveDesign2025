@@ -19,7 +19,7 @@
     window.onload = setRandomGradient;
 
     // Opcional: Alterar o gradiente a cada 5 segundos
-    setInterval(setRandomGradient, 15000);
+    setInterval(setRandomGradient, 10000);
 
 /* ----------------------------------------JAVA SCRIPT LOTTIE ANIMATION ----------------------------------------- >>>>>>>>>>>>>> */    
     
