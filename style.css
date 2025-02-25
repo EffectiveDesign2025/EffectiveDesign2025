@@ -208,13 +208,9 @@ height: auto;
 
 @media (max-width: 767px) {
 
-    nav svg {
-        color: green;
-    }
-
     nav .logo {
     margin-right: auto;
-}
+    }
 
     nav a {
     box-sizing: border-box;
@@ -241,6 +237,7 @@ height: auto;
 
     .close-sidebar-button {
         display: none;
+        padding: 20px;
     }
     
     .open-sidebar-button{
@@ -249,7 +246,6 @@ height: auto;
 
     #sidebar-active:checked ~ .links-container{
         right: 0;
-
         .close-sidebar-button {
         display: block;
     }
