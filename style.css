@@ -106,7 +106,7 @@ nav a:hover {
 
 /* Configurações do Bloco da Logo */
 nav .logo {
-    display: flex;
+    display: block;
     height: 80px;
     max-width: 30%;
 }
