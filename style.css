@@ -165,6 +165,12 @@ height: auto;
     animation: animateSpectrum 10s infinite linear;
 }
 
+#subtitulo {
+    font-size 40px
+    font-weight: bold;
+    text-align: left;
+}
+
 /* Animação do Gradiente */
 @keyframes animateSpectrum {
     0%   { background-position: 0% 0%; }
