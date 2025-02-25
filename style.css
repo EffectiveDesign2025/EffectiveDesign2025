@@ -130,7 +130,7 @@ height: auto;
 
 /* Configurações Gerais de Conteúdo P */
 .content p {
-    font-size: 2em;
+    font-size: 1.4em;
     margin-bottom: 20px;
     text-align: justify;
 }
@@ -193,7 +193,7 @@ height: auto;
     font-weight: bold;
     border-radius: 5px;
     text-decoration: none;
-    margin-top: 30px;
+    margin-top: 15px;
     width: 30%;
 }
 
