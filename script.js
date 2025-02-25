@@ -32,15 +32,3 @@
         path: "https://raw.githubusercontent.com/EffectiveDesign2025/EffectiveDesign2025/main/animacao/analise%20de%20projeto"
     });
 
-/* -------------------------------------------JAVA SCRIPT MENU HAMBÚGUER --------------------------- >>>>>>>>>>>>>> */    
-
-/* Configuração de Ativação do Menu Hambúguer */    
-// Selecionar os elementos
-const menuToggle = document.querySelector('.menu-toggle');
-const navList = document.querySelector('nav ul');
-
-// Adicionar evento de clique ao menu hamburguer
-menuToggle.addEventListener('click', () => {
-    navList.classList.toggle('active'); // Alterna a classe 'active'
-});
-/* ------------------------------------------------------------------------------------------------------- >>>>>>>>>>>>>> */
