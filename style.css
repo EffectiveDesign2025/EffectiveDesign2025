@@ -240,8 +240,9 @@ height: auto;
     }
     
     .open-sidebar-button{
-    display: block;
-}
+        display: block;
+        padding: 20px;
+    }
 
     #sidebar-active:checked ~ .links-container{
         right: 0;
