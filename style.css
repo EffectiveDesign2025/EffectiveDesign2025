@@ -18,8 +18,8 @@ body {
 nav {    
     display: flex;
     position: relative;
-    height: 100px;
-    width: 100%;
+    height: 80px;
+    width: auto;
     justify-content: space-around;
     align-items: center;
     text-align: center;
