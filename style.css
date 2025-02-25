@@ -123,14 +123,14 @@ height: auto;
 
 /* Configurações Gerais de Conteúdo h2 */
 .content h2 {
-    font-size: 1.5rem;
+    font-size: 1rem;
     margin-bottom: 15px;
     color: #260132;
 }
 
 /* Configurações Gerais de Conteúdo P */
 .content p {
-    font-size: 1rem;
+    font-size: 0.8rem;
     margin-bottom: 20px;
     text-align: justify;
 }
