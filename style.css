@@ -282,6 +282,11 @@ nav li {
     transition: background-color 0.3s;
     color: #16011e;
 }
+    
+    nav .logo {
+    margin-right: auto;
+}
+
         
     /* Configuração de Lista de Navegação - ATÉ 767px *
     nav ul {
@@ -316,12 +321,7 @@ nav li {
     }
 
     /* Configuração de Link de Lista de Navegação - ATÉ 767px */
-    nav a {
-        padding: 30px 30px;
-        margin: 20px 0px;
-        justify-content: flex-start;
-        color: #260132;
-    }    
+
     
     /* Configuração do Menu HAMBÚRGUER - Até 767px */
     .menu-toggle {
