@@ -59,6 +59,7 @@ nav .logo {
 nav a {
     text-decoration: none;
     font-weight: 700;
+    font-size: 30px;
     padding: 10px;
     border-radius: 5px;
     transition: background-color 0.3s;
