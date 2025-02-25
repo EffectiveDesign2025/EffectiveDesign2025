@@ -22,7 +22,7 @@ nav {
     display: flex;
     height: 80px;
     width: 100%;
-    justify-content: space-around;
+    justify-content: flex-end;
     align-items: center;
     text-align: center;
     font-family: "Caviar Dreams";   
