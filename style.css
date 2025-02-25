@@ -43,6 +43,7 @@ nav .logo {
     width: auto; ;
     max-width: 80px;
     animation: flutuante 3s ease-in-out infinite; /* Duração e repetição */
+    margin-top: 15px;
 }
 
 /* Configurações do Efeito Flutuante da Logo */
