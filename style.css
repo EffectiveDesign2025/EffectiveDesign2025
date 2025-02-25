@@ -225,7 +225,7 @@ nav .logo {
     /* Configuração da Barra de Navegação - ATÉ 767px */
     nav {
         display: flex;
-        justify-content: space-between;
+        justify-content: flex-end;
         align-items: center;
     }
 
