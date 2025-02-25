@@ -33,6 +33,7 @@ nav {
 .links-container{
 display: flex;
 justify-content: space-around;
+text-decoration: none;
 gap: 15px;
 width: 60%;
 height: auto;
