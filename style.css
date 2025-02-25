@@ -115,7 +115,7 @@ nav .logo {
 #logo {
     max-height: 70px;
     height: 60px;
-    width: auto;
+    width: auto; ;
     max-width: 70px;
     animation: flutuante 3s ease-in-out infinite; /* Duração e repetição */
 }
