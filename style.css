@@ -137,7 +137,10 @@ height: auto;
 
 /* Configuração - Sessão Inicial - Lado Esquedo */
 .secao-inicial-lado-esquerdo {
-    background-color: #FFFFFF;
+    h2 {
+    font-size: 4rem;
+    margin-bottom: 15px;
+    color: #260132;
 }
 
 /* Configuração - Seção Inicial - Lado Direito */
@@ -154,7 +157,7 @@ height: auto;
 
 /* Configuração do Texto com Gradiente */
 #effective-design {
-    font-size: 50px;
+    font-size: 55px;
     font-weight: bold;
     text-align: center;
     background-image: linear-gradient(45deg, #ff0000, #0000ff, #00ff00, #ffff00, #8a2be2, #ff00ff);
@@ -162,7 +165,7 @@ height: auto;
     color: transparent;
     -webkit-background-clip: text;
     background-clip: text;
-    animation: animateSpectrum 30s infinite linear;
+    animation: animateSpectrum 10s infinite linear;
 }
 
 /* Animação do Gradiente */
