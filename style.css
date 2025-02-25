@@ -275,9 +275,7 @@ nav li {
     
     .links-container{
     flex-direction: column;
-    align-items: flex-start;
-    text-align: center;
-    
+    align-items: flex-start;    
     position: fixed;
     top: 0;
     right: -100%;
