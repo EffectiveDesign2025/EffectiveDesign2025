@@ -31,6 +31,8 @@ nav {
 
 /* Configurações do Bloco da Logo */
 nav .logo {
+    align-items: center;
+    text-align: center;
     display: block;
     height: 80px;
     max-width: 30%;
