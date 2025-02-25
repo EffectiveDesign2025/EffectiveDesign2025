@@ -2,9 +2,6 @@
 @font-face {
     font-family: 'Caviar Dreams';
     src: url('https://raw.githubusercontent.com/EffectiveDesign2025/EffectiveDesign2025/main/fonts/CaviarDreams.ttf') format('truetype'),
-         url('https://raw.githubusercontent.com/EffectiveDesign2025/EffectiveDesign2025/main/fonts/CaviarDreams_Bold.ttf') format('truetype'),
-         url('https://raw.githubusercontent.com/EffectiveDesign2025/EffectiveDesign2025/main/fonts/CaviarDreams_BoldItalic.ttf') format('truetype'),
-         url('https://raw.githubusercontent.com/EffectiveDesign2025/EffectiveDesign2025/main/fonts/CaviarDreams_Italic.ttf') format('truetype');
 }
 
 /* Configurações Gerais do Corpo */
@@ -12,7 +9,7 @@ body {
     font-family: 'Lato', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #ffffff;
 }
 
 /* ------------------------------------------- MENU DE NAVEGAÇÃO --------------------------------------------- */
@@ -29,15 +26,6 @@ nav {
     font-family: "Caviar Dreams";   
     background-color: #ffffff;
     box-shadow: -5px 0 5px rgba(0,0,0,0.25);
-}
-
-nav img {
-    text-color: #16011e; 
-}
-
-nav .logo img {
-    max-height: 70px;
-    width: auto;
 }
 
 /* Configurações do Bloco da Logo */
@@ -65,15 +53,7 @@ nav .logo {
     100% { transform: translateY(0px) rotate(0deg); }
 }
 
-
-.links-container{
-display: flex;
-justify-content: space-around;
-gap: 15px;
-width: 60%;
-height: auto;
-}
-
+/* Configurações Gerais de Links do Menu de Navegação */
 nav a {
     text-decoration: none;
     font-weight: 700;
@@ -83,19 +63,33 @@ nav a {
     color: #16011e;
 }
 
-/* Configurações dos Links na Lista de Navegação | Hover */
+/* Configurações Gerais dos Links do Menu de Navegação | Hover */
 nav a:hover {
     color: #4b0263; 
     border-radius: 5px;
 }    
 
+/* Configuração da Caixa de Ativação do Menu Hamburguer */
 #sidebar-active {
     display: none;
 }
 
+/* Configuração dos Icones SVG de Menu Hamburguer & Fechar */
 .open-sidebar-button, .close-sidebar-button {
     display: none;
 }
+
+/* Configuração dos Links da Menu de Navegação */
+.links-container{
+display: flex;
+justify-content: space-around;
+gap: 15px;
+width: 60%;
+height: auto;
+}
+
+
+
 
     /* Configurações dos Links na Lista de Navegação */
 
