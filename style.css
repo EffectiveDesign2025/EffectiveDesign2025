@@ -258,7 +258,7 @@ height: auto;
     /* Configuração do Botão - ATÉ 767px */
     #bt_pulse {
         width: 50%;
-        padding: 10 30px;
+        padding: 10px 30px;
         margin-top: 20px;
     }
 }
