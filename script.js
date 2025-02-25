@@ -23,7 +23,7 @@
 
 /* ----------------------------------------JAVA SCRIPT LOTTIE ANIMATION ----------------------------------------- >>>>>>>>>>>>>> */    
     
-/* Configurações de Lottie Animation  */
+/* Configurações de Lottie Animation  *
     var animation = lottie.loadAnimation({
         container: document.getElementById('lottie-animation'),
         renderer: 'canvas',
@@ -31,4 +31,31 @@
         autoplay: true,
         path: "https://raw.githubusercontent.com/EffectiveDesign2025/EffectiveDesign2025/main/animacao/analise%20de%20projeto"
     });
+*/
+
+var animation = lottie.loadAnimation({
+    container: document.getElementById('lottie-animation'), 
+    renderer: 'canvas', 
+    loop: true, 
+    autoplay: true, 
+    path: 'caminho-da-animacao.json',
+    rendererSettings: {
+        preserveAspectRatio: 'xMidYMid slice', // Mantém o aspecto correto
+        clearCanvas: true,
+        progressiveLoad: true,
+        scaleMode: 'noScale'
+    }
+});
+
+// Ajuste a densidade de pixels (aumenta a qualidade)
+const canvas = document.querySelector('#lottie-animation canvas');
+if (canvas) {
+    const ctx = canvas.getContext('2d');
+    const pixelRatio = window.devicePixelRatio || 1;
+    
+    canvas.width = canvas.clientWidth * pixelRatio;
+    canvas.height = canvas.clientHeight * pixelRatio;
+    
+    ctx.scale(pixelRatio, pixelRatio);
+}
 
