@@ -17,6 +17,7 @@ body {
 /* Configurações Gerais da Barra de Navegação */
 nav {    
     display: flex;
+    position: relative;
     height: 100px;
     width: 100%;
     justify-content: space-around;
