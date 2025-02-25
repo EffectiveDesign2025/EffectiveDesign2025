@@ -33,7 +33,6 @@ nav {
 .links-container{
 display: flex;
 justify-content: space-around;
-text-decoration: none;
 gap: 15px;
 width: 60%;
 height: auto;
@@ -109,7 +108,7 @@ nav a:hover {
 nav .logo {
     display: flex;
     height: 80px;
-    width: auto;
+    max-width: 30%;
 }
 
 /* Configurações da logo por ID */
@@ -117,6 +116,7 @@ nav .logo {
     max-height: 70px;
     height: 60px;
     width: auto;
+    max-width: 70px;
     animation: flutuante 3s ease-in-out infinite; /* Duração e repetição */
 }
 
