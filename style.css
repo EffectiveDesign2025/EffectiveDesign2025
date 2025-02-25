@@ -284,6 +284,7 @@ nav li {
     width: 90%;
     background-color: #ffffff;
     box-shadow: -5px 0 5px rgba(0,0,0,0.25);
+    transition: 0.75s ease-out;
     }
 
     .open-sidebar-button, .close-sidebar-button {
@@ -292,7 +293,7 @@ nav li {
 }
 
     #sidebar-active:checked ~ .links-container{
-display: flex;
+        right: 0;
 }
         
     /* Configuração de Lista de Navegação - ATÉ 767px *
