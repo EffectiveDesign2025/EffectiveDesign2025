@@ -259,22 +259,14 @@ nav li {
 
 @media (max-width: 767px) {
 
-    /* Configuração da Barra de Navegação - ATÉ 767px */
-    nav {
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
-    }
-
     .links-container{
-    height: 100%;
-    width: 100%;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
+    text-align: center;
     }
         
-    /* Configuração de Lista de Navegação - ATÉ 767px */
+    /* Configuração de Lista de Navegação - ATÉ 767px *
     nav ul {
         display: none;
         position: absolute;
@@ -292,16 +284,16 @@ nav li {
         z-index: 10; /* 🔥 Garante que fique sobre os outros elementos */
     }
 
-    /* Configuração de Ativação de Lista - MENU HAMBÚRGUER - ATÉ 767px */
+    /* Configuração de Ativação de Lista - MENU HAMBÚRGUER - ATÉ 767px *
     nav ul.active {
         display: flex;
         flex-direction: column;
-        transform: translateX(0); /* Faz o menu deslizar para dentro da tela */
+        transform: translateX(0); /* Faz o menu deslizar para dentro da tela *
         opacity: 1;
         visibility: visible;
     }
 
-    /* Configuração de Linha de Lista de Navegação - ATÉ 767px */
+    /* Configuração de Linha de Lista de Navegação - ATÉ 767px *
     nav li {
        margin: 15px 0;
     }
