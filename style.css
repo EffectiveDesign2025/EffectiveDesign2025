@@ -259,8 +259,21 @@ nav li {
 
 @media (max-width: 767px) {
 
+    nav .logo {
+    margin-right: auto;
+}
+
+    nav a {
+    box-sizing: border-box;
+    hight: auto;
+    width: 100%;
+    padding: 20px 30px;
+    justify-content: flex-start;
+    }
+    
+    
     .links-container{
-    display: flex;
+    display: none;
     flex-direction: column;
     align-items: flex-start;
     text-align: center;
@@ -274,18 +287,13 @@ nav li {
     box-shadow: -5px 0 5px rgba(0,0,0,0.25);
     }
 
-    nav a {
-    box-sizing: border-box;
-    hight: auto;
-    width: 100%;
-    padding: 20px 30px;
-    justify-content: flex-start;
-    }
-    
-    nav .logo {
-    margin-right: auto;
+    .open-sidebar-button, .close-sidebar-button {
+    display: block;
 }
 
+    #sidebar-active:checked ~ .links-container{
+display: flex;
+}
         
     /* Configuração de Lista de Navegação - ATÉ 767px *
     nav ul {
