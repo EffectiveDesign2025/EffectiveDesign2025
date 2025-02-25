@@ -29,6 +29,14 @@ nav {
     background-color: #ffffff;
 }
 
+.links-container{
+height: 100%;
+width: 100%;
+display: flex;
+flex-direction: row;
+align-items: center;
+}
+
 /* Configurações da Lista de Navegação */
 nav ul {
     display: flex;
@@ -232,9 +240,14 @@ nav .logo {
         align-items: center;
     }
 
-    
-
-
+    .links-container{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    }
+        
     /* Configuração de Lista de Navegação - ATÉ 767px */
     nav ul {
         display: none;
