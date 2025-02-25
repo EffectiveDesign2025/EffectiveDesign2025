@@ -270,6 +270,7 @@ nav li {
     width: 100%;
     padding: 20px 30px;
     justify-content: flex-start;
+    align-items: flex-start;
     }
     
     
@@ -332,10 +333,10 @@ nav li {
     /* Configuração de Link de Lista de Navegação - ATÉ 767px */
 
     
-    /* Configuração do Menu HAMBÚRGUER - Até 767px */
+    /* Configuração do Menu HAMBÚRGUER - Até 767px *
     .menu-toggle {
         position: relative;
-        z-index: 10; /* Aumente o z-index para garantir que fique acima */
+        z-index: 10; /* Aumente o z-index para garantir que fique acima *
         display: block;
         flex-direction: column;
         align-items: center;
@@ -344,7 +345,7 @@ nav li {
         padding-right: 10%;
     }
 
-    /* Configuração das Barras do Menu HAMBÚRGUER - ATÉ 767px */
+    /* Configuração das Barras do Menu HAMBÚRGUER - ATÉ 767px *
     .menu-toggle .bar {
         display: block;
         width: 25px;
