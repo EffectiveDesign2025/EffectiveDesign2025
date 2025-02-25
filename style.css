@@ -288,6 +288,7 @@ nav li {
     }
 
     .open-sidebar-button, .close-sidebar-button {
+    padding: 20px;
     display: block;
 }
 
