@@ -85,6 +85,11 @@ nav a:hover {
     font-size: 50px;
 }
 
+.open-sidebar-button svg, 
+.close-sidebar-button svg {
+    fill: #16011e; /* Mude para a cor desejada */
+}
+
 /* Configuração dos Links da Menu de Navegação */
 .links-container{
 display: flex;
