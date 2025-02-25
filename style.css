@@ -222,7 +222,7 @@ height: auto;
     align-items: flex-start;
     position: fixed;
     top: 0;
-    transform: translateX(100%);
+    right: -100%;
     z-index: 10;
     width: 300px;
     height: 100vh;
@@ -237,7 +237,7 @@ height: auto;
 }
 
     #sidebar-active:checked ~ .links-container{
-        transform: translateX(0);
+        right: 0;
 }
     
     .container {
