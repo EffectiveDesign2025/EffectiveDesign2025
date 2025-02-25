@@ -26,7 +26,7 @@
 /* Configurações de Lottie Animation  */
     var animation = lottie.loadAnimation({
         container: document.getElementById('lottie-animation'),
-        renderer: 'svg',
+        renderer: 'canvas',
         loop: true,
         autoplay: true,
         path: "https://raw.githubusercontent.com/EffectiveDesign2025/EffectiveDesign2025/main/animacao/analise%20de%20projeto"
