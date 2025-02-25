@@ -130,7 +130,7 @@ height: auto;
 
 /* Configurações Gerais de Conteúdo P */
 .content p {
-    font-size: 1rem;
+    font-size: 2em;
     margin-bottom: 20px;
     text-align: justify;
 }
@@ -166,9 +166,9 @@ height: auto;
 }
 
 #subtitulo {
-    font-size 40px
+    font-size 45px
     font-weight: bold;
-    text-align: left;
+    text-align: justify;
 }
 
 /* Animação do Gradiente */
