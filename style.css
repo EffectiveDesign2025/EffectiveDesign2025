@@ -210,8 +210,6 @@ height: auto;
 
     nav a {
     box-sizing: border-box;
-    height: auto;
-    width: 300px;
     padding: 20px 30px;
     justify-content: flex-start;
     align-items: flex-start;
