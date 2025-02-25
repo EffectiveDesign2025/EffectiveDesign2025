@@ -241,8 +241,8 @@ nav .logo {
         position: absolute;
         flex-direction: column;
         align-items: flex-start;
-        width: 100%;
-        height: auto;
+        width: 90%;
+        height: 100%;
         top: 80px;
         background-color: #f8f9fa;
         padding: 10px 0;
