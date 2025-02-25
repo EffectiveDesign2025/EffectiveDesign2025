@@ -78,8 +78,9 @@ nav a:hover {
 .open-sidebar-button, .close-sidebar-button {
     display: none;
     color: #16011e;
-    width: 30px;
-    height: 30px;
+    width: 50px;
+    height: 50px;
+    font-size: 50px;
 }
 
 /* Configuração dos Links da Menu de Navegação */
