@@ -20,7 +20,7 @@ body {
 /* Configurações Gerais da Barra de Navegação */
 nav {    
     display: flex;
-    height: 80px;
+    height: 100px;
     width: 100%;
     justify-content: space-around;
     align-items: center;
@@ -37,6 +37,31 @@ nav img {
 nav .logo img {
     max-height: 70px;
     width: auto;
+}
+
+/* Configurações do Bloco da Logo */
+nav .logo {
+    display: block;
+    height: 80px;
+    max-width: 30%;
+}
+
+/* Configurações da logo por ID */
+#logo {
+    max-height: 80px;
+    height: auto;
+    width: auto; ;
+    max-width: 80px;
+    animation: flutuante 3s ease-in-out infinite; /* Duração e repetição */
+}
+
+/* Configurações do Efeito Flutuante da Logo */
+@keyframes flutuante {
+    0% { transform: translateY(0px) rotate(0deg); }
+    25% { transform: translateY(-4px) rotate(-1deg); }
+    50% { transform: translateY(0px) rotate(1deg); }
+    75% { transform: translateY(4px) rotate(-1deg); }
+    100% { transform: translateY(0px) rotate(0deg); }
 }
 
 
@@ -115,30 +140,7 @@ nav li {
 
 
 
-/* Configurações do Bloco da Logo */
-nav .logo {
-    display: block;
-    height: 80px;
-    max-width: 30%;
-}
 
-/* Configurações da logo por ID */
-#logo {
-    max-height: 70px;
-    height: 60px;
-    width: auto; ;
-    max-width: 70px;
-    animation: flutuante 3s ease-in-out infinite; /* Duração e repetição */
-}
-
-/* Configurações do Efeito Flutuante da Logo */
-@keyframes flutuante {
-    0% { transform: translateY(0px) rotate(0deg); }
-    25% { transform: translateY(-4px) rotate(-1deg); }
-    50% { transform: translateY(0px) rotate(1deg); }
-    75% { transform: translateY(4px) rotate(-1deg); }
-    100% { transform: translateY(0px) rotate(0deg); }
-}
 
 /* ---------------- CONFIGURAÇÕES DE LISTA DE MENU DE NAVEGAÇÃO ------- >>>>>>----- */
 
