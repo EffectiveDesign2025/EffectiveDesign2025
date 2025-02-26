@@ -187,6 +187,44 @@ nav a:hover {
     transform: scale(1.05);
 }
 
+/* -------------------------------------------- CARROCEL INFINITO ------------------------------------------- >>>>>>>>>
+
+.carousel {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    background-color: #000; /* Cor de fundo opcional */
+    padding: 10px 0;
+}
+
+.carousel-track {
+    display: flex;
+    gap: 10px;
+    animation: scroll 20s linear infinite; /* Animação contínua */
+    white-space: nowrap;
+}
+
+.carousel-track img {
+    height: 150px; /* Defina a altura máxima */
+    width: auto; /* Mantém a proporção */
+    object-fit: cover;
+    border-radius: 8px; /* Borda arredondada opcional */
+}
+
+/* Animação para mover as imagens */
+@keyframes scroll {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+
+
+
+
 /* ------------------------------------------- RESPONSIVIDADE --------------------------------------------- */
 
 @media (max-width: 767px) {
