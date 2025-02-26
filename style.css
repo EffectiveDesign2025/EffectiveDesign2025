@@ -205,7 +205,7 @@ nav a:hover {
 }
 
 .carousel-track img {
-    height: 150px; /* Defina a altura máxima */
+    max-height: 80px; /* Defina a altura máxima */
     width: auto; /* Mantém a proporção */
     object-fit: cover;
     border-radius: 8px; /* Borda arredondada opcional */
