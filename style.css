@@ -203,6 +203,14 @@ nav a:hover {
         height: auto;
         gap: 30px;
     }
+
+.secao-inicial {
+        display: flex;
+        flex-direction: column-reverse; /* Inverte apenas na seção inicial */
+        width: 100%;
+        height: auto;
+        gap: 30px;
+    }
     
     .content {
         width: 90%;
