@@ -193,7 +193,7 @@ nav a:hover {
     position: relative;
     overflow: hidden;
     position: relative;
-    background-color: #9ef7e9; /* Cor de fundo opcional */
+    background-color: #f5fefd; /* Cor de fundo opcional */
     animation-duration: 30s; /* Aumente este valor para uma animação mais lenta */
     padding: 20px 0;
 }
