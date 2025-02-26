@@ -1,7 +1,7 @@
 /* Configurações de Fonts */
 @font-face {
     font-family: 'Caviar Dreams';
-    src: url('https://raw.githubusercontent.com/EffectiveDesign2025/EffectiveDesign2025/main/fonts/CaviarDreams.ttf') format('truetype')
+    src: url('https://raw.githubusercontent.com/EffectiveDesign2025/EffectiveDesign2025/main/fonts/CaviarDreams.ttf') format('truetype');
 }
 
 /* Configurações Gerais do Corpo */
@@ -14,12 +14,11 @@ body {
 
 /* ------------------------------------------- MENU DE NAVEGAÇÃO --------------------------------------------- */
 
-/* Configurações Gerais da Barra de Navegação */
 nav {    
     display: flex;
     position: relative;
     height: 80px;
-    width: auto;
+    width: 100%;
     justify-content: space-around;
     align-items: center;
     text-align: center;
@@ -27,7 +26,6 @@ nav {
     background-color: #ffffff;
 }
 
-/* Configurações do Bloco da Logo */
 nav .logo {
     align-items: center;
     text-align: center;
@@ -36,17 +34,15 @@ nav .logo {
     max-width: 30%;
 }
 
-/* Configurações da logo por ID */
 #logo {
     max-height: 80px;
     height: auto;
-    width: auto; ;
+    width: auto;
     max-width: 80px;
-    animation: flutuante 3s ease-in-out infinite; /* Duração e repetição */
+    animation: flutuante 3s ease-in-out infinite;
     margin-top: 15px;
 }
 
-/* Configurações do Efeito Flutuante da Logo */
 @keyframes flutuante {
     0% { transform: translateY(0px) rotate(0deg); }
     25% { transform: translateY(-4px) rotate(-1deg); }
@@ -55,7 +51,6 @@ nav .logo {
     100% { transform: translateY(0px) rotate(0deg); }
 }
 
-/* Configurações Gerais de Links do Menu de Navegação */
 nav a {
     text-decoration: none;
     font-weight: 700;
@@ -66,18 +61,15 @@ nav a {
     font-size: 20px;
 }
 
-/* Configurações Gerais dos Links do Menu de Navegação | Hover */
 nav a:hover {
     color: #4b0263; 
     border-radius: 5px;
 }    
 
-/* Configuração da Caixa de Ativação do Menu Hamburguer */
 #sidebar-active {
     display: none;
 }
 
-/* Configuração dos Icones SVG de Menu Hamburguer & Fechar */
 .open-sidebar-button, .close-sidebar-button {
     display: none;
     color: #16011e;
@@ -86,18 +78,16 @@ nav a:hover {
     font-size: 50px;
 }
 
-/* Configuração dos Links da Menu de Navegação */
-.links-container{
-display: flex;
-justify-content: space-around;
-gap: 15px;
-width: 60%;
-height: auto;
+.links-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 15px;
+    width: 60%;
+    height: auto;
 }
 
-/* ----------------------------------------------- CONFIGURAÇÃO DE SESSÃO INICIAL -------------------------------------- >>>>>>>>>>>>>>>>>>>>>>
+/* ----------------------------------------------- CONFIGURAÇÃO DE SESSÃO INICIAL -------------------------------------- */
 
-/* Configuração Geral de Containers */
 .container {
     width: 100%;
     display: flex;
@@ -107,7 +97,6 @@ height: auto;
     background-color: #FFFFFF;
 }
 
-/* Configurações Gerais de Conteúdo */
 .content {
     width: 38%;
     height: auto;
@@ -116,44 +105,29 @@ height: auto;
     color: #000000;
 }
 
-/* Configurações Gerais de Conteúdo h1 */
 .content h1 {
     font-size: 4rem;
     margin-bottom: 10px;
 }
 
-/* Configurações Gerais de Conteúdo h2 */
 .content h2 {
     font-size: 1.8rem;
     margin-bottom: 15px;
     color: #260132;
 }
 
-/* Configurações Gerais de Conteúdo P */
 .content p {
     font-size: 1.1em;
     margin-bottom: 20px;
     text-align: justify;
 }
 
-/* Configuração - Sessão Inicial - Lado Esquedo */
-.secao-inicial-lado-esquerdo {
-    background-color: #FFFFFF;    
-}
-
-/* Configuração - Seção Inicial - Lado Direito */
-.secao-inicial-lado-direito {    
-    background-color: #FFFFFF;    
-}
-
-/* Configuração Específica da animação por ID */
 #lottie-animation {
     width: 100%;
     height: auto;
     margin: 0 auto;
 }
 
-/* Configuração do Texto com Gradiente */
 #effective-design {
     font-size: 70px;
     font-weight: bold;
@@ -166,13 +140,6 @@ height: auto;
     animation: animateSpectrum 10s infinite linear;
 }
 
-#subtitulo {
-    font-size 45px
-    font-weight: bold;
-    text-align: justify;
-}
-
-/* Animação do Gradiente */
 @keyframes animateSpectrum {
     0%   { background-position: 0% 0%; }
     25%  { background-position: 100% 0%; }
@@ -181,7 +148,6 @@ height: auto;
     100% { background-position: 0% 0%; }
 }
 
-/* Configurações do efeito do Botão */
 #bt_pulse {
     display: inline-flex;
     align-items: center;
@@ -198,116 +164,62 @@ height: auto;
     width: 30%;
 }
 
-/* Configurações do Link do Botão */
-#bt_pulse i {
-    margin-right: 8px;
-    font-size: 1.2rem;
-}
-
-/* Configurações do Botão | Hover */
 #bt_pulse:hover {
     background-color: #1ebe5d;
     transform: scale(1.05);
 }
 
-/* ------------------------------------------- RESPONSIVIDADE | MEDIAS QUERIES ATÉ 767px --------------------------------------------- */
+/* ------------------------------------------- RESPONSIVIDADE --------------------------------------------- */
 
 @media (max-width: 767px) {
 
-    nav .logo {
-    margin-right: auto;
+    .links-container {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        z-index: 10;
+        width: 300px;
+        height: 100vh;
+        backdrop-filter: blur(10px);
+        box-shadow: -5px 0 5px rgba(0,0,0,0.25);
+        transition: 0.75s ease-out;
     }
 
-    nav a {
-    box-sizing: border-box;
-    font-size: 20px;
-    padding: 20px 30px;
-    justify-content: flex-start;
-    align-items: flex-start;
-    }
-
-    
-    .links-container{
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    position: fixed;
-    top: 0;
-    right: -100%;
-    z-index: 10;
-    width: 300px;
-    height: 100vh;
-    backdrop-filter: blur(10px);
-    box-shadow: -5px 0 5px rgba(0,0,0,0.25);
-    transition: 0.75s ease-out;
-    }
-    .open-sidebar-button svg, 
-    .close-sidebar-button svg {
-        fill: #16011e; 
-    }
-    
-    .close-sidebar-button {
-        display: none;
-        padding: 20px;
-    }
-    
-    .open-sidebar-button{
+    .open-sidebar-button {
         display: block;
         padding: 20px;
     }
 
-    #sidebar-active:checked ~ .links-container{
+    #sidebar-active:checked ~ .links-container {
         right: 0;
-        .close-sidebar-button {
-        display: block;
     }
-}
     
     .container {
-        display: flex;
         flex-direction: column;
         width: 100%;
         height: auto;
         gap: 30px;
     }
-
-    /* Configuração do Conteúdo - ATÉ 767px */
+    
     .content {
         width: 90%;
         padding: 0 5%;
         text-align: center;
     }
-
-    /* Configuração do Botão - ATÉ 767px */
+    
     #bt_pulse {
         width: 50%;
         padding: 10px 30px;
         margin-top: 20px;
     }
 }
-/* ------------------------------------------- RESPONSIVIDADE | MEDIAS QUERIES ATÉ 417px --------------------------------------------- */
 
 @media (max-width: 417px) {
-
-    /* Configurações Gerais de Conteúdo h1 - ATÉ 417px */
-    .content h1 {
-        font-size: 3rem; /* Reduzir a fonte para tamanhos menores */
-    }
-
-    /* Configurações Gerais de Conteúdo h2 - ATÉ 417px */
-    .content h2 {
-        font-size: 1.2rem; /* Reduzir a fonte para tamanhos menores */
-    }
-
-    /* Configurações Gerais de Conteúdo P - ATÉ 417px */
-    .content p {
-        font-size: 0.9rem; /* Reduzir a fonte para tamanhos menores */
-    }
-
-    /* Configurações do Texto com Gradiente - ATÉ 417px */
-    #effective-design {
-        font-size: 45px; /* Reduzir a fonte para tamanhos menores */
-        margin-top: -30px;
-        margin-bottom: 5px;
-    }
+    .content h1 { font-size: 3rem; }
+    .content h2 { font-size: 1.2rem; }
+    .content p { font-size: 0.9rem; }
+    #effective-design { font-size: 45px; margin-top: -30px; margin-bottom: 5px; }
 }
