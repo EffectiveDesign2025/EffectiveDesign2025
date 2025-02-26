@@ -177,10 +177,10 @@ nav a:hover {
 
 @media (max-width: 767px) {
 
-    nav logo {
-        margin-right: auto;
+    nav {
+    justify-content: between;
     }
-
+    
     .links-container {
         flex-direction: column;
         justify-content: flex-start;
