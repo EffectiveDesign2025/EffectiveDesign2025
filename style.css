@@ -239,6 +239,10 @@ nav a:hover {
         padding: 0 5%;
         text-align: center;
     }
+
+    #lottie-animation {
+    margin-top: -30px;
+}
     
     #bt_pulse {
         width: 50%;
