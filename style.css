@@ -204,12 +204,13 @@ nav a:hover {
         gap: 30px;
     }
 
-.secao-inicial-lado-direito {
-        display: flex;
-        flex-direction: column-reverse; /* Inverte apenas na seção inicial */
-        width: 100%;
-        height: auto;
-        gap: 30px;
+ .secao-inicial-lado-direito {
+        order: -1; /* Coloca o lado direito em cima do lado esquerdo */
+        width: 100%; /* Ocupa toda a largura no mobile */
+    }
+
+    .secao-inicial-lado-esquerdo {
+        width: 100%; /* Ocupa toda a largura no mobile */
     }
     
     .content {
