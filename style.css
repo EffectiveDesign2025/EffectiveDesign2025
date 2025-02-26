@@ -194,6 +194,7 @@ nav a:hover {
     overflow: hidden;
     position: relative;
     background-color: #9ef7e9; /* Cor de fundo opcional */
+    animation-duration: 30s; /* Aumente este valor para uma animação mais lenta */
     padding: 20px 0;
 }
 
@@ -201,6 +202,8 @@ nav a:hover {
     display: flex;
     gap: 10px;
     animation: scroll 20s linear infinite; /* Animação contínua */
+}
+
     white-space: nowrap;
 }
 
