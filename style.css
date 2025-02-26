@@ -204,7 +204,7 @@ nav a:hover {
         gap: 30px;
     }
 
-.secao-inicial {
+.secao-inicial-lado-direito {
         display: flex;
         flex-direction: column-reverse; /* Inverte apenas na seção inicial */
         width: 100%;
