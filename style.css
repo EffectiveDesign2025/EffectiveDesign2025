@@ -191,7 +191,6 @@ nav a:hover {
 
 .carousel {
     position: relative;
-    width: 100%;
     overflow: hidden;
     position: relative;
     background-color: #000; /* Cor de fundo opcional */
