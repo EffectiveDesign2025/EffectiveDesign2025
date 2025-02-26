@@ -23,7 +23,7 @@ nav {
     align-items: center;
     text-align: center;
     font-family: "Caviar Dreams";   
-    background-color: #ffffff;
+    background-color: #f5fefd;
 }
 
 nav .logo {
@@ -94,7 +94,7 @@ nav a:hover {
     justify-content: space-between;
     flex-wrap: wrap;
     gap: 30px;
-    background-color: #FFFFFF;
+    background-color: #f5fefd;
 }
 
 .content {
