@@ -178,7 +178,7 @@ nav a:hover {
 @media (max-width: 767px) {
 
     nav {
-    justify-content: between;
+    justify-content: space-between;
     }
     
     .links-container {
