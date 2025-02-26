@@ -193,6 +193,11 @@ nav a:hover {
         padding: 20px;
     }
 
+     .close-sidebar-button {
+        display: block;
+        padding: 20px;
+    }
+
     #sidebar-active:checked ~ .links-container {
         right: 0;
     }
