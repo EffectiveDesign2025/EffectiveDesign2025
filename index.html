@@ -1,89 +1,103 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-br"> <!-- Define o idioma da página como português do Brasil -->
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Effective Design - Soluções em Marketing, Tecnologia e Impressão</title>
-    <meta name="keywords" content="design, marketing, digital, soluções, personalizadas">
-    <meta name="description" content="Na Effective Design, transformamos ideias em soluções personalizadas em marketing digital, tecnologia e impressão gráfica para impulsionar seu negócio. Descubra como podemos ajudar você!">
-    <meta name="robots" content="index, follow">
+    <meta charset="UTF-8"> <!-- Define a codificação de caracteres como UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Configura a responsividade da página -->
+    <title>Effective Design - Soluções em Marketing, Tecnologia e Impressão</title> <!-- Título da página -->
+    <meta name="keywords" content="design, marketing, digital, soluções, personalizadas"> <!-- Palavras-chave para SEO -->
+    <meta name="description" content="Na Effective Design, transformamos ideias em soluções personalizadas em marketing digital, tecnologia e impressão gráfica para impulsionar seu negócio. Descubra como podemos ajudar você!"> <!-- Descrição para SEO -->
+    <meta name="robots" content="index, follow"> <!-- Instruções para robôs de busca sobre como indexar a página -->
+    
+    <!-- Pré-conexão com o Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <!-- Habilita o carregamento de fontes do Google -->
+    
+    <!-- Importa a fonte "Lato" -->
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    
+    <!-- Define o ícone da aba do navegador -->
     <link rel="icon" href="https://raw.githubusercontent.com/EffectiveDesign2025/EffectiveDesign2025/main/favicon.ico" type="image/x-icon">
+    
+    <!-- Importa a biblioteca de ícones Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" crossorigin="anonymous">
+    
+    <!-- Pré-carregamento do arquivo CSS -->
     <link rel="preload" href="style.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <noscript>
+        <!-- Caso o JavaScript esteja desativado, carrega o CSS -->
         <link rel="stylesheet" href="style.css">
     </noscript>
 </head>
 <body>
     <header>
-    <nav>
-        <div class="logo">
-            <img id="logo" src="https://raw.githubusercontent.com/EffectiveDesign2025/EffectiveDesign2025/main/imagens/Logo%20Effective%20Design%202025%20-%20Branca%20-%20A.webp" alt="Effective Design" width="150" height="50">
-        </div>
-        <input type="checkbox" id="sidebar-active">
-        <!-- Botão para abrir o menu -->
-        <label for="sidebar-active" class="open-sidebar-button" aria-label="Abrir Menu">
-            <img src="https://raw.githubusercontent.com/EffectiveDesign2025/EffectiveDesign2025/main/imagens/ICONE%20MENU%20HAMBURGUER.svg" alt="Abrir de Menu" width="50px" height="50px">
-        </label>
-        <!-- Container do menu -->
-        <div class="links-container">
-            <!-- Botão para fechar o menu -->
-            <label for="sidebar-active" class="close-sidebar-button" aria-label="Fechar Menu">
-                <img src="https://raw.githubusercontent.com/EffectiveDesign2025/EffectiveDesign2025/main/imagens/ICONE%20FECHAR.svg" alt="Fechar de Menu" width="50px" height="50px">
+        <nav>
+            <div class="logo"> <!-- Logo da empresa -->
+                <img id="logo" src="https://raw.githubusercontent.com/EffectiveDesign2025/EffectiveDesign2025/main/imagens/Logo%20Effective%20Design%202025%20-%20Branca%20-%20A.webp" alt="Effective Design" width="150" height="50">
+            </div>
+            <input type="checkbox" id="sidebar-active"> <!-- Checkbox para controlar o estado do menu lateral -->
+            <!-- Botão para abrir o menu -->
+            <label for="sidebar-active" class="open-sidebar-button" aria-label="Abrir Menu">
+                <img src="https://raw.githubusercontent.com/EffectiveDesign2025/EffectiveDesign2025/main/imagens/ICONE%20MENU%20HAMBURGUER.svg" alt="Abrir de Menu" width="50px" height="50px">
             </label>
-            <a href="link-inicio">Inicio</a>
-            <a href="link-serviços">Serviços</a>
-            <a href="Sobre">Sobre</a>
-            <a href="link-blog">Blog</a>
-            <a href="link-contato">Contato</a>
-        </div>
-    </nav>
-</header>
-    <section class="secao-inicial">
+            <!-- Container do menu -->
+            <div class="links-container">
+                <!-- Botão para fechar o menu -->
+                <label for="sidebar-active" class="close-sidebar-button" aria-label="Fechar Menu">
+                    <img src="https://raw.githubusercontent.com/EffectiveDesign2025/EffectiveDesign2025/main/imagens/ICONE%20FECHAR.svg" alt="Fechar de Menu" width="50px" height="50px">
+                </label>
+                <!-- Links de navegação -->
+                <a href="link-inicio">Inicio</a>
+                <a href="link-serviços">Serviços</a>
+                <a href="Sobre">Sobre</a>
+                <a href="link-blog">Blog</a>
+                <a href="link-contato">Contato</a>
+            </div>
+        </nav>
+    </header>
+    
+    <section class="secao-inicial"> <!-- Seção inicial da página -->
         <main class="container">        
-            <div class="secao-inicial-lado-esquerdo content">
-                <h1 id="effective-design">Effective Design</h1>
-                <h2 id="subtitulo">Transformamos ideias em soluções personalizadas para impulsionar seu negócio.</h2>         
+            <div class="secao-inicial-lado-esquerdo content"> <!-- Lado esquerdo da seção inicial -->
+                <h1 id="effective-design">Effective Design</h1> <!-- Título principal -->
+                <h2 id="subtitulo">Transformamos ideias em soluções personalizadas para impulsionar seu negócio.</h2> <!-- Subtítulo -->
                 <p>No <strong>marketing digital</strong>, <strong>tecnologia</strong> e <strong>impressão gráfica</strong>, oferecemos estratégias inovadoras para destacar sua marca. Nossa equipe <strong>entende suas necessidades</strong> e <strong>cria soluções personalizadas</strong> para <strong>maximizar resultados.</strong></p>
                 <p><strong>Entre em contato</strong> e descubra como podemos ajudar o seu negócio!</p> 
-                <a id="bt_pulse" href="https://wa.me/5567984530160?text=Ol%C3%A1,%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20a%20Effective%20Design." target="_blank" aria-label="Entre em contato com a Effective Design pelo WhatsApp">
+                <a id="bt_pulse" href="https://wa.me/5567984530160?text=Ol%C3%A1,%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20a%20Effective%20Design." target="_blank" aria-label="Entre em contato com a Effective Design pelo WhatsApp"> <!-- Botão de contato via WhatsApp -->
                     <i class="fab fa-whatsapp"></i> Fale Conosco
                 </a>
             </div>
-            <div class="secao-inicial-lado-direito content">
-                 <div id="lottie-animation" role="img" aria-labelledby="animation-description"></div>
-                    <span id="animation-description" class="sr-only">Animação representando Design de Projeto</span>
-            </div>
+            <div class="secao-inicial-lado-direito content"> <!-- Lado direito da seção inicial -->
+                <div id="lottie-animation" role="img" aria-labelledby="animation-description"></div> <!-- Container para animação Lottie -->
+                <span id="animation-description" class="sr-only">Animação representando Design de Projeto</span> <!-- Descrição da animação para leitores de tela -->
             </div>
         </main>
     </section>
-    <section class="servicos">
+
+    <section class="servicos"> <!-- Seção de serviços -->
         <div class="section-break">
-            <h2>Serviços</h2>
+            <h2>Serviços</h2> <!-- Título da seção -->
             <p>Descubra as <strong>soluções personalizadas</strong> que oferecemos para alavancar sua <strong>presença no mercado</strong>.</p>
     
-            <div class="services-grid">
-                <div class="service">
-                    <h3>Marketing Digital</h3>
-                    <p>Criação de estratégias de marketing online, gestão de redes sociais, SEO, campanhas de anúncios e muito mais.</p>
+            <div class="services-grid"> <!-- Grid para exibição dos serviços -->
+                <div class="service"> <!-- Primeiro serviço -->
+                    <h3>Marketing Digital</h3> <!-- Título do serviço -->
+                    <p>Criação de estratégias de marketing online, gestão de redes sociais, SEO, campanhas de anúncios e muito mais.</p> <!-- Descrição do serviço -->
                 </div>
-                <div class="service">
+                <div class="service"> <!-- Segundo serviço -->
                     <h3>Tecnologia</h3>
-                    <p>Desenvolvimento de websites, aplicativos, sistemas personalizados e soluções de tecnologia sob medida.</p>
+                    <p>Desenvolvimento de websites, aplicativos, sistemas personalizados e soluções de tecnologia sob medida.</p> <!-- Descrição do serviço -->
                 </div>
-                <div class="service">
+                <div class="service"> <!-- Terceiro serviço -->
                     <h3>Impressão Gráfica</h3>
-                    <p>Impressão de materiais promocionais, cartões de visita, flyers, banners e outros materiais gráficos.</p>
+                    <p>Impressão de materiais promocionais, cartões de visita, flyers, banners e outros materiais gráficos.</p> <!-- Descrição do serviço -->
                 </div>
             </div>
         </div>
     </section>
+    
     <!-- Relacionando Biblioteca Lottie Animation -->    
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.9.6/lottie.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.9.6/lottie.min.js"></script> <!-- Importa a biblioteca Lottie para animações -->
     <!-- Relacionando Arquivo Java Script no diretório -->
-    <script src="https://EffectiveDesign2025.github.io/EffectiveDesign2025/script.js"></script>
+    <script src="https://EffectiveDesign2025.github.io/EffectiveDesign2025/script.js"></script> <!-- Importa o script personalizado -->
 </body>
 </html>
