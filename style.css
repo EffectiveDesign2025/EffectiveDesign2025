@@ -152,13 +152,27 @@ nav a:hover {
     100% { background-position: 0% 0%; }
 }
 
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 rgba(12, 100, 51, 0.7);
+    }
+    50% {
+        transform: scale(1.1);
+        box-shadow: 0 0 10px 5px rgba(12, 100, 51, 0.3);
+    }
+    100% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 rgba(12, 100, 51, 0.7);
+    }
+}
+
 #bt_pulse {
     display: inline-flex;
     align-items: center;
     justify-content: center;
     padding: 12px 20px;
-    background-color:#0C6433;
-    transition: background-color 0.3s, transform 0.2s;
+    background-color: #0C6433;
     color: #fff;
     font-size: 1rem;
     font-weight: bold;
@@ -166,6 +180,8 @@ nav a:hover {
     text-decoration: none;
     margin-top: 15px;
     width: 30%;
+    transition: background-color 0.3s;
+    animation: pulse 1.5s infinite; /* Adiciona a animação contínua */
 }
 
 #bt_pulse:hover {
