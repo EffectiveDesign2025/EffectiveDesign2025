@@ -1,307 +1,357 @@
+/* ----------------------------------------------------------------------------- CABEÇALHO ------------>>>>>>>>>>>>>>>>>>>> */
+
 /* Configurações de Fonts */
 @font-face {
-    font-family: 'Caviar Dreams';
-    src: url('https://raw.githubusercontent.com/EffectiveDesign2025/EffectiveDesign2025/main/fonts/CaviarDreams.ttf') format('truetype');
+    font-family: 'Caviar Dreams'; /* Define uma fonte personalizada chamada 'Caviar Dreams' */
+    src: url('https://raw.githubusercontent.com/EffectiveDesign2025/EffectiveDesign2025/main/fonts/CaviarDreams.ttf') format('truetype'); /* Importa a fonte a partir de uma URL */
 }
+
+/* ---------------------------------------------------------------------------------CORPO -------------->>>>>>>>>>>>>>>>>>>> */
 
 /* Configurações Gerais do Corpo */
 body {
-    font-family: 'Lato', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f5fefd;
+    font-family: 'Lato', sans-serif; /* Define a fonte padrão do corpo como 'Lato' */
+    margin: 0; /* Remove margens padrão */
+    padding: 0; /* Remove espaçamento interno padrão */
+    background-color: #f5fefd; /* Define a cor de fundo */
 }
 
-/* ------------------------------------------- MENU DE NAVEGAÇÃO --------------------------------------------- */
+/* ----------------------------------------------------------------------------MENU DE NAVEGAÇÃO ------------->>>>>>>>>>>>>>>> */
 
+/* Configurações Gerais da Barra de Navegação */
 nav {    
-    display: flex;
-    position: relative;
-    height: 80px;
-    width: 100%;
-    justify-content: space-around;
-    align-items: center;
-    text-align: center;
-    font-family: "Caviar Dreams";   
-    background-color: #f5fefd;
+    display: flex; /* Usando flexbox para layout */
+    position: relative; /* Permite posicionar elementos filhos em relação ao nav */
+    height: 80px; /* Altura fixa para a barra de navegação */
+    width: 100%; /* Ocupa toda a largura da tela */
+    justify-content: space-around; /* Distribui os itens uniformemente com espaço ao redor */
+    align-items: center; /* Centraliza os itens verticalmente */
+    text-align: center; /* Centraliza o texto dos itens */
+    font-family: "Caviar Dreams"; /* Aplica a fonte personalizada ao nav */
+    background-color: #f5fefd; /* Cor de fundo da barra de navegação */
 }
 
-nav .logo {
-    align-items: center;
-    text-align: center;
-    display: block;
-    height: 80px;
-    max-width: 30%;
-}
-
-#logo {
-    max-height: 80px;
-    height: auto;
-    width: auto;
-    max-width: 80px;
-    animation: flutuante 3s ease-in-out infinite;
-    margin-top: 15px;
-}
-
-@keyframes flutuante {
-    0% { transform: translateY(0px) rotate(0deg); }
-    25% { transform: translateY(-4px) rotate(-1deg); }
-    50% { transform: translateY(0px) rotate(1deg); }
-    75% { transform: translateY(4px) rotate(-1deg); }
-    100% { transform: translateY(0px) rotate(0deg); }
-}
-
-nav a {
-    text-decoration: none;
-    font-weight: 700;
-    padding: 10px;
-    border-radius: 5px;
-    transition: background-color 0.3s;
-    color: #16011e;
-    font-size: 20px;
-}
-
-nav a:hover {
-    color: #4b0263; 
-    border-radius: 5px;
-}    
-
-#sidebar-active {
-    display: none;
-}
-
-.open-sidebar-button, .close-sidebar-button {
-    display: none;
-    color: #16011e;
-    width: 50px;
-    height: 50px;
-    font-size: 50px;
-}
-
+/* Configurações da Lista de Menu de Navegação */
 .links-container {
-    display: flex;
-    justify-content: space-around;
-    gap: 15px;
-    width: 60%;
-    height: auto;
+    display: flex; /* Utiliza flexbox para os links */
+    justify-content: space-around; /* Distribui os links com espaço ao redor */
+    gap: 15px; /* Espaçamento entre os links */
+    width: 60%; /* Largura do contêiner de links */
+    height: auto; /* Altura automática para acomodar o conteúdo */
 }
 
-/* ----------------------------------------------- CONFIGURAÇÃO DE SESSÃO INICIAL -------------------------------------- */
+/* Configurações Gerais dos Links da Barra de Navegação */
+nav a {
+    text-decoration: none; /* Remove sublinhado dos links */
+    font-weight: 700; /* Define o peso da fonte como negrito */
+    padding: 10px; /* Espaçamento interno dos links */
+    border-radius: 5px; /* Bordas arredondadas para os links */
+    transition: background-color 0.3s; /* Efeito de transição suave para a cor de fundo */
+    color: #16011e; /* Cor do texto dos links */
+    font-size: 20px; /* Tamanho da fonte dos links */
+}
 
+/* Configurações Gerais dos Links da Barra de Navegação | Hover */
+nav a:hover {
+    color: #4b0263; /* Altera a cor do texto ao passar o mouse */
+    border-radius: 5px; /* Mantém bordas arredondadas no hover */
+}
+
+/* Configurações da Caixa de Ativação [ check Box ] do Menu Hambúrguer */
+#sidebar-active {
+    display: none; /* Esconde a checkbox que controla o menu hamburguer */
+}
+
+/* Configurações do Ícone de Menu Hamburguer ABRIR & FECHAR */
+.open-sidebar-button, .close-sidebar-button {
+    display: none; /* Inicialmente escondidos, serão exibidos conforme necessário */
+    color: #16011e; /* Cor do ícone do menu */
+    width: 50px; /* Largura do ícone */
+    height: 50px; /* Altura do ícone */
+    font-size: 50px; /* Tamanho do ícone */
+}
+
+/* Configurações do Bloco de Conteúdo da Logo */
+nav .logo {
+    align-items: center; /* Alinha o conteúdo da logo no centro */
+    text-align: center; /* Centraliza o texto da logo */
+    display: block; /* Exibe como bloco para ocupar espaço total */
+    height: 80px; /* Altura fixa para a logo */
+    max-width: 30%; /* Largura máxima da logo */
+}
+
+/* Configurações da Logo por ID */
+#logo {
+    max-height: 80px; /* Altura máxima da logo */
+    height: auto; /* Altura automática para manter a proporção */
+    width: auto; /* Largura automática para manter a proporção */
+    max-width: 80px; /* Largura máxima da logo */
+    animation: flutuante 3s ease-in-out infinite; /* Animação flutuante aplicada à logo */
+    margin-top: 15px; /* Margem superior da logo */
+}
+
+/* Configurações do Efeito Flutuante da Logo */
+@keyframes flutuante {
+    0% { transform: translateY(0px) rotate(0deg); } /* Posição inicial */
+    25% { transform: translateY(-4px) rotate(-1deg); } /* Movimento para cima e rotação */
+    50% { transform: translateY(0px) rotate(1deg); } /* Posição central */
+    75% { transform: translateY(4px) rotate(-1deg); } /* Movimento para baixo e rotação */
+    100% { transform: translateY(0px) rotate(0deg); } /* Retorna à posição inicial */
+}
+
+/* ----------------------------------------------------------------------------SEÇÃO INICIAL------------------------------>>>>>>>>>>>>>>>> */
+
+/* Configuração Geral de Container */
 .container {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 30px;
-    background-color: #f5fefd;
+    width: 100%; /* Largura total do container */
+    display: flex; /* Usando flexbox para layout */
+    justify-content: space-between; /* Espaçamento entre os itens */
+    flex-wrap: wrap; /* Permite que os itens se movam para a próxima linha */
+    gap: 30px; /* Espaço entre os itens */
+    background-color: #f5fefd; /* Cor de fundo do container */
 }
 
+/* Configuração Geral de Conteúdo */
 .content {
-    width: 38%;
-    height: auto;
-    padding: 0 5%;
-    text-align: center;
-    color: #000000;
+    width: 38%; /* Largura do conteúdo */
+    height: auto; /* Altura automática para se ajustar ao conteúdo */
+    padding: 0 5%; /* Padding lateral */
+    text-align: center; /* Centraliza o texto */
+    color: #000000; /* Cor do texto */
 }
 
+/* Configuração Geral de Conteúdo H1 */
 .content h1 {
-    font-size: 4rem;
-    margin-bottom: 10px;
+    font-size: 4rem; /* Tamanho da fonte do título */
+    margin-bottom: 10px; /* Espaçamento inferior */
 }
 
+/* Configuração Geral de Conteúdo H2 */
 .content h2 {
-    font-size: 1.8rem;
-    margin-bottom: 15px;
-    color: #260132;
+    font-size: 1.8rem; /* Tamanho da fonte do subtítulo */
+    margin-bottom: 15px; /* Espaçamento inferior */
+    color: #260132; /* Cor do subtítulo */
 }
 
+/* Configuração Geral de Conteúdo P */
 .content p {
-    font-size: 1.1em;
-    margin-bottom: 20px;
-    text-align: justify;
+    font-size: 1.1em; /* Tamanho da fonte do parágrafo */
+    margin-bottom: 20px; /* Espaçamento inferior */
+    text-align: justify; /* Justifica o texto */
 }
 
+/*-------------------------------------------------------------------------------------------*/
+
+/* Configuração da Animação - Seção Inicial */
 #lottie-animation {
-    width: 100%;
-    height: auto;
-    margin: 0 auto;
+    width: 100%; /* Largura total da animação */
+    height: auto; /* Altura automática */
+    margin: 0 auto; /* Centraliza a animação */
 }
 
-#subtitulo {
-    text-align: left;
-}
-
+/* Configuração do Título Principal por ID - Seção Inicial */
 #effective-design {
-    font-size: 70px;
-    font-weight: bold;
-    text-align: center;
-    background-image: linear-gradient(45deg, #ff0000, #0000ff, #00ff00, #ffff00, #8a2be2, #ff00ff);
-    background-size: 400% 400%;
-    color: transparent;
-    -webkit-background-clip: text;
-    background-clip: text;
-    animation: animateSpectrum 15s infinite ease-in-out;
+    font-size: 70px; /* Tamanho da fonte do título principal */
+    font-weight: bold; /* Negrito para o título */
+    text-align: center; /* Centraliza o título */
+    background-image: linear-gradient(45deg, #ff0000, #0000ff, #00ff00, #ffff00, #8a2be2, #ff00ff); /* Gradiente de fundo */
+    background-size: 400% 400%; /* Tamanho do fundo para animação */
+    color: transparent; /* Torna o texto transparente */
+    -webkit-background-clip: text; /* Para navegadores baseados em WebKit */
+    background-clip: text; /* Recorta o fundo para o texto */
+    animation: animateSpectrum 15s infinite ease-in-out; /* Animação de espectro */
 }
 
+/* Configuração de Efeito Gradiente do Título Principal */
 @keyframes animateSpectrum {
-    0%   { background-position: 0% 50%; }
-    50%  { background-position: 100% 50%; }
-    100% { background-position: 0% 50%; }
+    0%   { background-position: 0% 50%; } /* Posição inicial do gradiente */
+    50%  { background-position: 100% 50%; } /* Posição média do gradiente */
+    100% { background-position: 0% 50%; } /* Posição final do gradiente */
 }
 
+/* Configuração do Subtítulo por ID - Seção Inicial */
+#subtitulo {
+    text-align: left; /* Alinha o subtítulo à esquerda */
+}
+
+/*-------------------------------------------------------------------------------------------*/
+
+/* Configurações do Botão */
+#bt_pulse {
+    display: inline-flex; /* Usando flexbox para o botão */
+    align-items: center; /* Alinha verticalmente os itens no centro */
+    justify-content: center; /* Centraliza o conteúdo do botão */
+    padding: 12px 20px; /* Padding interno do botão */
+    background-color: #0C6433; /* Cor de fundo do botão */
+    color: #fff; /* Cor do texto do botão */
+    font-size: 1rem; /* Tamanho da fonte do botão */
+    font-weight: bold; /* Negrito para o texto do botão */
+    border-radius: 5px; /* Bordas arredondadas */
+    text-decoration: none; /* Remove sublinhado do texto */
+    margin-top: 15px; /* Espaçamento superior */
+    width: 30%; /* Largura do botão */
+    transition: background-color 0.3s; /* Transição suave da cor de fundo */
+    animation: pulse 2.5s infinite ease-in-out; /* Animação de pulsar */
+}
+
+/* Configuração de Efeito "Pulsar" do Botão */
 @keyframes pulse {
     0% {
-        transform: scale(1);
-        box-shadow: 0 0 0 0 rgba(12, 100, 51, 0.4);
+        transform: scale(1); /* Escala inicial */
+        box-shadow: 0 0 0 0 rgba(12, 100, 51, 0.4); /* Sombra inicial */
     }
     50% {
-        transform: scale(1.03); /* Crescimento mais sutil */
-        box-shadow: 0 0 8px 4px rgba(12, 100, 51, 0.2); /* Menos brilho */
+        transform: scale(1.03); /* Crescimento do botão */
+        box-shadow: 0 0 8px 4px rgba(12, 100, 51, 0.2); /* Sombra no meio do pulsar */
     }
     100% {
-        transform: scale(1);
-        box-shadow: 0 0 0 0 rgba(12, 100, 51, 0.4);
+        transform: scale(1); /* Retorna à escala original */
+        box-shadow: 0 0 0 0 rgba(12, 100, 51, 0.4); /* Retorna à sombra inicial */
     }
 }
 
-#bt_pulse {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    padding: 12px 20px;
-    background-color: #0C6433;
-    color: #fff;
-    font-size: 1rem;
-    font-weight: bold;
-    border-radius: 5px;
-    text-decoration: none;
-    margin-top: 15px;
-    width: 30%;
-    transition: background-color 0.3s;
-    animation: pulse 2.5s infinite ease-in-out; /* Suavização na animação */
-}
-
+/* Configurações do Botão | Hover */
 #bt_pulse:hover {
-    background-color: #1ebe5d;
-    transform: scale(1.05);
+    background-color: #1ebe5d; /* Cor de fundo ao passar o mouse */
+    transform: scale(1.05); /* Aumenta um pouco o tamanho */
 }
 
-/* -------------------------------------------- CARROCEL INFINITO ------------------------------------------- >>>>>>>>>*/
+/* -----------------------------------------------------------------------CARROCEL INFINITO ------------------------------>>>>>>>>>>>>>>>> */
 
+/* .carousel: classe principal que define o contêiner do carrossel.
+   Controla o layout geral e a aparência, incluindo overflow e espaçamento. */
 .carousel {
-    position: relative;
-    overflow: hidden;
+    position: relative; /* Define a posição relativa para o controle de elementos internos */
+    overflow: hidden; /* Oculta qualquer conteúdo que ultrapasse o contêiner */
     background-color: #f5fefd; /* Cor de fundo opcional */
-    padding: 20px 0;
+    padding: 20px 0; /* Espaçamento vertical */
 }
 
+/* .carousel-track: classe que contém as imagens do carrossel.
+   Utiliza flexbox para alinhar as imagens horizontalmente e aplica a animação de rolagem. */
 .carousel-track {
-    display: flex;
-    gap: 10px;
-    animation: scroll 60s linear infinite; /* Aumente a duração para uma animação mais lenta */
-    white-space: nowrap; /* Corrigido para ficar na posição correta */
+    display: flex; /* Utiliza flexbox para alinhar as imagens em linha */
+    gap: 10px; /* Espaçamento entre os itens do carrossel */
+    animation: scroll 60s linear infinite; /* Animação contínua das imagens */
+    white-space: nowrap; /* Impede que as imagens quebrem para a próxima linha */
 }
 
+/* .carousel-track img: classe que estiliza as imagens dentro do carrossel.
+   Controla o tamanho, a margem e o ajuste das imagens para garantir um visual consistente. */
 .carousel-track img {
-    max-height: 40px; /* Defina a altura máxima */
-    width: auto; /* Mantém a proporção */
-    margin: 0 30px;
-    object-fit: cover;
-    border-radius: 8px; /* Borda arredondada opcional */
+    max-height: 40px; /* Limita a altura das imagens para manter um layout consistente */
+    width: auto; /* Mantém a proporção da imagem */
+    margin: 0 30px; /* Margem lateral para espaçamento das imagens */
+    object-fit: cover; /* Ajusta as imagens para preencher seu contêiner mantendo a proporção */
+    border-radius: 8px; /* Borda arredondada opcional para um visual mais suave */
 }
 
-/* Animação para mover as imagens */
+/* @keyframes scroll: define a animação de rolagem das imagens do carrossel.
+   A animação move as imagens da direita para a esquerda de forma contínua. */
 @keyframes scroll {
     from {
-        transform: translateX(100%);
+        transform: translateX(100%); /* Inicia a animação fora da tela à direita */
     }
     to {
-        transform: translateX(-100%);
+        transform: translateX(-100%); /* Move para fora da tela à esquerda */
     }
 }
 
-/* ------------------------------------------- RESPONSIVIDADE --------------------------------------------- */
+/* ----------------------------------------------------------------------- RESPONSIVIDADE - MIDIAS QUERIES ------------------------------>>>>>>>>>>>>>>>> */
 
+/* Media query para telas com largura máxima de 767px (geralmente dispositivos móveis) */
 @media (max-width: 767px) {
 
     nav {
-    justify-content: space-between;
+        justify-content: space-between; /* Alinha os itens do nav com espaço entre eles */
+    }
+    
+    /* .links-container: estiliza o menu de links quando a tela é pequena.
+       A posição fixa e a transição permitem que o menu deslize da direita. */
+    .links-container {
+        flex-direction: column; /* Coloca os links em uma coluna */
+        justify-content: flex-start; /* Alinha os itens no início do contêiner */
+        align-items: flex-start; /* Alinha os itens à esquerda */
+        position: fixed; /* Fixa o menu na tela */
+        top: 0; /* Posiciona no topo */
+        right: -100%; /* Começa fora da tela à direita */
+        z-index: 10; /* Garante que o menu fique acima de outros elementos */
+        width: 300px; /* Largura do menu lateral */
+        height: 100vh; /* Altura total da tela */
+        backdrop-filter: blur(10px); /* Efeito de desfoque de fundo */
+        box-shadow: -5px 0 5px rgba(0,0,0,0.25); /* Sombra do menu */
+        transition: 0.75s ease-out; /* Animação suave ao abrir e fechar */
+    }
+
+    /* Botões de abrir e fechar o menu */
+    .open-sidebar-button,
+    .close-sidebar-button {
+        display: block; /* Mostra os botões em telas pequenas */
+        padding: 20px; /* Espaçamento interno dos botões */
+    }
+
+    /* Quando o sidebar estiver ativo, o menu aparece */
+    #sidebar-active:checked ~ .links-container {
+        right: 0; /* Move o menu para a tela */
     }
 
     #logo {
-        margin-left: 15px;
+        margin-left: 15px; /* Adiciona margem à esquerda do logo para espaçamento */
     }
     
-    .links-container {
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: flex-start;
-        position: fixed;
-        top: 0;
-        right: -100%;
-        z-index: 10;
-        width: 300px;
-        height: 100vh;
-        backdrop-filter: blur(10px);
-        box-shadow: -5px 0 5px rgba(0,0,0,0.25);
-        transition: 0.75s ease-out;
-    }
-
-    .open-sidebar-button {
-        display: block;
-        padding: 20px;
-    }
-
-     .close-sidebar-button {
-        display: block;
-        padding: 20px;
-    }
-
-    #sidebar-active:checked ~ .links-container {
-        right: 0;
-    }
-    
+    /* .container: estiliza um contêiner flexível que se adapta em telas pequenas */
     .container {
-        flex-direction: column;
-        width: 100%;
-        height: auto;
-        gap: 30px;
+        flex-direction: column; /* Alinha os itens em coluna */
+        width: 100%; /* Largura total */
+        height: auto; /* Altura automática para acomodar o conteúdo */
+        gap: 30px; /* Espaçamento entre os itens */
     }
 
-    #subtitulo {
-        text-align: justify;
+     /* .content: estiliza a seção de conteúdo */
+    .content {
+        width: 90%; /* Largura do conteúdo em relação ao contêiner */
+        padding: 0 5%; /* Espaçamento horizontal */
+        text-align: center; /* Centraliza o texto */
     }
 
- .secao-inicial-lado-direito {
-        order: -1; /* Coloca o lado direito em cima do lado esquerdo */
+    /* Estilização para seções lado direito e esquerdo */
+    .secao-inicial-lado-direito {
+        order: -1; /* Coloca o lado direito acima do lado esquerdo */
         width: 100%; /* Ocupa toda a largura no mobile */
     }
 
     .secao-inicial-lado-esquerdo {
         width: 100%; /* Ocupa toda a largura no mobile */
     }
-    
-    .content {
-        width: 90%;
-        padding: 0 5%;
-        text-align: center;
+
+    #subtitulo {
+        text-align: justify; /* Alinha o texto do subtítulo justificado */
     }
 
+    
     #lottie-animation {
-    margin-top: -30px;
-}
+        margin-top: -30px; /* Ajusta a margem superior da animação */
+    }
     
     #bt_pulse {
-        width: 50%;
-        padding: 10px 30px;
-        margin-top: 20px;
+        width: 50%; /* Largura do botão */
+        padding: 10px 30px; /* Espaçamento interno do botão */
+        margin-top: 20px; /* Margem superior */
     }
 }
 
+/* ----------------------------------------------------------------------- RESPONSIVIDADE - 417 PX ------------------------------>>>>>>>>>>>>>>>> */
+
+/* Media query para telas com largura máxima de 417px (dispositivos móveis menores) */
 @media (max-width: 417px) {
-    .content h1 { font-size: 3rem; }
-    .content h2 { font-size: 1.2rem; }
-    .content p { font-size: 0.9rem; }
-    #effective-design { font-size: 45px; margin-top: -30px; margin-bottom: 5px; }
+    /* Estilos para títulos e parágrafos para garantir legibilidade em telas pequenas */
+    .content h1 { font-size: 3rem; } /* Tamanho do título principal */
+    .content h2 { font-size: 1.2rem; } /* Tamanho do subtítulo */
+    .content p { font-size: 0.9rem; } /* Tamanho do parágrafo */
+    #effective-design { 
+        font-size: 45px; /* Tamanho do texto específico */
+        margin-top: -30px; /* Ajusta a margem superior */
+        margin-bottom: 5px; /* Margem inferior */
+    }
 }
+
