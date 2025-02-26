@@ -193,17 +193,14 @@ nav a:hover {
     position: relative;
     overflow: hidden;
     background-color: #f5fefd; /* Cor de fundo opcional */
-    animation-duration: 30s; /* Aumente este valor para uma animação mais lenta */
     padding: 20px 0;
 }
 
 .carousel-track {
     display: flex;
     gap: 10px;
-    animation: scroll 35s linear infinite; /* Animação contínua */
-}
-
-    white-space: nowrap;
+    animation: scroll 60s linear infinite; /* Aumente a duração para uma animação mais lenta */
+    white-space: nowrap; /* Corrigido para ficar na posição correta */
 }
 
 .carousel-track img {
@@ -223,10 +220,6 @@ nav a:hover {
         transform: translateX(-100%);
     }
 }
-
-
-
-
 
 /* ------------------------------------------- RESPONSIVIDADE --------------------------------------------- */
 
