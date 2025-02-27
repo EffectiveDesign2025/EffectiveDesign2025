@@ -178,7 +178,7 @@ nav .logo {
 /*-------------------------------------------------------------------------------------------*/
 
 /* Configuração do Subtítulo por ID - Seção Inicial */
-#subtituloPRINCIPAL {
+#subtitulo-principal {
     text-align: left; /* Alinha o subtítulo à esquerda */
 }
 
@@ -226,7 +226,7 @@ nav .logo {
 
 /* ----------------------------------------------------------------------------SEÇÃO DE SERVIÇOS ------------------------------>>>>>>>>>>>>>>>> */
 
-.sectionRANGE {
+.section-range {
 	position:relative;
 	width: 100%;
 	text-align: justify;
@@ -236,7 +236,7 @@ nav .logo {
 	padding: 0 10%;
 }
 
-#sectionSUBTITLE {
+#section-subtitle {
 	text-align: center;
 	align-items: center;
 }
@@ -283,7 +283,7 @@ nav .logo {
 /*-------------------------------------------------------------------------------------------*/
 
 
-.containerCARD {
+.container-card {
 	display: flex;
 	flex-wrap: wrap;
 	position: relative;
@@ -308,7 +308,7 @@ nav .logo {
 	transform: scale(1.05);
 }
 
-.caixaIMG { /* Corrigi a classe (suponho que queria esta) */
+.caixa-igm { /* Corrigi a classe (suponho que queria esta) */
 	position: absolute;
 	top: 20px;
 	width: 300px;
@@ -390,7 +390,7 @@ nav .logo {
 	
 /*-------------------------------------------------------------------------------------------*/
 	
-    #subtitulo {
+    #subtitulo-principal {
         text-align: justify; /* Alinha o texto do subtítulo justificado */
 	    
     }
