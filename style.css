@@ -387,7 +387,6 @@ section-range h3 {
 	text-align: center;
 	align-items: center;
         height: auto; /* Altura automática para acomodar o conteúdo */
-        gap: 30px; /* Espaçamento entre os itens */
     }
 
      /* .content: estiliza a seção de conteúdo */
@@ -395,12 +394,10 @@ section-range h3 {
 .content-1-bloco {
 	width: 100%; /* Largura do conteúdo */
 	padding: 0;
-	margin: -5%
 }
 	.content-2-blocos {
 	width: 100%; /* Largura do conteúdo */
 	padding: 0;
-	margin: -5%
 }
 	
 
