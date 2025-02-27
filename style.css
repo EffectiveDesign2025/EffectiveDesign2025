@@ -410,7 +410,9 @@ section-range h3 {
 	
 /*-------------------------------------------------------------------------------------------*/	
 #secao-inicial {
-		margin-bottom: 50px;
+	margin-bottom: 50px;
+	padding: 5%;
+	
 	}	
 	
     /* Estilização para seções lado direito e esquerdo */
