@@ -10,10 +10,15 @@
 
 /* Configurações Gerais do Corpo */
 body {
+    display: flex;	
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
     font-family: 'Lato', sans-serif; /* Define a fonte padrão do corpo como 'Lato' */
     margin: 0; /* Remove margens padrão */
     padding: 0; /* Remove espaçamento interno padrão */
     background-color: #f5fefd; /* Define a cor de fundo */
+	
 }
 
 /* ----------------------------------------------------------------------------MENU DE NAVEGAÇÃO ------------->>>>>>>>>>>>>>>> */
@@ -271,8 +276,13 @@ nav .logo {
 /*-------------------------------------------------------------------------------------------*/
 
 .containerCARD {
-	position: relative;
 	display: flex;
+	flex-wrap: wrap;
+	position: relative;
+	overflow: hidden;
+	box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+	transition: transform: 0.3s;
+	
 	width: 100%;
 	justify-content: space-around;
 }
@@ -288,7 +298,7 @@ nav .logo {
 }
 
 .card: hover {
-	height: 400px;
+	transform: scale(1.05);
 }
 
 .cardIMG {
