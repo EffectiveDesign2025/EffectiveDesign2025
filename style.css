@@ -403,7 +403,7 @@ A animação move as imagens da direita para a esquerda de forma contínua. */
 	/* Configuração do Título Principal por ID - Seção Inicial */
 	
 	#effective-design { 
-		font-size: 50px; /* Tamanho do texto específico */
+		font-size: 48px; /* Tamanho do texto específico */
 		margin-bottom: 5px; /* Margem inferior */
 		margin-top: -15px;
 	}
@@ -438,6 +438,7 @@ A animação move as imagens da direita para a esquerda de forma contínua. */
 		width: 50%; /* Largura do botão */
 		padding: 10px 30px; /* Espaçamento interno do botão */
 		margin-top: 20px; /* Margem superior */
+		text-align: center;
 	}
 	
 /*--------------------------------------------------------------------------------------------------------------------------------------*/
