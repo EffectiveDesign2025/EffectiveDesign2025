@@ -379,12 +379,11 @@ A animação move as imagens da direita para a esquerda de forma contínua. */
 	
 	/* .container: estiliza um contêiner flexível que se adapta em telas pequenas */
 	.container {
-		width: 90%;
+		width: 100%;
 		flex-direction: column; /* Alinha os itens em coluna */
 		align-items: center;
 		height: auto; /* Altura automática para acomodar o conteúdo */
 		gap: 0;
-		padding: 0 5%;
 	}
 	
 	/* .content: estiliza a seção de conteúdo */
