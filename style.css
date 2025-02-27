@@ -149,6 +149,8 @@ nav .logo {
     margin: 0 auto; /* Centraliza a animação */
 }
 
+/*-------------------------------------------------------------------------------------------*/
+
 /* Configuração do Título Principal por ID - Seção Inicial */
 #effective-design {
     font-size: 70px; /* Tamanho da fonte do título principal */
@@ -168,6 +170,8 @@ nav .logo {
     50%  { background-position: 100% 50%; } /* Posição média do gradiente */
     100% { background-position: 0% 50%; } /* Posição final do gradiente */
 }
+
+/*-------------------------------------------------------------------------------------------*/
 
 /* Configuração do Subtítulo por ID - Seção Inicial */
 #subtitulo {
@@ -216,32 +220,7 @@ nav .logo {
     transform: scale(1.05); /* Aumenta um pouco o tamanho */
 }
 
-/* ----------------------------------------------------------------------------SEÇÃO INICIAL------------------------------>>>>>>>>>>>>>>>> */
-
-.containerCARD .card {
-	position: relative;
-	width: 350px;
-	height: 300px;
-    border-radios: 20px;
-	background: #ffffff;
-    box-shadow: 0 35px 80px rgba(0,0,0,.15);
-    transition: .5s;
-}
-
-.containerCARD .card: hover {
-	height: 400px;
-}
-
-.containerCARD .cardIMG {
-    position: absolute;
-    top: 20px;
-    width: 300px;
-    height: 220px;
-    border-radius: 12px;
-    background-clor: #3f635d;
-}
-
-
+/* ----------------------------------------------------------------------------SEÇÃO DE SERVIÇOS ------------------------------>>>>>>>>>>>>>>>> */
 
 
 /* .carousel: classe principal que define o contêiner do carrossel.
@@ -282,6 +261,32 @@ nav .logo {
         transform: translateX(-100%); /* Move para fora da tela à esquerda */
     }
 }
+
+/*-------------------------------------------------------------------------------------------*/
+
+.containerCARD .card {
+	position: relative;
+	width: 350px;
+	height: 300px;
+        border-radios: 20px;
+	background: #ffffff;
+        box-shadow: 0 35px 80px rgba(0,0,0,.15);
+        transition: .5s;
+}
+
+.containerCARD .card: hover {
+	height: 400px;
+}
+
+.containerCARD .cardIMG {
+    position: absolute;
+    top: 20px;
+    width: 300px;
+    height: 220px;
+    border-radius: 12px;
+    background-clor: #3f635d;
+}
+
 
 /* ----------------------------------------------------------------------- RESPONSIVIDADE - MIDIAS QUERIES ------------------------------>>>>>>>>>>>>>>>> */
 
@@ -324,7 +329,9 @@ nav .logo {
     #logo {
         margin-left: 15px; /* Adiciona margem à esquerda do logo para espaçamento */
     }
-    
+	
+/*-------------------------------------------------------------------------------------------*/
+	
     /* .container: estiliza um contêiner flexível que se adapta em telas pequenas */
     .container {
         flex-direction: column; /* Alinha os itens em coluna */
@@ -340,6 +347,8 @@ nav .logo {
         text-align: center; /* Centraliza o texto */
     }
 
+/*-------------------------------------------------------------------------------------------*/	
+	
     /* Estilização para seções lado direito e esquerdo */
     .secao-inicial-lado-direito {
         order: -1; /* Coloca o lado direito acima do lado esquerdo */
@@ -349,15 +358,20 @@ nav .logo {
     .secao-inicial-lado-esquerdo {
         width: 100%; /* Ocupa toda a largura no mobile */
     }
-
+	
+/*-------------------------------------------------------------------------------------------*/
+	
     #subtitulo {
         text-align: justify; /* Alinha o texto do subtítulo justificado */
+	    
     }
-
+/*-------------------------------------------------------------------------------------------*/
     
     #lottie-animation {
         margin-top: -30px; /* Ajusta a margem superior da animação */
     }
+
+/*-------------------------------------------------------------------------------------------*/
     
     #bt_pulse {
         width: 50%; /* Largura do botão */
