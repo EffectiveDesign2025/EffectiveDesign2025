@@ -279,35 +279,34 @@ nav .logo {
 	flex-wrap: wrap;
 	position: relative;
 	overflow: hidden;
-	box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 	transition: transform 0.3s;
 	width: 100%;
 	justify-content: space-around;
 }
 
 .card {
-	position: absolute;
+	position: relative; /* Alterado de absolute para relative */
 	width: 350px;
 	height: 300px;
-        border-radios: 20px;
+	border-radius: 20px; /* Corrigido */
 	background: #ffffff;
-        box-shadow: 0 35px 80px rgba(0,0,0,.15);
-        transition: .5s;
+	box-shadow: 0 35px 80px rgba(0, 0, 0, 0.15);
+	transition: 0.5s;
 }
 
-.card: hover {
+.card:hover { /* Corrigido */
 	transform: scale(1.05);
 }
 
-.cardIMG {
-    position: absolute;
-    top: 20px;
-    width: 300px;
-    height: 220px;
-    border-radius: 12px;
-    background-clor: #3f635d;
+.caixaIMG { /* Corrigi a classe (suponho que queria esta) */
+	position: absolute;
+	top: 20px;
+	width: 300px;
+	height: 220px;
+	border-radius: 12px;
+	background-color: #3f635d; /* Corrigido */
 }
-
 
 /* ----------------------------------------------------------------------- RESPONSIVIDADE - MIDIAS QUERIES ------------------------------>>>>>>>>>>>>>>>> */
 
