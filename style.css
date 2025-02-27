@@ -139,7 +139,7 @@ nav .logo {
 
 /* Configuração Geral de Conteúdo P */
 .content h3, p {
-    font-size: 1.1em; /* Tamanho da fonte do parágrafo */
+    font-size: 0.8em; /* Tamanho da fonte do parágrafo */
     margin-bottom: 20px; /* Espaçamento inferior */
     text-align: justify; /* Justifica o texto */
 }
@@ -235,18 +235,12 @@ nav .logo {
 	align-items: center;
 }
 
-;section-range h3 {
+section-range h3 {
 	text-align: justify;
 }
 
 /*-------------------------------------------------------------------------------------------*/
 
-#section-subtitle {
-	text-align: center;
-	align-items: center;
-}
-
-/*-------------------------------------------------------------------------------------------*/
 
 /* .carousel: classe principal que define o contêiner do carrossel.
    Controla o layout geral e a aparência, incluindo overflow e espaçamento. */
@@ -390,7 +384,7 @@ nav .logo {
 
 /*-------------------------------------------------------------------------------------------*/	
 #secao-inicial {
-		margin-bottom: 20px;
+		margin-bottom: 50px;
 	}	
 	
     /* Estilização para seções lado direito e esquerdo */
