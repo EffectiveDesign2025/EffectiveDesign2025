@@ -113,7 +113,6 @@ nav .logo {
     flex-wrap: wrap; /* Permite que os itens se movam para a próxima linha */
     gap: 30px; /* Espaço entre os itens */
     background-color: #f5fefd; /* Cor de fundo do container */
-    padding: 0 40%; /* Padding lateral */
 }
 
 /* Configuração Geral de Conteúdo */
