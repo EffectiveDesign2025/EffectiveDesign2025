@@ -178,7 +178,7 @@ nav .logo {
 /*-------------------------------------------------------------------------------------------*/
 
 /* Configuração do Subtítulo por ID - Seção Inicial */
-#subtitulo {
+#subtituloPRINCIPAL {
     text-align: left; /* Alinha o subtítulo à esquerda */
 }
 
@@ -226,7 +226,7 @@ nav .logo {
 
 /* ----------------------------------------------------------------------------SEÇÃO DE SERVIÇOS ------------------------------>>>>>>>>>>>>>>>> */
 
-.trackSECTION {
+.sectionRANGE {
 	position:relative;
 	width: 100%;
 	text-align: justify;
@@ -378,12 +378,12 @@ nav .logo {
 /*-------------------------------------------------------------------------------------------*/	
 	
     /* Estilização para seções lado direito e esquerdo */
-    .secao-inicial-lado-direito {
+    #secao-inicial-lado-direito {
         order: -1; /* Coloca o lado direito acima do lado esquerdo */
         width: 100%; /* Ocupa toda a largura no mobile */
     }
 
-    .secao-inicial-lado-esquerdo {
+    #secao-inicial-lado-esquerdo {
         width: 100%; /* Ocupa toda a largura no mobile */
     }
 	
