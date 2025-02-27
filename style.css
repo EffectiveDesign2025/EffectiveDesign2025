@@ -8,6 +8,11 @@
 
 /* ---------------------------------------------------------------------------------CORPO -------------->>>>>>>>>>>>>>>>>>>> */
 
+/* Aplica box-sizing: border-box para todos os elementos */
+* {
+    box-sizing: border-box;
+}
+
 /* Configurações Gerais do Corpo */
 body {
 	min-height: 100vh;
