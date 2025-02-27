@@ -367,9 +367,11 @@ nav .logo {
     /* .container: estiliza um contêiner flexível que se adapta em telas pequenas */
     .container {
         flex-direction: column; /* Alinha os itens em coluna */
-        width: 100%; /* Largura total */
+	text-align: center;
+	align-items: center;
         height: auto; /* Altura automática para acomodar o conteúdo */
         gap: 30px; /* Espaçamento entre os itens */
+	padding: 0 5%;
     }
 
      /* .content: estiliza a seção de conteúdo */
