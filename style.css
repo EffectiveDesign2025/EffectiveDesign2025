@@ -277,7 +277,7 @@ nav .logo {
 	justify-content: space-around;
 }
 
-.containerCARD .card {
+.card {
 	position: absolute;
 	width: 350px;
 	height: 300px;
@@ -287,11 +287,11 @@ nav .logo {
         transition: .5s;
 }
 
-.containerCARD .card: hover {
+.card: hover {
 	height: 400px;
 }
 
-.containerCARD .cardIMG {
+.cardIMG {
     position: absolute;
     top: 20px;
     width: 300px;
