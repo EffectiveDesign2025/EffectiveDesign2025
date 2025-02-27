@@ -377,6 +377,7 @@ nav .logo {
         width: 90%; /* Largura do conteúdo em relação ao contêiner */
         padding: 0 5%; /* Espaçamento horizontal */
         text-align: center; /* Centraliza o texto */
+	align-items: center;
     }
 
 /*-------------------------------------------------------------------------------------------*/	
@@ -384,11 +385,9 @@ nav .logo {
     /* Estilização para seções lado direito e esquerdo */
     #secao-inicial-lado-direito {
         order: -1; /* Coloca o lado direito acima do lado esquerdo */
-        width: 100%; /* Ocupa toda a largura no mobile */
     }
 
     #secao-inicial-lado-esquerdo {
-        width: 100%; /* Ocupa toda a largura no mobile */
     }
 	
 /*-------------------------------------------------------------------------------------------*/
