@@ -224,6 +224,7 @@ nav .logo {
 
 .faixaSECTION {
 	position:relative;
+	width: 100%;
 	text-align: center;
 	align-items: center;
 }
