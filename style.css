@@ -462,6 +462,9 @@ A animação move as imagens da direita para a esquerda de forma contínua. */
 		}
 	}
 
+	.container-card {
+	justify-content: column;
+}
 /* ----------------------------------------------------------------------- RESPONSIVIDADE - 417 PX ------------------------------>>>>>>>>>>>>>>>> */
 
 /* Media query para telas com largura máxima de 417px (dispositivos móveis menores) */
