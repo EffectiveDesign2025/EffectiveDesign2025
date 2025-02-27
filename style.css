@@ -384,7 +384,7 @@ A animação move as imagens da direita para a esquerda de forma contínua. */
 		align-items: center;
 		height: auto; /* Altura automática para acomodar o conteúdo */
 		gap: 0;
-		padding: 10px;
+		padding: 5%;
 	}
 	
 	/* .content: estiliza a seção de conteúdo */
