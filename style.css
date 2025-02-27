@@ -400,6 +400,12 @@ section-range h3 {
 	padding: 0;
 }
 	
+	/* Configuração do Título Principal por ID - Seção Inicial */
+
+	#effective-design { 
+        font-size: 45px; /* Tamanho do texto específico */
+        margin-bottom: 5px; /* Margem inferior */
+    }
 
 	
 /*-------------------------------------------------------------------------------------------*/	
@@ -472,10 +478,3 @@ section-range h3 {
     .content h1 { font-size: 3rem; } /* Tamanho do título principal */
     .content h2 { font-size: 1.2rem; } /* Tamanho do subtítulo */
     .content p { font-size: 0.9rem; } /* Tamanho do parágrafo */
-    #effective-design { 
-        font-size: 45px; /* Tamanho do texto específico */
-        margin-top: -30px; /* Ajusta a margem superior */
-        margin-bottom: 5px; /* Margem inferior */
-    }
-}
-
