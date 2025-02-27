@@ -120,7 +120,6 @@ nav .logo {
     width: 38%; /* Largura do conteúdo */
     height: auto; /* Altura automática para se ajustar ao conteúdo */
     padding: 0 5%; /* Padding lateral */
-    text-align: center; /* Centraliza o texto */
     color: #000000; /* Cor do texto */
 }
 
