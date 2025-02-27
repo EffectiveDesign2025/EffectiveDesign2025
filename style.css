@@ -81,6 +81,12 @@ nav a:hover {
 	margim: 0 auto;
 }
 
+.open-sidebar-button {
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+}
+
 /* Configurações do Bloco de Conteúdo da Logo */
 nav .logo {
 	align-items: center; /* Alinha o conteúdo da logo no centro */
