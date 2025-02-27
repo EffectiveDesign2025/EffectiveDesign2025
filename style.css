@@ -366,8 +366,7 @@ A animação move as imagens da direita para a esquerda de forma contínua. */
 	}
 	
 	/* Botões de abrir e fechar o menu */
-	.open-sidebar-button,
-	.close-sidebar-button {
+	.open-sidebar-button {
 		display: block; /* Mostra os botões em telas pequenas */
 		padding: 20px; /* Espaçamento interno dos botões */
 		margim: 0 auto;
