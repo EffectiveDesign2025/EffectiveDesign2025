@@ -78,10 +78,6 @@ nav a:hover {
 	width: 50px; /* Largura do ícone */
 	height: 50px; /* Altura do ícone */
 	font-size: 50px; /* Tamanho do ícone */
-	margim: 0 auto;
-	text-align: center;
-	align-items: center;
-	justify-content: center;
 }
 
 /* Configurações do Bloco de Conteúdo da Logo */
@@ -374,6 +370,10 @@ A animação move as imagens da direita para a esquerda de forma contínua. */
 	.close-sidebar-button {
 		display: block; /* Mostra os botões em telas pequenas */
 		padding: 20px; /* Espaçamento interno dos botões */
+		margim: 0 auto;
+		text-align: center;
+		align-items: center;
+		justify-content: center;
 	}
 	
 	/* Quando o sidebar estiver ativo, o menu aparece */
