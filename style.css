@@ -238,6 +238,7 @@ nav .logo {
 
 #sectionSUBTITLE {
 	text-align: center;
+	align-items: center;
 }
 
 /* .carousel: classe principal que define o contêiner do carrossel.
