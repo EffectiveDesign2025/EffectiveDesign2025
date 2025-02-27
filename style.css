@@ -222,6 +222,9 @@ nav .logo {
 
 /* ----------------------------------------------------------------------------SEÇÃO DE SERVIÇOS ------------------------------>>>>>>>>>>>>>>>> */
 
+.faixaSECTION {
+	position:relative;
+}
 
 /* .carousel: classe principal que define o contêiner do carrossel.
    Controla o layout geral e a aparência, incluindo overflow e espaçamento. */
