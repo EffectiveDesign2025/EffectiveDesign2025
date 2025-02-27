@@ -229,10 +229,11 @@ nav .logo {
 .faixaSECTION {
 	position:relative;
 	width: 100%;
-	text-align: center;
+	text-align: justify;
 	align-items: center;
-	h2: font-size="3rem";
+	h2: font-size="8rem";
 	h3: font-size="1.4rem";
+	padding: 0 20%
 }
 
 /* .carousel: classe principal que define o contêiner do carrossel.
