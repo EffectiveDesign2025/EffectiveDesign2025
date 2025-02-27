@@ -216,7 +216,33 @@ nav .logo {
     transform: scale(1.05); /* Aumenta um pouco o tamanho */
 }
 
-/* -----------------------------------------------------------------------CARROCEL INFINITO ------------------------------>>>>>>>>>>>>>>>> */
+/* ----------------------------------------------------------------------------SEÇÃO INICIAL------------------------------>>>>>>>>>>>>>>>> */
+
+.containerCARD .card {
+	position: relative;
+	width: 350px;
+	height: 300px;
+    border-radios: 20px;
+	background: #ffffff;
+    box-shadow: 0 35px 80px rgba(0,0,0,.15);
+    transition: .5s;
+}
+
+.containerCARD .card: hover {
+	height: 400px;
+}
+
+.containerCARD .cardIMG {
+    position: absolute;
+    top: 20px;
+    width: 300px;
+    height: 220px;
+    border-radius: 12px;
+    background-clor: #3f635d;
+}
+
+
+
 
 /* .carousel: classe principal que define o contêiner do carrossel.
    Controla o layout geral e a aparência, incluindo overflow e espaçamento. */
