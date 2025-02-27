@@ -267,9 +267,10 @@ nav .logo {
 .contaiberCARD {
 	display: flex;
 	position: relative;
+	width: 100%;
 
 .containerCARD .card {
-	position: relative;
+	position: absolute;
 	width: 350px;
 	height: 300px;
         border-radios: 20px;
