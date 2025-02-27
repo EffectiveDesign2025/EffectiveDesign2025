@@ -79,9 +79,6 @@ nav a:hover {
 	height: 50px; /* Altura do ícone */
 	font-size: 50px; /* Tamanho do ícone */
 	margim: 0 auto;
-}
-
-.open-sidebar-button {
 	text-align: center;
 	align-items: center;
 	justify-content: center;
