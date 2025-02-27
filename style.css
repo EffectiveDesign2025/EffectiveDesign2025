@@ -270,6 +270,12 @@ nav .logo {
 
 /*-------------------------------------------------------------------------------------------*/
 
+.containerCARD {
+	position: relative;
+	display: flex;
+	width: 100%;
+}
+
 .containerCARD .card {
 	position: absolute;
 	width: 350px;
