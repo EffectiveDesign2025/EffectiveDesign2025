@@ -392,7 +392,11 @@ section-range h3 {
 
      /* .content: estiliza a seção de conteúdo */
 	
+.content-2-blocos {
+    width: 100%; /* Largura do conteúdo */
+}
 
+	
 /*-------------------------------------------------------------------------------------------*/	
 #secao-inicial {
 		margin-bottom: 50px;
