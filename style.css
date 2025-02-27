@@ -175,7 +175,7 @@ nav .logo {
     -webkit-background-clip: text; /* Para navegadores baseados em WebKit */
     background-clip: text; /* Recorta o fundo para o texto */
     animation: animateSpectrum 15s infinite ease-in-out; /* Animação de espectro */
-    padding-bottom: -20px;
+    margin-bottom: -20px;
 }
 
 /* Configuração de Efeito Gradiente do Título Principal */
