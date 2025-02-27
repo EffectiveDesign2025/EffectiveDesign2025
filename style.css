@@ -248,6 +248,8 @@ nav .logo {
     overflow: hidden; /* Oculta qualquer conteúdo que ultrapasse o contêiner */
     background-color: #f5fefd; /* Cor de fundo opcional */
     padding: 20px 0; /* Espaçamento vertical */
+    white-space: nowrap;
+    max-width: 100vw; /* Evita estouro na largura da tela */
 }
 
 /* .carousel-track: classe que contém as imagens do carrossel.
@@ -255,6 +257,7 @@ nav .logo {
 .carousel-track {
     display: flex; /* Utiliza flexbox para alinhar as imagens em linha */
     gap: 10px; /* Espaçamento entre os itens do carrossel */
+    width: auto;
     animation: scroll 90s linear infinite; /* Animação contínua das imagens */
     white-space: nowrap; /* Impede que as imagens quebrem para a próxima linha */
 }
@@ -262,7 +265,7 @@ nav .logo {
 /* .carousel-track img: classe que estiliza as imagens dentro do carrossel.
    Controla o tamanho, a margem e o ajuste das imagens para garantir um visual consistente. */
 .carousel-track img {
-    max-height: 40px; /* Limita a altura das imagens para manter um layout consistente */
+    max-height: 35px; /* Limita a altura das imagens para manter um layout consistente */
     width: auto; /* Mantém a proporção da imagem */
     margin: 0 30px; /* Margem lateral para espaçamento das imagens */
     object-fit: cover; /* Ajusta as imagens para preencher seu contêiner mantendo a proporção */
@@ -408,6 +411,31 @@ nav .logo {
         margin-top: 20px; /* Margem superior */
     }
 }
+
+/*-------------------------------------------------------------------------------------------*/
+
+    .carousel-track {
+        width: auto; /* Ajusta o tamanho no mobile */
+        flex-wrap: nowrap;
+        gap: 5px; /* Reduz o espaçamento entre os itens */
+    }
+    
+    .carousel-track img {
+        max-height: 30px; /* Reduz a altura das imagens */
+        margin: 0 10px; /* Reduz as margens */
+    }
+}
+
+/* Animação contínua */
+@keyframes scroll {
+    from {
+        transform: translateX(0%);
+    }
+    to {
+        transform: translateX(-50%);
+    }
+}
+
 
 /* ----------------------------------------------------------------------- RESPONSIVIDADE - 417 PX ------------------------------>>>>>>>>>>>>>>>> */
 
