@@ -140,6 +140,7 @@ nav .logo {
 /* Configuração Geral de Conteúdo P */
 .content h3, p {
     font-size: 1em; /* Tamanho da fonte do parágrafo */
+    line-height: 1.5;
     margin-bottom: 20px; /* Espaçamento inferior */
     text-align: justify; /* Justifica o texto */
 }
