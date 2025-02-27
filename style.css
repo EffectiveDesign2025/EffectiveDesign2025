@@ -224,6 +224,8 @@ nav .logo {
 
 .faixaSECTION {
 	position:relative;
+	text-align: center;
+	align-items: center;
 }
 
 /* .carousel: classe principal que define o contêiner do carrossel.
@@ -240,7 +242,7 @@ nav .logo {
 .carousel-track {
     display: flex; /* Utiliza flexbox para alinhar as imagens em linha */
     gap: 10px; /* Espaçamento entre os itens do carrossel */
-    animation: scroll 60s linear infinite; /* Animação contínua das imagens */
+    animation: scroll 90s linear infinite; /* Animação contínua das imagens */
     white-space: nowrap; /* Impede que as imagens quebrem para a próxima linha */
 }
 
