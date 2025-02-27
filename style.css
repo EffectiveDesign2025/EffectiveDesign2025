@@ -125,7 +125,7 @@ nav .logo {
 }
 
 .content-1-bloco {
-    width: 100%; /* Largura do conteúdo */
+    width: 90%; /* Largura do conteúdo */
     height: auto; /* Altura automática para se ajustar ao conteúdo */
     text-align: center; /* Centraliza o texto */
     padding: 0 5%; /* Padding lateral */
