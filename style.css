@@ -11,6 +11,7 @@
 /* Configurações Gerais do Corpo */
 body {
 	min-height: 100vh;
+	overflow-x: hidden;
 	justify-content: center;
 	align-items: center;
 	font-family: 'Lato', sans-serif; /* Define a fonte padrão do corpo como 'Lato' */
