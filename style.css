@@ -144,14 +144,14 @@ nav .logo {
 }
 
 /* Configuração Geral de Conteúdo P */
-..content-1-bloco .content-2-blocos h3, {
+.content-1-bloco .content-2-blocos h3 {
 	font-size: 1em; /* Tamanho da fonte do parágrafo */
 	line-height: 1.5;
 	margin-bottom: 20px; /* Espaçamento inferior */
 	text-align: justify; /* Justifica o texto */
 }
 
-..content-1-bloco .content-2-blocos {
+.content-1-bloco .content-2-blocos {
 	font-size: 1em; /* Tamanho da fonte do parágrafo */
 	line-height: 1.5;
 	margin-bottom: 20px; /* Espaçamento inferior */
@@ -245,11 +245,11 @@ nav .logo {
 }
 
 .section-range h2 {
-	tex-align:center;
+	text-align:center;
 	align-items: center;
 }
 
-section-range h3 {
+.section-range h3 {
 	text-align: justify;
 }
 
@@ -324,7 +324,7 @@ A animação move as imagens da direita para a esquerda de forma contínua. */
 	transform: scale(1.05);
 }
 
-.caixa-igm { /* Corrigi a classe (suponho que queria esta) */
+.caixa-img { /* Corrigi a classe (suponho que queria esta) */
 	position: absolute;
 	top: 20px;
 	width: 300px;
@@ -383,6 +383,7 @@ A animação move as imagens da direita para a esquerda de forma contínua. */
 		align-items: center;
 		height: auto; /* Altura automática para acomodar o conteúdo */
 		gap: 0;
+		padding: 10px;
 	}
 	
 	/* .content: estiliza a seção de conteúdo */
@@ -471,3 +472,4 @@ A animação move as imagens da direita para a esquerda de forma contínua. */
     .content h1 { font-size: 3rem; } /* Tamanho do título principal */
     .content h2 { font-size: 1.2rem; } /* Tamanho do subtítulo */
     .content p { font-size: 0.9rem; } /* Tamanho do parágrafo */
+}
