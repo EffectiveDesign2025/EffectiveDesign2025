@@ -226,14 +226,18 @@ nav .logo {
 
 /* ----------------------------------------------------------------------------SEÇÃO DE SERVIÇOS ------------------------------>>>>>>>>>>>>>>>> */
 
-.faixaSECTION {
+.trackSECTION {
 	position:relative;
 	width: 100%;
 	text-align: justify;
 	align-items: center;
 	h2: font-size="8rem";
 	h3: font-size="1.4rem";
-	padding: 0 20%
+	padding: 0 10%
+}
+
+#sectionSUBTITLE {
+	text-align: center;
 }
 
 /* .carousel: classe principal que define o contêiner do carrossel.
