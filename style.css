@@ -1,4 +1,4 @@
-/* ----------------------------------------------------------------------------- CABEÇALHO ------------>>>>>>>>>>>>>>>>>>>> */
+ /* ----------------------------------------------------------------------------- CABEÇALHO ------------>>>>>>>>>>>>>>>>>>>> */
 
 /* Configurações de Fonts */
 @font-face {
@@ -417,7 +417,7 @@ A animação move as imagens da direita para a esquerda de forma contínua. */
 	
 	#secao-inicial {
 		margin-bottom: 50px;
-		padding: 10%;
+		padding: 6%;
 		padding-bottom: 20px;
 	}
 	
@@ -439,6 +439,7 @@ A animação move as imagens da direita para a esquerda de forma contínua. */
 		padding: 10px 30px; /* Espaçamento interno do botão */
 		margin-top: 20px; /* Margem superior */
 		text-align: center;
+		align-items: center;
 	}
 	
 /*--------------------------------------------------------------------------------------------------------------------------------------*/
