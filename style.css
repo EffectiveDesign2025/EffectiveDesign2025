@@ -1,4 +1,10 @@
- /* ----------------------------------------------------------------------------- CABEÇALHO ------------>>>>>>>>>>>>>>>>>>>> */
+:root {
+    --fa-rotate-angle: 0deg; /* Define um valor válido para evitar erro */
+}
+
+
+
+/* ----------------------------------------------------------------------------- CABEÇALHO ------------>>>>>>>>>>>>>>>>>>>> */
 
 /* Configurações de Fonts */
 @font-face {
@@ -17,6 +23,7 @@ body {
 	padding: 0; /* Remove espaçamento interno padrão */
 	background-color: #f5fefd; /* Define a cor de fundo */
 }
+
 
 /* ----------------------------------------------------------------------------MENU DE NAVEGAÇÃO ------------->>>>>>>>>>>>>>>> */
 
