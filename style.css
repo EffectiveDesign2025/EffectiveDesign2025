@@ -193,6 +193,12 @@ nav .logo {
 	height: auto;
 }
 
+#secao-inicial-lado-direito { 
+	width: 30%;
+	padding: 5%;
+	height: auto;
+}
+
 /* Configuração da Animação - Seção Inicial */
 #lottie-animation {
 	width: 100%; /* Largura total da animação */
