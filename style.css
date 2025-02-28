@@ -19,9 +19,6 @@ body {
 	background-color: #f5fefd; /* Define a cor de fundo */
 
 	/* Remover as propriedades -webkit e -moz */
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-
 	text-rendering: optimizeLegibility;
 	
 }
