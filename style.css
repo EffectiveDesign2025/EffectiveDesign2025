@@ -263,6 +263,8 @@ nav .logo {
 /* ----------------------------------------------------------------------------SEÇÃO DE SERVIÇOS ------------------------------>>>>>>>>>>>>>>>> */
 
 #servicos {
+	display:flax;
+	justify-content: flex-start;
 	width: auto;
 	max-width: 100%;
 }
