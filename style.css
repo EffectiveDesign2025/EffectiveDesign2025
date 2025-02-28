@@ -62,6 +62,8 @@ nav a:hover {
 /* Configurações da Caixa de Ativação [ check Box ] do Menu Hambúrguer */
 #sidebar-active {
 	display: none; /* Esconde a checkbox que controla o menu hamburguer */
+	padding: 20px;
+	justify-content: flex-end;
 }
 
 /* Configurações do Ícone de Menu Hamburguer ABRIR & FECHAR */
