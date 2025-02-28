@@ -133,6 +133,10 @@ nav .logo {
 	background-color: #f5fefd; /* Cor de fundo do container */
 }
 
+.secao-inicial { 
+	display: flex; 
+}
+
 /* Configuração Geral de Conteúdo */
 .content-2-blocos {
 	width: 38%; /* Largura do conteúdo */
