@@ -86,11 +86,11 @@ nav a:hover {
 
 /* Configurações do Bloco de Conteúdo da Logo */
 nav .logo {
-	align-items: center; /* Alinha o conteúdo da logo no centro */
-	text-align: center; /* Centraliza o texto da logo */
-	display: block; /* Exibe como bloco para ocupar espaço total */
-	height: 80px; /* Altura fixa para a logo */
-	max-width: 30%; /* Largura máxima da logo */
+    max-width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
 }
 
 /* Configurações da Logo por ID */
