@@ -350,11 +350,13 @@ A animação move as imagens da direita para a esquerda de forma contínua. */
 
 	   nav {
 		justify-content: space-between; /* Alinha os itens do nav com espaço entre eles */
+	
 	}
 	
 	/* .links-container: estiliza o menu de links quando a tela é pequena.
 	A posição fixa e a transição permitem que o menu deslize da direita. */
 	.links-container {
+		display: none; /* Esconde os links no mobile */
 		flex-direction: column; /* Coloca os links em uma coluna */
 		justify-content: flex-start; /* Alinha os itens no início do contêiner */
 		align-items: flex-start; /* Alinha os itens à esquerda */
@@ -368,6 +370,13 @@ A animação move as imagens da direita para a esquerda de forma contínua. */
 		box-shadow: -5px 0 5px rgba(0,0,0,0.25); /* Sombra do menu */
 		transition: 0.75s ease-out; /* Animação suave ao abrir e fechar */
 	}
+
+	/* Quando o sidebar estiver ativo, o menu aparece */
+	#sidebar-active:checked ~ .links-container {
+		display: flex; 
+		right: 0; /* Move o menu para a tela */
+	}
+	
 
 	
 	/* Botões de abrir e fechar o menu */
@@ -387,10 +396,6 @@ A animação move as imagens da direita para a esquerda de forma contínua. */
 		padding: 20px; /* Espaçamento interno dos botões */
 		margim: 0 auto;
 	
-	/* Quando o sidebar estiver ativo, o menu aparece */
-	#sidebar-active:checked ~ .links-container {
-		right: 0; /* Move o menu para a tela */
-	}
 	
 	#logo {
 		margin-left: 15px; /* Adiciona margem à esquerda do logo para espaçamento */
