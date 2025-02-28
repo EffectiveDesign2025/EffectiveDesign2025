@@ -435,10 +435,12 @@ A animação move as imagens da direita para a esquerda de forma contínua. */
 	
 	.content-1-bloco {
 		width: 100%; /* Largura do conteúdo */
+		align-items: center;
 	}
 	
 	.content-2-blocos {
 		width: 100%; /* Largura do conteúdo */
+		align-items: center;
 	}
 
 	
