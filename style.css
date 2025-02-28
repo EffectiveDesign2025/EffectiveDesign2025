@@ -490,15 +490,12 @@ A animação move as imagens da direita para a esquerda de forma contínua. */
 
 	#servicos {
 	display:flex;
-	flex-direction: colum;
+	flex-direction: column;
 	justify-content: flex-start;
 	width: auto;
 	max-width: 100%;
 	padding: 0 10%;
 }
-
-
-
 	
 	.carousel-track {
 		width: auto; /* Ajusta o tamanho no mobile */
