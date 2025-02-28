@@ -131,43 +131,47 @@ nav .logo {
 
 
 /* Configuração Geral de Conteúdo */
-.content-2-blocos {
+.content-desktop {
 	width: 38%; /* Largura do conteúdo */
 	height: auto; /* Altura automática para se ajustar ao conteúdo */
-	padding: 0 5%; /* Padding lateral */
+	padding: 0 7%; /* Padding lateral */
 	color: #000000; /* Cor do texto */
 }
 
-.content-1-bloco {
+.content-mobile {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 	width: auto; /* Largura do conteúdo */
 	height: auto; /* Altura automática para se ajustar ao conteúdo */
 	text-align: center; /* Centraliza o texto */
-	padding: 0 5%; /* Padding lateral */
+	align-items: center;
+	padding: 0 7%; /* Padding lateral */
 	color: #000000; /* Cor do texto */
 }
 
 /* Configuração Geral de Conteúdo H1 */
-.content-1-bloco .content-2-blocos h1 {
+.content-desktop .content-mobile h1 {
 	font-size: 4rem; /* Tamanho da fonte do título */
 	margin-bottom: 10px; /* Espaçamento inferior */
 }
 
 /* Configuração Geral de Conteúdo H2 */
-.content-1-bloco .content-2-blocos h2 {
+.content-desktop .content-mobile h2 {
 	font-size: 1.8rem; /* Tamanho da fonte do subtítulo */
 	margin-bottom: 15px; /* Espaçamento inferior */
 	color: #260132; /* Cor do subtítulo */
 }
 
 /* Configuração Geral de Conteúdo P */
-.content-1-bloco .content-2-blocos h3 {
+.content-desktop .content-mobile h3 {
 	font-size: 1em; /* Tamanho da fonte do parágrafo */
 	line-height: 1.5;
 	margin-bottom: 20px; /* Espaçamento inferior */
 	text-align: justify; /* Justifica o texto */
 }
 
-.content-1-bloco .content-2-blocos {
+.content-desktop .content-mobile p {
 	font-size: 1em; /* Tamanho da fonte do parágrafo */
 	line-height: 1.5;
 	margin-bottom: 20px; /* Espaçamento inferior */
@@ -435,12 +439,10 @@ A animação move as imagens da direita para a esquerda de forma contínua. */
 	/* .content: estiliza a seção de conteúdo */
 	
 	.content-1-bloco {
-		width: 100%; /* Largura do conteúdo */
 		align-items: center;
 	}
 	
 	.content-2-blocos {
-		width: 100%; /* Largura do conteúdo */
 		align-items: center;
 	}
 
