@@ -60,12 +60,20 @@ nav a:hover {
 }
 
 /* Configurações da Caixa de Ativação [ check Box ] do Menu Hambúrguer */
-	#sidebar-active {
+#sidebar-active {
 	display: none; /* Esconde a checkbox que controla o menu hamburguer */
 }
 
 /* Configurações do Ícone de Menu Hamburguer ABRIR & FECHAR */
-.open-sidebar-button .close-sidebar-button {
+.open-sidebar-button {
+	display: none; /* Inicialmente escondidos, serão exibidos conforme necessário */
+	color: #16011e; /* Cor do ícone do menu */
+	width: 50px; /* Largura do ícone */
+	height: 50px; /* Altura do ícone */
+	font-size: 50px; /* Tamanho do ícone */
+}
+
+.close-sidebar-button {
 	display: none; /* Inicialmente escondidos, serão exibidos conforme necessário */
 	color: #16011e; /* Cor do ícone do menu */
 	width: 50px; /* Largura do ícone */
