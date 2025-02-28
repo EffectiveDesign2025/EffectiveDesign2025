@@ -450,7 +450,7 @@ A animação move as imagens da direita para a esquerda de forma contínua. */
 	
 #secao-inicial { 
 	justify-content: space-between;	
-	flex-direction: column-reverse;
+	flex-direction: column;
 	width: auto;
 	max-width: 100%;
 	margin-bottom: 50px;
