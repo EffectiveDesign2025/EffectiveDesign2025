@@ -512,7 +512,15 @@ A animação move as imagens da direita para a esquerda de forma contínua. */
 /* Media query para telas com largura máxima de 417px (dispositivos móveis menores) */
 @media (max-width: 417px) {
     /* Estilos para títulos e parágrafos para garantir legibilidade em telas pequenas */
-    .content h1 { font-size: 3rem; } /* Tamanho do título principal */
-    .content h2 { font-size: 1.2rem; } /* Tamanho do subtítulo */
-    .content p { font-size: 0.9rem; } /* Tamanho do parágrafo */
+    .content h1 { 
+	    font-size: 3rem;
+    } /* Tamanho do título principal */
+	
+    .content h2 {
+	    font-size: 1.2rem;
+    } /* Tamanho do subtítulo */
+	
+    .content p { 
+	    font-size: 0.9rem; 
+    } /* Tamanho do parágrafo */
 }
