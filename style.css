@@ -193,7 +193,6 @@ nav .logo {
 	background-image: linear-gradient(45deg, #ff0000, #0000ff, #00ff00, #ffff00, #8a2be2, #ff00ff); /* Gradiente de fundo */
 	background-size: 400% 400%; /* Tamanho do fundo para animação */
 	color: transparent; /* Torna o texto transparente */
-
 	background-clip: text; /* Recorta o fundo para o texto */
 	animation: animateSpectrum 15s infinite ease-in-out; /* Animação de espectro */
 	margin-bottom: -5px;
