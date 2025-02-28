@@ -188,14 +188,14 @@ nav .logo {
 }
 
 #secao-inicial-lado-esquerdo { 
-	width: 30%;
-	padding: 5%;
+	width: 40%;
+	padding: 0 5%;
 	height: auto;
 }
 
 #secao-inicial-lado-direito { 
-	width: 30%;
-	padding: 5%;
+	width: 40%;
+	padding: 0 5%;
 	height: auto;
 }
 
