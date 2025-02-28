@@ -28,8 +28,10 @@ body {
 	/* Remover as propriedades -webkit e -moz */
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
-	font-smoothing: antialiased; /* Esta linha é desnecessária na maioria dos casos e pode ser removida */
+	
+	text-rendering: optimizeLegibility;
 }
+
 
 
 /* ----------------------------------------------------------------------------MENU DE NAVEGAÇÃO ------------->>>>>>>>>>>>>>>> */
