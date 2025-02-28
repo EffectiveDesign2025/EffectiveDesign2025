@@ -1,7 +1,9 @@
 :root {
-    --fa-rotate-angle: 0deg; /* Define um valor válido para evitar erro */
-}
-
+        --fa-rotate-angle: 0deg;
+    }
+    .fa-rotate-by {
+        transform: rotate(var(--fa-rotate-angle, 0deg));
+    }
 
 
 /* ----------------------------------------------------------------------------- CABEÇALHO ------------>>>>>>>>>>>>>>>>>>>> */
