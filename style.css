@@ -449,18 +449,13 @@ A animação move as imagens da direita para a esquerda de forma contínua. */
 
 	
 #secao-inicial { 
-	justify-content: space-between;	
 	flex-direction: column;
+	justify-content: flex-start;
 	width: auto;
 	max-width: 100%;
 	margin-bottom: 50px;
 	padding-bottom: 20px;
 	order: -1;
-}
-	
-/* Estilização para seções lado direito e esquerdo */
-#secao-inicial-lado-direito {
-	order: -1; /* Coloca o lado direito acima do lado esquerdo */
 }
 
 /* Configuração do Título Principal por ID - Seção Inicial */
