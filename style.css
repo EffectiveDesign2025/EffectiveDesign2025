@@ -133,7 +133,7 @@ nav .logo {
 	background-color: #f5fefd; /* Cor de fundo do container */
 }
 
-.secao-inicial { 
+#secao-inicial { 
 	display: flex; 
 }
 
