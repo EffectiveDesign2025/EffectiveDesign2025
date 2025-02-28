@@ -37,17 +37,18 @@
         </div>
         
         <input type="checkbox" id="sidebar-active">
-        
-        <!-- Botão para abrir o menu -->
-        <label for="sidebar-active" class="open-sidebar-button" aria-label="Abrir Menu">
-            <img src="https://raw.githubusercontent.com/EffectiveDesign2025/EffectiveDesign2025/main/imagens/ICONE%20MENU%20HAMBURGUER.svg" alt="Abrir Menu" width="50" height="50">
-        </label>
-        
-        <div class="links-container">
-            <!-- Botão para fechar o menu -->
-            <label for="sidebar-active" class="close-sidebar-button" aria-label="Fechar Menu">
-                <img src="https://raw.githubusercontent.com/EffectiveDesign2025/EffectiveDesign2025/main/imagens/ICONE%20FECHAR.svg" alt="Fechar Menu" width="50" height="50">
-            </label>
+
+<!-- Botão para abrir o menu -->
+<label for="sidebar-active" class="open-sidebar-button" aria-label="Abrir Menu">
+    <img src="https://raw.githubusercontent.com/EffectiveDesign2025/EffectiveDesign2025/main/imagens/ICONE%20MENU%20HAMBURGUER.svg" alt="Abrir Menu" width="50" height="50">
+</label>
+
+<div class="links-container">
+    <!-- Botão para fechar o menu -->
+    <button type="button" class="close-sidebar-button" aria-label="Fechar Menu" onclick="document.getElementById('sidebar-active').checked = false;">
+        <img src="https://raw.githubusercontent.com/EffectiveDesign2025/EffectiveDesign2025/main/imagens/ICONE%20FECHAR.svg" alt="Fechar Menu" width="50" height="50">
+    </button>
+</div>
             
             <!-- Links de navegação -->
             <a href="link-inicio">Início</a>
