@@ -467,6 +467,14 @@ A posição fixa e a transição permitem que o menu deslize da direita. */
 	padding-bottom: 20px;
 }
 
+#secao-inicial-lado-esquerdo { 
+	width: auto;
+}
+
+#secao-inicial-lado-direito { 
+	width: auto:
+}
+
 /* Estilização para seções lado direito e esquerdo */
 #secao-inicial-lado-direito {
 	order: -1; /* Coloca o lado direito acima do lado esquerdo */
