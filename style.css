@@ -180,7 +180,7 @@ nav .logo {
 	justify-content: space-between;	
 	flex-direction: row;
 	width: auto;
-	max-width: 100%
+	max-width: 100%;
 }
 
 /* Configuração da Animação - Seção Inicial */
@@ -446,6 +446,16 @@ A animação move as imagens da direita para a esquerda de forma contínua. */
 
 	
 /*--------------------------------------------------------------------------------------------------------------------------------------*/
+
+	
+#secao-inicial { 
+	justify-content: space-between;	
+	flex-direction: column;
+	width: auto;
+	max-width: 100%;
+}
+
+
 	
 	/* Configuração do Título Principal por ID - Seção Inicial */
 	
