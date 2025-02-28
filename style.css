@@ -438,11 +438,7 @@ A animação move as imagens da direita para a esquerda de forma contínua. */
 	
 	/* .content: estiliza a seção de conteúdo */
 	
-	.content-1-bloco {
-		align-items: center;
-	}
-	
-	.content-2-blocos {
+	.content-desktop .content-mobile {
 		align-items: center;
 	}
 
