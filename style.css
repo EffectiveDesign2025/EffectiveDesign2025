@@ -84,11 +84,13 @@ nav a:hover {
 }
 
 .close-sidebar-button {
-    display: block;
-    position: absolute;
-    top: 15px;
-    right: 15px;
-    cursor: pointer;
+	display: none; /* Inicialmente escondidos, serão exibidos conforme necessário */
+	color: #16011e; /* Cor do ícone do menu */
+	width: 50px; /* Largura do ícone */
+	height: 50px; /* Altura do ícone */
+	font-size: 50px; /* Tamanho do ícone */
+	padding: 20px; /* Espaçamento interno dos botões */
+	margin: 0 auto;
 }
 
 /* Configurações do Bloco de Conteúdo da Logo */
@@ -398,11 +400,13 @@ A animação move as imagens da direita para a esquerda de forma contínua. */
     z-index: 20;
 }
 
-	.close-sidebar-button {
-		display: block; /* Mostra os botões em telas pequenas */
-		padding: 20px; /* Espaçamento interno dos botões */
-		margin: 0 auto;
-	}	
+.close-sidebar-button {
+    display: block;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    cursor: pointer;
+}
 	
 	#logo {
 		position: relative;
