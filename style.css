@@ -21,8 +21,11 @@ body {
 	/* Remover as propriedades -webkit e -moz */
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
-	
+
 	text-rendering: optimizeLegibility;
+	
+	.fa-rotate-by {
+    transform: rotate(var(--fa-rotate-angle, 0deg)) !important;
 }
 
 
