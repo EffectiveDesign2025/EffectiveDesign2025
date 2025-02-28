@@ -455,98 +455,98 @@ A animação move as imagens da direita para a esquerda de forma contínua. */
 	max-width: 100%;
 	margin-bottom: 50px;
 	padding-bottom: 20px;
+	order: -1;
 }
 	
-	/* Estilização para seções lado direito e esquerdo */
-	#secao-inicial-lado-direito {
-		order: -1; /* Coloca o lado direito acima do lado esquerdo */
-	}
-
-	
-	/* Configuração do Título Principal por ID - Seção Inicial */
-	
-	#effective-design { 
-		font-size: 46px; /* Tamanho do texto específico */
-		margin-bottom: 5px; /* Margem inferior */
-		margin-top: -15px;
-	}
-
-	#subtitulo-principal {
-		text-align: left; /* Alinha o texto do subtítulo justificado */
-	
-	}
-	
-/*--------------------------------------------------------------------------------------------------------------------------------------*/
-	
-/*--------------------------------------------------------------------------------------------------------------------------------------*/
-	
-	#lottie-animation {
-		margin-top: -30px; /* Ajusta a margem superior da animação */
-	}
-	
-/*--------------------------------------------------------------------------------------------------------------------------------------*/
-	
-	#bt_pulse {
-		width: 50%; /* Largura do botão */
-		padding: 10px 30px; /* Espaçamento interno do botão */
-		margin-top: 20px; /* Margem superior */
-		text-align: center;
-		align-items: center;
-	}
-	
-/*--------------------------------------------------------------------------------------------------------------------------------------*/
-
-
-	#servicos {
-	display:flex;
-	flex-direction: column;
-	justify-content: flex-start;
-	width: auto;
-	max-width: 100%;
-	padding: 0 10%;
+/* Estilização para seções lado direito e esquerdo */
+#secao-inicial-lado-direito {
+	order: -1; /* Coloca o lado direito acima do lado esquerdo */
 }
-	
-	.carousel-track {
-		width: auto; /* Ajusta o tamanho no mobile */
-		flex-wrap: nowrap;
-		gap: 5px; /* Reduz o espaçamento entre os itens */
-	}
-	
-	.carousel-track img {
-		max-height: 30px; /* Reduz a altura das imagens */
-		margin: 0 10px; /* Reduz as margens */
-	}
-	
-	/* Animação contínua */
-	@keyframes scroll {
-		from {
-			transform: translateX(0%);
-		}
-		to {
-			transform: translateX(-50%);
-		}
-	}
 
-	.container-card {
-	    display: flex; /* Garante que o contêiner se comporte como um flex container */
-	    flex-direction: column; /* Alinha os itens em uma coluna */
-	    justify-content: flex-start; /* Alinha os itens no início da coluna */
+/* Configuração do Título Principal por ID - Seção Inicial */
+
+#effective-design { 
+font-size: 46px; /* Tamanho do texto específico */
+margin-bottom: 5px; /* Margem inferior */
+margin-top: -15px;
 }
-	
+
+#subtitulo-principal {
+text-align: left; /* Alinha o texto do subtítulo justificado */
+
+}
+
+/*--------------------------------------------------------------------------------------------------------------------------------------*/
+
+/*--------------------------------------------------------------------------------------------------------------------------------------*/
+
+#lottie-animation {
+margin-top: -30px; /* Ajusta a margem superior da animação */
+}
+
+/*--------------------------------------------------------------------------------------------------------------------------------------*/
+
+#bt_pulse {
+width: 50%; /* Largura do botão */
+padding: 10px 30px; /* Espaçamento interno do botão */
+margin-top: 20px; /* Margem superior */
+text-align: center;
+align-items: center;
+}
+
+/*--------------------------------------------------------------------------------------------------------------------------------------*/
+
+
+#servicos {
+display:flex;
+flex-direction: column;
+justify-content: flex-start;
+width: auto;
+max-width: 100%;
+padding: 0 10%;
+}
+
+.carousel-track {
+width: auto; /* Ajusta o tamanho no mobile */
+flex-wrap: nowrap;
+gap: 5px; /* Reduz o espaçamento entre os itens */
+}
+
+.carousel-track img {
+max-height: 30px; /* Reduz a altura das imagens */
+margin: 0 10px; /* Reduz as margens */
+}
+
+/* Animação contínua */
+@keyframes scroll {
+from {
+transform: translateX(0%);
+}
+to {
+transform: translateX(-50%);
+}
+}
+
+.container-card {
+display: flex; /* Garante que o contêiner se comporte como um flex container */
+flex-direction: column; /* Alinha os itens em uma coluna */
+justify-content: flex-start; /* Alinha os itens no início da coluna */
+}
+
 /* ----------------------------------------------------------------------- RESPONSIVIDADE - 417 PX ------------------------------>>>>>>>>>>>>>>>> */
 
 /* Media query para telas com largura máxima de 417px (dispositivos móveis menores) */
 @media (max-width: 417px) {
-    /* Estilos para títulos e parágrafos para garantir legibilidade em telas pequenas */
-    .content h1 { 
-	    font-size: 3rem;
-    } /* Tamanho do título principal */
-	
-    .content h2 {
-	    font-size: 1.2rem;
-    } /* Tamanho do subtítulo */
-	
-    .content p { 
-	    font-size: 0.9rem; 
-    } /* Tamanho do parágrafo */
+/* Estilos para títulos e parágrafos para garantir legibilidade em telas pequenas */
+.content h1 { 
+font-size: 3rem;
+} /* Tamanho do título principal */
+
+.content h2 {
+font-size: 1.2rem;
+} /* Tamanho do subtítulo */
+
+.content p { 
+font-size: 0.9rem; 
+} /* Tamanho do parágrafo */
 }
