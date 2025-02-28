@@ -348,27 +348,28 @@ A animação move as imagens da direita para a esquerda de forma contínua. */
 /* Media query para telas com largura máxima de 767px (geralmente dispositivos móveis) */
 @media (max-width: 767px) {
 
-	nav {
-		justify-content: space-between; /* Alinha os itens do nav com espaço entre eles */
-	}
-	
-	/* .links-container: estiliza o menu de links quando a tela é pequena.
-	A posição fixa e a transição permitem que o menu deslize da direita. */
-	.links-container {
-		flex-direction: column; /* Coloca os links em uma coluna */
-		justify-content: flex-start; /* Alinha os itens no início do contêiner */
-		align-items: flex-start; /* Alinha os itens à esquerda */
-		position: fixed; /* Fixa o menu na tela */
-		top: 0; /* Posiciona no topo */
-		right: -100%; /* Começa fora da tela à direita */
-		z-index: 10; /* Garante que o menu fique acima de outros elementos */
-		width: 300px; /* Largura do menu lateral */
-		height: 100vh; /* Altura total da tela */
-		backdrop-filter: blur(10px); /* Efeito de desfoque de fundo */
-		box-shadow: -5px 0 5px rgba(0,0,0,0.25); /* Sombra do menu */
-		transition: 0.75s ease-out; /* Animação suave ao abrir e fechar */
-	}
-	
+	   nav {
+        justify-content: space-between; /* Garante espaçamento correto */
+        padding: 0 20px;
+    }
+
+    .links-container {
+        display: none; /* Esconde os links no mobile */
+        position: absolute;
+        top: 80px;
+        right: 0;
+        background-color: #f5fefd;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 0;
+    }
+
+    #sidebar-active:checked ~ .links-container {
+        display: flex; /* Exibe o menu ao ativar o checkbox */
+    }
+}
+
 	/* Botões de abrir e fechar o menu */
 	.open-sidebar-button {
     display: flex; /* Garante que seja um elemento flexível */
