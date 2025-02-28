@@ -45,7 +45,7 @@ nav {
 	display: flex; /* Utiliza flexbox para os links */
 	justify-content: space-around; /* Distribui os links com espaço ao redor */
 	gap: 15px; /* Espaçamento entre os links */
-	width: 60%; /* Largura do contêiner de links */
+	width: auto; /* Largura do contêiner de links */
 	height: auto; /* Altura automática para acomodar o conteúdo */
 }
 
