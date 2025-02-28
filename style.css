@@ -275,7 +275,6 @@ nav .logo {
 /* .carousel: classe principal que define o contêiner do carrossel.
 Controla o layout geral e a aparência, incluindo overflow e espaçamento. */
 .carousel {
-	position: relative; /* Define a posição relativa para o controle de elementos internos */
 	overflow: hidden; /* Oculta qualquer conteúdo que ultrapasse o contêiner */
 	background-color: #f5fefd; /* Cor de fundo opcional */
 	padding: 20px 0; /* Espaçamento vertical */
