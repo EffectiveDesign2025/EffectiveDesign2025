@@ -29,31 +29,36 @@
     </noscript>
 </head>
 <body>
-    <header>
-        <nav>
-            <div class="logo"> <!-- Logo da empresa -->
-                <img id="logo" src="https://raw.githubusercontent.com/EffectiveDesign2025/EffectiveDesign2025/main/imagens/Logo%20Effective%20Design%202025%20-%20Branca%20-%20A.webp" alt="Effective Design" width="150" height="50">
-            </div>
-            <input type="checkbox" id="sidebar-active"> <!-- Checkbox para controlar o estado do menu lateral -->
-            <!-- Botão para abrir o menu -->
-            <label for="sidebar-active" class="open-sidebar-button" aria-label="Abrir Menu">
-                <img src="https://raw.githubusercontent.com/EffectiveDesign2025/EffectiveDesign2025/main/imagens/ICONE%20MENU%20HAMBURGUER.svg" alt="Abrir de Menu" width="50px" height="50px">
+  <header>
+    <nav>
+        <div class="logo">
+            <img id="logo" src="https://raw.githubusercontent.com/EffectiveDesign2025/EffectiveDesign2025/main/imagens/Logo%20Effective%20Design%202025%20-%20Branca%20-%20A.webp" alt="Effective Design" width="150" height="50">
+        </div>
+        
+        <input type="checkbox" id="sidebar-active">
+        
+        <!-- Botão para abrir o menu -->
+        <label for="sidebar-active" class="open-sidebar-button" aria-label="Abrir Menu" role="button" tabindex="0">
+            <img src="https://raw.githubusercontent.com/EffectiveDesign2025/EffectiveDesign2025/main/imagens/ICONE%20MENU%20HAMBURGUER.svg" alt="Abrir Menu" width="50px" height="50px">
+        </label>
+        
+        <div class="links-container">
+            <!-- Botão para fechar o menu -->
+            <label for="sidebar-active" class="close-sidebar-button" aria-label="Fechar Menu" role="button" tabindex="0">
+                <img src="https://raw.githubusercontent.com/EffectiveDesign2025/EffectiveDesign2025/main/imagens/ICONE%20FECHAR.svg" alt="Fechar Menu" width="50px" height="50px">
             </label>
-            <!-- Container do menu -->
-            <div class="links-container">
-                <!-- Botão para fechar o menu -->
-                <label for="sidebar-active" class="close-sidebar-button" aria-label="Fechar Menu">
-                    <img src="https://raw.githubusercontent.com/EffectiveDesign2025/EffectiveDesign2025/main/imagens/ICONE%20FECHAR.svg" alt="Fechar de Menu" width="50px" height="50px">
-                </label>
-                <!-- Links de navegação -->
-                <a href="link-inicio">Inicio</a>
-                <a href="link-serviços">Serviços</a>
-                <a href="Sobre">Sobre</a>
-                <a href="link-blog">Blog</a>
-                <a href="link-contato">Contato</a>
-            </div>
-        </nav>
-    </header>
+            
+            <!-- Links de navegação -->
+            <a href="link-inicio">Início</a>
+            <a href="link-servicos">Serviços</a>
+            <a href="link-sobre">Sobre</a>
+            <a href="link-blog">Blog</a>
+            <a href="link-contato">Contato</a>
+        </div>
+    </nav>
+</header>
+
+
     
     <section id="secao-inicial"> <!-- Seção inicial da página -->
         <main class="container">        
