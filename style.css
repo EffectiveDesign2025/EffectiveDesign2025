@@ -63,8 +63,8 @@ nav a:hover {
 #sidebar-active {
     display: none;
     position: absolute; /* Permite o uso de right */
-    right: 35px; /* Alinha o checkbox à direita */
-    top: 35px; /* Ajusta para o topo, se necessário */
+    right: 34px; /* Alinha o checkbox à direita */
+    top: 34px; /* Ajusta para o topo, se necessário */
 }
 
 /* Configurações do Ícone de Menu Hamburguer ABRIR & FECHAR */
@@ -371,10 +371,15 @@ A animação move as imagens da direita para a esquerda de forma contínua. */
 	
 	/* Botões de abrir e fechar o menu */
 	.open-sidebar-button {
-		display: block; /* Mostra os botões em telas pequenas */
-		padding: 20px; /* Espaçamento interno dos botões */
-		margim: 0 auto;
-	}
+    display: flex; /* Garante que seja um elemento flexível */
+    justify-content: center; /* Centraliza o ícone dentro do botão */
+    align-items: center;
+    position: absolute; /* Permite posicionar corretamente */
+    right: 15px; /* Ajuste para alinhar à direita */
+    top: 50%; /* Centraliza verticalmente */
+    transform: translateY(-50%); /* Ajuste fino para centralizar */
+    cursor: pointer; /* Indica que é clicável */
+}
 
 	.close-sidebar-button {
 		display: block; /* Mostra os botões em telas pequenas */
