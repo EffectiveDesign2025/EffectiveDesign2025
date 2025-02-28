@@ -405,7 +405,7 @@ A animação move as imagens da direita para a esquerda de forma contínua. */
 		display: block; /* Mostra os botões em telas pequenas */
 		padding: 20px; /* Espaçamento interno dos botões */
 		margin: 0 auto;
-	
+	}	
 	
 	#logo {
 		position: relative;
