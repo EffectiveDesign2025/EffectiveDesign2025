@@ -63,8 +63,8 @@ nav a:hover {
 #sidebar-active {
     display: none;
     position: absolute; /* Permite o uso de right */
-    right: 0; /* Alinha o checkbox à direita */
-    top: 0; /* Ajusta para o topo, se necessário */
+    right: 10; /* Alinha o checkbox à direita */
+    top: 10; /* Ajusta para o topo, se necessário */
 }
 
 /* Configurações do Ícone de Menu Hamburguer ABRIR & FECHAR */
