@@ -24,8 +24,6 @@ body {
 
 	text-rendering: optimizeLegibility;
 	
-	.fa-rotate-by {
-    transform: rotate(var(--fa-rotate-angle, 0deg)) !important;
 }
 
 
