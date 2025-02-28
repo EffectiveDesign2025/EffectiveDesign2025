@@ -63,7 +63,7 @@ nav a:hover {
 #sidebar-active {
 	display: none; /* Esconde a checkbox que controla o menu hamburguer */
 	padding: 20px;
-	justify-content: flex-end;
+	justify-self: end;
 }
 
 /* Configurações do Ícone de Menu Hamburguer ABRIR & FECHAR */
