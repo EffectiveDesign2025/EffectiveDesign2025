@@ -77,11 +77,11 @@ nav a:hover {
 }
 
 .close-sidebar-button {
-	display: none; /* Inicialmente escondidos, serão exibidos conforme necessário */
-	color: #16011e; /* Cor do ícone do menu */
-	width: 50px; /* Largura do ícone */
-	height: 50px; /* Altura do ícone */
-	font-size: 50px; /* Tamanho do ícone */
+    display: block;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    cursor: pointer;
 }
 
 /* Configurações do Bloco de Conteúdo da Logo */
