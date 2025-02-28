@@ -389,16 +389,18 @@ A animação move as imagens da direita para a esquerda de forma contínua. */
     top: 50%; /* Centraliza verticalmente */
     transform: translateY(-50%); /* Ajuste fino para centralizar */
     cursor: pointer; /* Indica que é clicável */
+    z-index: 20;
 }
 
 	.close-sidebar-button {
 		display: block; /* Mostra os botões em telas pequenas */
 		padding: 20px; /* Espaçamento interno dos botões */
-		margim: 0 auto;
+		margin: 0 auto;
 	
 	
 	#logo {
 		margin-left: 15px; /* Adiciona margem à esquerda do logo para espaçamento */
+		z-index: 10; /* Mantém visível sobre outros elementos */
 	}
 	
 /*--------------------------------------------------------------------------------------------------------------------------------------*/
