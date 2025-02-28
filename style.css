@@ -181,11 +181,16 @@ nav .logo {
 
 #secao-inicial { 
 	display: flex;
-	flex-wrap: wrap;
 	justify-content: space-between;	
 	flex-direction: row;
 	width: auto;
 	max-width: 100%;
+}
+
+#secao-inicial-lado-esquerdo { 
+	width: 30%;
+	padding: 5%;
+	height: auto;
 }
 
 /* Configuração da Animação - Seção Inicial */
