@@ -371,10 +371,12 @@ A animação move as imagens da direita para a esquerda de forma contínua. */
 		display: block; /* Mostra os botões em telas pequenas */
 		padding: 20px; /* Espaçamento interno dos botões */
 		margim: 0 auto;
-		text-align: center;
-		align-items: center;
-		justify-content: center;
 	}
+
+	.close-sidebar-button {
+		display: block; /* Mostra os botões em telas pequenas */
+		padding: 20px; /* Espaçamento interno dos botões */
+		margim: 0 auto;
 	
 	/* Quando o sidebar estiver ativo, o menu aparece */
 	#sidebar-active:checked ~ .links-container {
