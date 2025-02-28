@@ -156,7 +156,7 @@ nav .logo {
 }
 
 /* Configuração Geral de Conteúdo H2 */
-..content-1-bloco .content-2-blocos h2 {
+.content-1-bloco .content-2-blocos h2 {
 	font-size: 1.8rem; /* Tamanho da fonte do subtítulo */
 	margin-bottom: 15px; /* Espaçamento inferior */
 	color: #260132; /* Cor do subtítulo */
@@ -408,6 +408,7 @@ A animação move as imagens da direita para a esquerda de forma contínua. */
 	
 	
 	#logo {
+		position: relative;
 		margin-left: 15px; /* Adiciona margem à esquerda do logo para espaçamento */
 		z-index: 10; /* Mantém visível sobre outros elementos */
 	}
