@@ -420,7 +420,7 @@ A posição fixa e a transição permitem que o menu deslize da direita. */
 
 
 .sidebar-button .open-icon {
-    display: block; /* Esconde o ícone de fechar por padrão */
+    display: flex; /* Esconde o ícone de fechar por padrão */
 }
 
 .sidebar-button .close-icon {
