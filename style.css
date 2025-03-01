@@ -395,7 +395,8 @@ A animação move as imagens da direita para a esquerda de forma contínua. */
 
 
 nav a {
-	margin-top: 80px;
+	padding: 10px;
+	marring-left: 15px;
 }
 
 /* .links-container: estiliza o menu de links quando a tela é pequena.
