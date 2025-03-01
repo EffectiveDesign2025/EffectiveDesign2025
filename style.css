@@ -408,8 +408,6 @@ A posição fixa e a transição permitem que o menu deslize da direita. */
 	right: 0; /* Move o menu para a tela */
 }
 
-
-
 /* Botões de abrir e fechar o menu */
 .open-sidebar-button {
 	display: flex; /* Garante que seja um elemento flexível */
@@ -475,9 +473,12 @@ A posição fixa e a transição permitem que o menu deslize da direita. */
 	order: -1; /* Coloca o lado direito acima do lado esquerdo */
 }
 
-#secao-inicial-lado-esquerdo h1 { 
-	text-align: justify;
-	text-align: center;	
+#secao-inicial-lado-esquerdo h2 { 
+	text-align: justify;	
+}
+
+#secao-inicial-lado-esquerdo p { 
+	text-align: justify;	
 }
 
 /* Configuração do Título Principal por ID - Seção Inicial */
