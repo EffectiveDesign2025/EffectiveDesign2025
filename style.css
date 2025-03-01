@@ -417,6 +417,12 @@ A posição fixa e a transição permitem que o menu deslize da direita. */
 	transition: 0.75s ease-out; /* Animação suave ao abrir e fechar */
 }
 /* CSS */
+
+
+.sidebar-button .open-icon {
+    display: block; /* Esconde o ícone de fechar por padrão */
+}
+
 .sidebar-button .close-icon {
     display: none; /* Esconde o ícone de fechar por padrão */
 }
