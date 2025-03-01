@@ -428,6 +428,7 @@ A posição fixa e a transição permitem que o menu deslize da direita. */
 
 .sidebar-button {
 	display: block;
+	margint-right: 20px;
 }
 
 .open-icon {
