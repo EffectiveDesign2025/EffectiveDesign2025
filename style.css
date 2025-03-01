@@ -67,7 +67,7 @@ nav a:hover {
 #sidebar-active {
 	display: none;
 	position: relative; /* Permite o uso de right */
-}
+}tts-floating-icon
 
 /* Configurações do Ícone de Menu Hamburguer ABRIR & FECHAR */
 .sidebar-button {
@@ -78,6 +78,7 @@ nav a:hover {
 	height: 50px; /* Altura do ícone */
 	font-size: 50px; /* Tamanho do ícone */
 	padding: 10px;
+	z-index: 20;
 }
 
 .open-icon {
@@ -424,10 +425,16 @@ A animação move as imagens da direita para a esquerda de forma contínua. */
 		transition: right 0.4s ease-out; /* Animação suave ao abrir e fechar */
 		padding: 30px;
 	}
-
+	
+	#sidebar-active:checked ~ .links-container {
+	        display: flex; /* Mostra o ícone de fechar quando o menu está aberto */
+		right: 0;
+	}
+	
 	.sidebar-button {
 		display: block;
 		margin-right: 20px;
+		
 	}
 	
 	.open-icon {
@@ -439,19 +446,15 @@ A animação move as imagens da direita para a esquerda de forma contínua. */
 	    display: none; /* Esconde o ícone de fechar por padrão */
 	
 	}
-	
-	#sidebar-active:checked ~ .sidebar-button .close-icon {
-	    display: block; /* Mostra o ícone de fechar quando o menu está aberto */
-	}
-		
+			
 	#sidebar-active:checked ~ .sidebar-button .open-icon {
 	    display: none; /* Esconde o ícone de abrir quando o menu está aberto */
 	}
-	
-	#sidebar-active:checked ~ .links-container {
-	    display: flex; /* Mostra o ícone de fechar quando o menu está aberto */
-		right: 0;
+
+	#sidebar-active:checked ~ .sidebar-button .close-icon {
+	    display: block; /* Mostra o ícone de fechar quando o menu está aberto */
 	}
+	
 	
 	#logo {
 		position: relative;
