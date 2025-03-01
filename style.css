@@ -97,7 +97,7 @@ nav a:hover {
 	margin: 0 auto;
 	cursor: pointer; /* Indica que é clicável */
 	z-index: 20;
-	rigth: 30px;
+	right: 30px;
 }
 
 /* Configurações do Bloco de Conteúdo da Logo */
@@ -438,7 +438,12 @@ A posição fixa e a transição permitem que o menu deslize da direita. */
 #sidebar-active:checked ~ .sidebar-button .open-icon {
     display: none; /* Esconde o ícone de abrir quando o menu está aberto */
 }
-	
+
+#sidebar-active:checked ~ .links-container {
+    display: flex; /* Mostra o ícone de fechar quando o menu está aberto */
+	right: 0;
+}
+
 #logo {
 	position: relative;
 	z-index: 10; /* Mantém visível sobre outros elementos */
