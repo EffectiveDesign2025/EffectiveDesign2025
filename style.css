@@ -442,7 +442,6 @@ A posição fixa e a transição permitem que o menu deslize da direita. */
 	
 #logo {
 	position: relative;
-	margin-left: 15px; /* Adiciona margem à esquerda do logo para espaçamento */
 	z-index: 10; /* Mantém visível sobre outros elementos */
 }
 
