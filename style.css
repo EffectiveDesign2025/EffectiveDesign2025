@@ -97,6 +97,7 @@ nav a:hover {
 	margin: 0 auto;
 	cursor: pointer; /* Indica que é clicável */
 	z-index: 20;
+	rigth: 30px;
 }
 
 /* Configurações do Bloco de Conteúdo da Logo */
@@ -402,7 +403,7 @@ A posição fixa e a transição permitem que o menu deslize da direita. */
 .links-container {
 	display: none; /* Esconde os links no mobile */
 	flex-direction: column; /* Coloca os links em uma coluna */
-	justify-content: flex-start; /* Alinha os itens no início do contêiner */
+	justify-content: space-between; /* Alinha os itens no início do contêiner */
 	align-items: flex-start; /* Alinha os itens à esquerda */
 	position: fixed; /* Fixa o menu na tela */
 	top: 0; /* Posiciona no topo */
@@ -422,10 +423,6 @@ A posição fixa e a transição permitem que o menu deslize da direita. */
 /* Botões de abrir e fechar o menu */
 .open-icon {
 	display: flex; /* Garante que seja um elemento flexível */	
-}
-
-.close-icon {
-	display: none;
 }
 
 #sidebar-active:checked ~ .links-container {
