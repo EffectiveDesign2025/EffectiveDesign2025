@@ -453,6 +453,7 @@ A posição fixa e a transição permitem que o menu deslize da direita. */
 
 .content h3 {
 	font-size: 0.5em; /* Tamanho da fonte do parágrafo */
+	text-align: justify;
 }
 
 .content p {
