@@ -129,27 +129,6 @@ nav .logo {
 	background-color: #f5fefd; /* Cor de fundo do container */
 }
 
-
-/* Configuração Geral de Conteúdo */
-.content-desktop {
-	width: 38%; /* Largura do conteúdo */
-	height: auto; /* Altura automática para se ajustar ao conteúdo */
-	padding: 0 7%; /* Padding lateral */
-	color: #000000; /* Cor do texto */
-}
-
-.content-mobile {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	width: auto; /* Largura do conteúdo */
-	height: auto; /* Altura automática para se ajustar ao conteúdo */
-	text-align: center; /* Centraliza o texto */
-	align-items: center;
-	padding: 0 7%; /* Padding lateral */
-	color: #000000; /* Cor do texto */
-}
-
 /* Configuração Geral de Conteúdo H1 */
 .content h1 {
 	font-size: 4rem; /* Tamanho da fonte do título */
@@ -287,12 +266,12 @@ nav .logo {
 	padding: 0 10%;
 }
 
-.section-range h2 {
+.faixa-secao h2 {
 	text-align:center;
 	align-items: center;
 }
 
-.section-range h3 {
+.faixa-secao h3 {
 	text-align: justify;
 }
 
