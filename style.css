@@ -395,205 +395,210 @@ A animação move as imagens da direita para a esquerda de forma contínua. */
 
 /* Media query para telas com largura máxima de 767px (geralmente dispositivos móveis) */
 @media (max-width: 767px) {
+
+	nav {
+		justify-content: space-between;
+	}
+
+	nav .logo {
+		margin-left: -30px;
+	}
 	
-/* .links-container: estiliza o menu de links quando a tela é pequena.
-A posição fixa e a transição permitem que o menu deslize da direita. */
-.links-container {
-	display: none; /* Esconde os links no mobile */
-	flex-direction: column; /* Coloca os links em uma coluna */
-	justify-content: flex-start;
-	align-items: flex-start; /* Alinha os itens à esquerda */
-	position: fixed; /* Fixa o menu na tela */
-	top: 0; /* Posiciona no topo */
-	right: -100%; /* Começa fora da tela à direita */
-	z-index: 10; /* Garante que o menu fique acima de outros elementos */
-	width: 300px; /* Largura do menu lateral */
-	height: 100vh; /* Altura total da tela */
-	backdrop-filter: blur(10px); /* Efeito de desfoque de fundo */
-	box-shadow: -5px 0 5px rgba(0,0,0,0.25); /* Sombra do menu */
-	transition: 0.75s ease-out; /* Animação suave ao abrir e fechar */
-}
-
-.links-container a {
-
-	padding: 20px;
-	margin-top: 30px;
-}
-
-.sidebar-button {
-	display: block;
-}
-
-.open-icon {
-    display: block; /* Esconde o ícone de fechar por padrão */
-}
-
-.close-icon {
-    display: none; /* Esconde o ícone de fechar por padrão */
-}
-
-#sidebar-active:checked ~ .sidebar-button .close-icon {
-    display: block; /* Mostra o ícone de fechar quando o menu está aberto */
-}
+	/* .links-container: estiliza o menu de links quando a tela é pequena.
+	A posição fixa e a transição permitem que o menu deslize da direita. */
+	.links-container {
+		display: none; /* Esconde os links no mobile */
+		flex-direction: column; /* Coloca os links em uma coluna */
+		justify-content: flex-start;
+		align-items: flex-start; /* Alinha os itens à esquerda */
+		position: fixed; /* Fixa o menu na tela */
+		top: 0; /* Posiciona no topo */
+		right: -100%; /* Começa fora da tela à direita */
+		z-index: 10; /* Garante que o menu fique acima de outros elementos */
+		width: 300px; /* Largura do menu lateral */
+		height: 100vh; /* Altura total da tela */
+		backdrop-filter: blur(10px); /* Efeito de desfoque de fundo */
+		box-shadow: -5px 0 5px rgba(0,0,0,0.25); /* Sombra do menu */
+		transition: 0.75s ease-out; /* Animação suave ao abrir e fechar */
+	}
 	
-#sidebar-active:checked ~ .sidebar-button .open-icon {
-    display: none; /* Esconde o ícone de abrir quando o menu está aberto */
-}
-
-#sidebar-active:checked ~ .links-container {
-    display: flex; /* Mostra o ícone de fechar quando o menu está aberto */
-	right: 0;
-}
-
-#logo {
-	position: relative;
-	z-index: 10; /* Mantém visível sobre outros elementos */
-}
-
-/*--------------------------------------------------------------------------------------------------------------------------------------*/
-
-/* .container: estiliza um contêiner flexível que se adapta em telas pequenas */
-.container {
-	flex-direction: column; /* Alinha os itens em coluna */
-	justify-content: flex-start;
-	align-items: center;
-	height: auto; /* Altura automática para acomodar o conteúdo */
-	gap: 0;
-}
-
-/* .content: estiliza a seção de conteúdo */
-
-.content {
-	align-items: center;
-	text-align: center;
-}
-
-.content h3 {
-	font-size: 0.5em; /* Tamanho da fonte do parágrafo */
-	text-align: justify;
-}
-
-.content p {
-	font-size: 1.2em; /* Tamanho da fonte do parágrafo */
-	line-height: 1.5;
-	margin-bottom: 20px; /* Espaçamento inferior */
-	text-align: justify; /* Justifica o texto */
-}
-
-/*--------------------------------------------------------------------------------------------------------------------------------------*/
-#secao-inicial { 
-
-	justify-content: flex-start;	
-	flex-direction: column;
-	width: auto;
-	margin-bottom: 50px;
-	padding-bottom: 20px;
-}
+	.sidebar-button {
+		display: block;
+		margin-right: 20px;
+	}
 	
-#secao-inicial-lado-esquerdo { 
-	width: auto;
-}
-
-#secao-inicial-lado-direito { 
-	width: auto;
-	order: -1; /* Coloca o lado direito acima do lado esquerdo */
-}
-
-#secao-inicial-lado-esquerdo h2 { 
-	text-align: justify;	
-}
-
-#secao-inicial-lado-esquerdo p { 
-	text-align: justify;	
-}
-
-#secao-inicial a {
-	justify-content: center;
-	text-align: center;
-	align-items: center;
-}
-
-
-/* Configuração do Título Principal por ID - Seção Inicial */
-
-#effective-design { 
-	font-size: 46px; /* Tamanho do texto específico */
-	margin-bottom: 5px; /* Margem inferior */
-	margin-top: -15px;
-}
-
-#subtitulo-principal {
-	text-align: left; /* Alinha o texto do subtítulo justificado */
-
-}
-
-/*--------------------------------------------------------------------------------------------------------------------------------------*/
-
-/*--------------------------------------------------------------------------------------------------------------------------------------*/
-
-#lottie-animation {
-	margin-top: -30px; /* Ajusta a margem superior da animação */
-}
-
-/*--------------------------------------------------------------------------------------------------------------------------------------*/
-
-#bt_pulse {
-	width: 50%; /* Largura do botão */
-	padding: 10px 30px; /* Espaçamento interno do botão */
-	margin-top: 20px; /* Margem superior */
-	text-align: center;
-	align-items: center;
-}
-
-/*--------------------------------------------------------------------------------------------------------------------------------------*/
-
-
-#servicos {
-	flex-direction: column;
-	justify-content: flex-start;
-	width: auto;
-	padding: 0 5%;
-}
-
-.carousel-track {
-	width: auto;
-	max-width: 767px; /* Ajusta o tamanho no mobile */
-	flex-wrap: nowrap;
-	gap: 5px; /* Reduz o espaçamento entre os itens */
-}
-
-.carousel-track img {
-	max-height: 30px; /* Reduz a altura das imagens */
-	margin: 0 10px; /* Reduz as margens */
-}
-
-/* Animação contínua */
-@keyframes scroll {
-	from {
-		transform: translateX(0%);
-		}
-	to {
-		transform: translateX(-50%);
-}
-}
-
-.container-card {
-display: flex; /* Garante que o contêiner se comporte como um flex container */
-flex-direction: column; /* Alinha os itens em uma coluna */
-justify-content: flex-start; /* Alinha os itens no início da coluna */
-}
-}
-/* ----------------------------------------------------------------------- RESPONSIVIDADE - 417 PX ------------------------------>>>>>>>>>>>>>>>> */
-
+	.open-icon {
+	    display: block; /* Esconde o ícone de fechar por padrão */
+	    margin-right: 20px;
+	}
+	
+	.close-icon {
+	    display: none; /* Esconde o ícone de fechar por padrão */
+	    margin-right: 20px;
+	}
+	
+	#sidebar-active:checked ~ .sidebar-button .close-icon {
+	    display: block; /* Mostra o ícone de fechar quando o menu está aberto */
+	}
+		
+	#sidebar-active:checked ~ .sidebar-button .open-icon {
+	    display: none; /* Esconde o ícone de abrir quando o menu está aberto */
+	}
+	
+	#sidebar-active:checked ~ .links-container {
+	    display: flex; /* Mostra o ícone de fechar quando o menu está aberto */
+		right: 0;
+	}
+	
+	#logo {
+		position: relative;
+		z-index: 10; /* Mantém visível sobre outros elementos */
+	}
+	
+	/*--------------------------------------------------------------------------------------------------------------------------------------*/
+	
+	/* .container: estiliza um contêiner flexível que se adapta em telas pequenas */
+	.container {
+		flex-direction: column; /* Alinha os itens em coluna */
+		justify-content: flex-start;
+		align-items: center;
+		height: auto; /* Altura automática para acomodar o conteúdo */
+		gap: 0;
+	}
+	
+	/* .content: estiliza a seção de conteúdo */
+	
+	.content {
+		align-items: center;
+		text-align: center;
+	}
+	
+	.content h3 {
+		font-size: 0.5em; /* Tamanho da fonte do parágrafo */
+		text-align: justify;
+	}
+	
+	.content p {
+		font-size: 1.2em; /* Tamanho da fonte do parágrafo */
+		line-height: 1.5;
+		margin-bottom: 20px; /* Espaçamento inferior */
+		text-align: justify; /* Justifica o texto */
+	}
+	
+	/*--------------------------------------------------------------------------------------------------------------------------------------*/
+	#secao-inicial { 
+	
+		justify-content: flex-start;	
+		flex-direction: column;
+		width: auto;
+		margin-bottom: 50px;
+		padding-bottom: 20px;
+	}
+		
+	#secao-inicial-lado-esquerdo { 
+		width: auto;
+	}
+	
+	#secao-inicial-lado-direito { 
+		width: auto;
+		order: -1; /* Coloca o lado direito acima do lado esquerdo */
+	}
+	
+	#secao-inicial-lado-esquerdo h2 { 
+		text-align: justify;	
+	}
+	
+	#secao-inicial-lado-esquerdo p { 
+		text-align: justify;	
+	}
+	
+	#secao-inicial a {
+		justify-content: center;
+		text-align: center;
+		align-items: center;
+	}
+	
+	
+	/* Configuração do Título Principal por ID - Seção Inicial */
+	
+	#effective-design { 
+		font-size: 46px; /* Tamanho do texto específico */
+		margin-bottom: 5px; /* Margem inferior */
+		margin-top: -15px;
+	}
+	
+	#subtitulo-principal {
+		text-align: left; /* Alinha o texto do subtítulo justificado */
+	
+	}
+	
+	/*--------------------------------------------------------------------------------------------------------------------------------------*/
+	
+	/*--------------------------------------------------------------------------------------------------------------------------------------*/
+	
+	#lottie-animation {
+		margin-top: -30px; /* Ajusta a margem superior da animação */
+	}
+	
+	/*--------------------------------------------------------------------------------------------------------------------------------------*/
+	
+	#bt_pulse {
+		width: 50%; /* Largura do botão */
+		padding: 10px 30px; /* Espaçamento interno do botão */
+		margin-top: 20px; /* Margem superior */
+		text-align: center;
+		align-items: center;
+	}
+	
+	/*--------------------------------------------------------------------------------------------------------------------------------------*/
+	
+	
+	#servicos {
+		flex-direction: column;
+		justify-content: flex-start;
+		width: auto;
+		padding: 0 5%;
+	}
+	
+	.carousel-track {
+		width: auto;
+		max-width: 767px; /* Ajusta o tamanho no mobile */
+		flex-wrap: nowrap;
+		gap: 5px; /* Reduz o espaçamento entre os itens */
+	}
+	
+	.carousel-track img {
+		max-height: 30px; /* Reduz a altura das imagens */
+		margin: 0 10px; /* Reduz as margens */
+	}
+	
+	/* Animação contínua */
+	@keyframes scroll {
+		from {
+			transform: translateX(0%);
+			}
+		to {
+			transform: translateX(-50%);
+	}
+	}
+	
+	.container-card {
+	display: flex; /* Garante que o contêiner se comporte como um flex container */
+	flex-direction: column; /* Alinha os itens em uma coluna */
+	justify-content: flex-start; /* Alinha os itens no início da coluna */
+	}
+	}
+	/* ----------------------------------------------------------------------- RESPONSIVIDADE - 417 PX ------------------------------>>>>>>>>>>>>>>>> */
+	
 /* Media query para telas com largura máxima de 417px (dispositivos móveis menores) */
 @media (max-width: 417px) {
-
-	.carousel-track {
-	width: auto;
-	max-width: 417px; /* Ajusta o tamanho no mobile */
-	flex-wrap: nowrap;
-	gap: 5px; /* Reduz o espaçamento entre os itens */
-}
-}
-
-/* Estilos para títulos e parágrafos para garantir legibilidade em telas pequenas */
+	
+		.carousel-track {
+		width: auto;
+		max-width: 417px; /* Ajusta o tamanho no mobile */
+		flex-wrap: nowrap;
+		gap: 5px; /* Reduz o espaçamento entre os itens */
+	}
+	}
+	
+	/* Estilos para títulos e parágrafos para garantir legibilidade em telas pequenas */
