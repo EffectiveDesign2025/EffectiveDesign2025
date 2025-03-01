@@ -451,6 +451,13 @@ A posição fixa e a transição permitem que o menu deslize da direita. */
 	text-align: center;
 }
 
+.content p {
+	font-size: 1.4em; /* Tamanho da fonte do parágrafo */
+	line-height: 1.5;
+	margin-bottom: 20px; /* Espaçamento inferior */
+	text-align: justify; /* Justifica o texto */
+}
+
 /*--------------------------------------------------------------------------------------------------------------------------------------*/
 #secao-inicial { 
 
