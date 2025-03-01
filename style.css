@@ -451,8 +451,12 @@ A posição fixa e a transição permitem que o menu deslize da direita. */
 	text-align: center;
 }
 
+.content h3 {
+	font-size: 0.5em; /* Tamanho da fonte do parágrafo */
+}
+
 .content p {
-	font-size: 1.4em; /* Tamanho da fonte do parágrafo */
+	font-size: 1.5em; /* Tamanho da fonte do parágrafo */
 	line-height: 1.5;
 	margin-bottom: 20px; /* Espaçamento inferior */
 	text-align: justify; /* Justifica o texto */
@@ -485,10 +489,12 @@ A posição fixa e a transição permitem que o menu deslize da direita. */
 	text-align: justify;	
 }
 
-#secao-inicial a { 
-	text-aligm: center;
+#secao-inicial a {
+	justify-content: center;
+	text-align: center;
 	align-items: center;
 }
+
 
 /* Configuração do Título Principal por ID - Seção Inicial */
 
