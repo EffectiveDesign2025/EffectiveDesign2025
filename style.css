@@ -420,6 +420,7 @@ A animação move as imagens da direita para a esquerda de forma contínua. */
 		backdrop-filter: blur(10px); /* Efeito de desfoque de fundo */
 		box-shadow: -5px 0 5px rgba(0,0,0,0.25); /* Sombra do menu */
 		transition: 0.75s ease-out; /* Animação suave ao abrir e fechar */
+		padding: 30px;
 	}
 	
 	.sidebar-button {
