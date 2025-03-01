@@ -71,6 +71,7 @@ nav a:hover {
 /* Configurações do Ícone de Menu Hamburguer ABRIR & FECHAR */
 .sidebar-button {
 	display: none; /* Inicialmente escondidos, serão exibidos conforme necessário */
+	position: relative; /* Permite o uso de right */
 	color: #16011e; /* Cor do ícone do menu */
 	width: 50px; /* Largura do ícone */
 	height: 50px; /* Altura do ícone */
@@ -79,6 +80,7 @@ nav a:hover {
 
 .open-icon {
 	display: none; /* Inicialmente escondidos, serão exibidos conforme necessário */
+	position: relative; /* Permite o uso de right */
 	color: #16011e; /* Cor do ícone do menu */
 	width: 50px; /* Largura do ícone */
 	height: 50px; /* Altura do ícone */
@@ -90,6 +92,7 @@ nav a:hover {
 	
 .close-icon {
 	display: none; /* Inicialmente escondidos, serão exibidos conforme necessário */
+	position: relative; /* Permite o uso de right */
 	color: #16011e; /* Cor do ícone do menu */
 	width: 50px; /* Largura do ícone */
 	height: 50px; /* Altura do ícone */
