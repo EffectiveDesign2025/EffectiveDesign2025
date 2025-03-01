@@ -396,7 +396,7 @@ A animação move as imagens da direita para a esquerda de forma contínua. */
 
 nav a {
 	padding: 10px;
-	marring-left: 15px;
+	margin-left: 15px;
 }
 
 /* .links-container: estiliza o menu de links quando a tela é pequena.
@@ -417,7 +417,7 @@ A posição fixa e a transição permitem que o menu deslize da direita. */
 	transition: 0.75s ease-out; /* Animação suave ao abrir e fechar */
 }
 
-.sidebar-button, .open-icon {
+.sidebar-button .open-icon {
 	display: flex;
 }
 
