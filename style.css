@@ -432,7 +432,7 @@ A animação move as imagens da direita para a esquerda de forma contínua. */
 	}
 	
 	.sidebar-button {
-		display: block;
+		display: flex;
 		margin-right: 20px;
 		
 	}
