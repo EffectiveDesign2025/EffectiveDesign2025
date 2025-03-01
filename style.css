@@ -410,7 +410,7 @@ A animação move as imagens da direita para a esquerda de forma contínua. */
 	/* .links-container: estiliza o menu de links quando a tela é pequena.
 	A posição fixa e a transição permitem que o menu deslize da direita. */
 	.links-container {
-		display: none; /* Esconde os links no mobile */
+		
 		flex-direction: column; /* Coloca os links em uma coluna */
 		justify-content: flex-start;
 		align-items: flex-start; /* Alinha os itens à esquerda */
