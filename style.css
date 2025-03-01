@@ -374,7 +374,7 @@ A animação move as imagens da direita para a esquerda de forma contínua. */
 	background-color: #3f635d; /* Corrigido */
 }
 
-/* ----------------------------------------------------------------------- RESPONSIVIDADE - MIDIAS QUERIES ------------------------------>>>>>>>>>>>>>>>> */
+/* ----------------------------------------------------------------------- RESPONSIVIDADE 767 PX- MIDIAS QUERIES ------------------------------>>>>>>>>>>>>>>>> */
 
 /* Media query para telas com largura máxima de 767px (geralmente dispositivos móveis) */
 @media (max-width: 767px) {
@@ -405,12 +405,7 @@ A posição fixa e a transição permitem que o menu deslize da direita. */
 	box-shadow: -5px 0 5px rgba(0,0,0,0.25); /* Sombra do menu */
 	transition: 0.75s ease-out; /* Animação suave ao abrir e fechar */
 }
-
-/* Quando o sidebar estiver ativo, o menu aparece */
-#sidebar-active:checked ~ .links-container {
-	display: flex; 
-	right: 0; /* Move o menu para a tela */
-
+	
 /* Botões de abrir e fechar o menu */
 .open-sidebar-button {
 	display: flex; /* Garante que seja um elemento flexível */
@@ -432,6 +427,27 @@ A posição fixa e a transição permitem que o menu deslize da direita. */
 	cursor: pointer;
 }
 
+#sidebar-active:checked ~ .links-container .open-sidebar-button {
+    display: flex; /* Garante que seja um elemento flexível */
+    justify-content: center; /* Centraliza o ícone dentro do botão */
+    align-items: center;
+    position: absolute; /* Permite posicionar corretamente */
+    right: 15px; /* Ajuste para alinhar à direita */
+    top: 50%; /* Centraliza verticalmente */
+    transform: translateY(-50%); /* Ajuste fino para centralizar */
+    cursor: pointer; /* Indica que é clicável */
+    z-index: 20;
+}
+
+#sidebar-active:checked ~ .links-container .close-sidebar-button {
+    display: block;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    cursor: pointer;
+}
+	
+
 #logo {
 	position: relative;
 	margin-left: 15px; /* Adiciona margem à esquerda do logo para espaçamento */
@@ -451,7 +467,7 @@ A posição fixa e a transição permitem que o menu deslize da direita. */
 
 /* .content: estiliza a seção de conteúdo */
 
-.content{
+.content {
 	align-items: center;
 	text-align: center;
 }
