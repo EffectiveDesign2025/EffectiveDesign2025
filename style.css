@@ -384,6 +384,10 @@ nav {
 
 }
 
+nav a {
+	top: 80px;
+}
+	
 /* .links-container: estiliza o menu de links quando a tela é pequena.
 A posição fixa e a transição permitem que o menu deslize da direita. */
 .links-container {
@@ -406,7 +410,6 @@ A posição fixa e a transição permitem que o menu deslize da direita. */
 #sidebar-active:checked ~ .links-container {
 	display: flex; 
 	right: 0; /* Move o menu para a tela */
-}
 
 /* Botões de abrir e fechar o menu */
 .open-sidebar-button {
