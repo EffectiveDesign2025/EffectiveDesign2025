@@ -505,7 +505,7 @@ A animação move as imagens da direita para a esquerda de forma contínua. */
 	}
 	
 	#secao-inicial-lado-esquerdo h2 { 
-		text-align: justify;	
+		text-align: left;	
 	}
 	
 	#secao-inicial-lado-esquerdo p { 
@@ -527,11 +527,7 @@ A animação move as imagens da direita para a esquerda de forma contínua. */
 		margin-top: -15px;
 	}
 	
-	#subtitulo-principal {
-		text-align: left; /* Alinha o texto do subtítulo justificado */
-	
-	}
-	
+
 	/*--------------------------------------------------------------------------------------------------------------------------------------*/
 	
 	/*--------------------------------------------------------------------------------------------------------------------------------------*/
