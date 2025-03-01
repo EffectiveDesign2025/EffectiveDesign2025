@@ -529,8 +529,7 @@ A posição fixa e a transição permitem que o menu deslize da direita. */
 	flex-direction: column;
 	justify-content: flex-start;
 	width: auto;
-	max-width: 100%;
-	padding: 0 10%;
+	padding: 0 5%;
 }
 
 .carousel-track {
