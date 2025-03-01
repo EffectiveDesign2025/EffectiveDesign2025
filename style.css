@@ -65,7 +65,7 @@ nav a:hover {
 /* Configurações da Caixa de Ativação [ check Box ] do Menu Hambúrguer */
 #sidebar-active {
 	display: none;
-	position: absolute; /* Permite o uso de right */
+	position: relative; /* Permite o uso de right */
 	right: 34px; /* Alinha o checkbox à direita */
 	top: 34px; /* Ajusta para o topo, se necessário */
 }
