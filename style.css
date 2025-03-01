@@ -422,6 +422,10 @@ A animação move as imagens da direita para a esquerda de forma contínua. */
 		transition: 0.75s ease-out; /* Animação suave ao abrir e fechar */
 		padding: 30px;
 	}
+
+	.links-container a {
+		padding: 0 20px;
+	}
 	
 	.sidebar-button {
 		display: block;
