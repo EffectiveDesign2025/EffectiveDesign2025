@@ -397,14 +397,15 @@ A animação move as imagens da direita para a esquerda de forma contínua. */
 @media (max-width: 767px) {
 
 
+nav { 
+	justify-content: space-between; /* Alinha os itens no início do contêiner */
+}
+	
 nav a {
 	padding: 10px;
 	margin-left: 15px;
 }
 
-nav .logo {
-	margin-left: -30px;
-}
 
 /* .links-container: estiliza o menu de links quando a tela é pequena.
 A posição fixa e a transição permitem que o menu deslize da direita. */
@@ -428,7 +429,6 @@ A posição fixa e a transição permitem que o menu deslize da direita. */
 
 .sidebar-button {
 	display: block;
-	margint-right: 20px;
 }
 
 .open-icon {
