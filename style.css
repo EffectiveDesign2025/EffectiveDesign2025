@@ -83,7 +83,6 @@ nav a:hover {
 	width: 50px; /* Largura do ícone */
 	height: 50px; /* Altura do ícone */
 	font-size: 50px; /* Tamanho do ícone */
-	padding: 5px; /* Espaçamento interno dos botões */
 	margin: 0 auto;
 	cursor: pointer; /* Indica que é clicável */
 	z-index: 20;
@@ -95,7 +94,6 @@ nav a:hover {
 	width: 50px; /* Largura do ícone */
 	height: 50px; /* Altura do ícone */
 	font-size: 50px; /* Tamanho do ícone */
-	padding: 5px; /* Espaçamento interno dos botões */
 	margin: 0 auto;
 	cursor: pointer; /* Indica que é clicável */
 	z-index: 20;
