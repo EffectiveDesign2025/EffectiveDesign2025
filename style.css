@@ -433,11 +433,11 @@ A posição fixa e a transição permitem que o menu deslize da direita. */
     right: 0;
 }
 	
-#sidebar-active:checked ~ .close-icon {
+#sidebar-active:checked ~ sidebar-button .close-icon {
     display: flex;
 }
 
-#sidebar-active:checked ~ .open-icon {
+#sidebar-active:checked ~ .sidebar-button .open-icon {
     display: none;
 }
 	
