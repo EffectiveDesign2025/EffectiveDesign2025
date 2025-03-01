@@ -416,7 +416,7 @@ A animação move as imagens da direita para a esquerda de forma contínua. */
 		align-items: flex-start; /* Alinha os itens à esquerda */
 		position: fixed; /* Fixa o menu na tela */
 		top: 0; /* Posiciona no topo */
-		right: -100%; /* Começa fora da tela à direita */
+		right: -300px; /* Começa fora da tela à direita */
 		z-index: 10; /* Garante que o menu fique acima de outros elementos */
 		width: 300px; /* Largura do menu lateral */
 		height: 100vh; /* Altura total da tela */
