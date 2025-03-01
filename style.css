@@ -73,13 +73,10 @@ nav a:hover {
 /* Configurações do Ícone de Menu Hamburguer ABRIR & FECHAR */
 .sidebar-button {
 	display: none; /* Inicialmente escondidos, serão exibidos conforme necessário */
-	position: absolute;
 	color: #16011e; /* Cor do ícone do menu */
 	width: 50px; /* Largura do ícone */
 	height: 50px; /* Altura do ícone */
 	font-size: 50px; /* Tamanho do ícone */
-	right: 34px; /* Alinha o checkbox à direita */
-	top: 34px; /* Ajusta para o topo, se necessário */
 }
 
 .open-icon {
@@ -90,8 +87,6 @@ nav a:hover {
 	font-size: 50px; /* Tamanho do ícone */
 	padding: 20px; /* Espaçamento interno dos botões */
 	margin: 0 auto;
-	right: 34px; /* Alinha o checkbox à direita */
-	top: 34px; /* Ajusta para o topo, se necessário */
 }
 	
 .close-icon {
@@ -429,16 +424,12 @@ A posição fixa e a transição permitem que o menu deslize da direita. */
 	display: flex; /* Garante que seja um elemento flexível */
 	justify-content: center; /* Centraliza o ícone dentro do botão */
 	align-items: center;
-	position: absolute; /* Permite posicionar corretamente */
 	cursor: pointer; /* Indica que é clicável */
 	z-index: 20;
 }
 
 .close-icon {
 	display: none;
-	position: absolute;
-	top: 15px;
-	right: 15px;
 	cursor: pointer;
 }
 
