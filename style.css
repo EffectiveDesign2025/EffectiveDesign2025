@@ -417,27 +417,22 @@ A posição fixa e a transição permitem que o menu deslize da direita. */
 	transition: 0.75s ease-out; /* Animação suave ao abrir e fechar */
 }
 
-.sidebar-button {
+.sidebar-button .open-icon {
 	display: flex;
-}
-
-/* Botões de abrir e fechar o menu */
-.open-icon {
-	display: flex; /* Garante que seja um elemento flexível */	
 }
 
 #sidebar-active:checked ~ .links-container {
     display: flex; /* Garante que seja um elemento flexível */
     right: 0;
 }
+#sidebar-active:checked ~ .sidebar-button .open-icon {
+    display: none;
+}
 	
 #sidebar-active:checked ~ sidebar-button .close-icon {
     display: flex;
 }
 
-#sidebar-active:checked ~ .sidebar-button .open-icon {
-    display: none;
-}
 	
 #logo {
 	position: relative;
