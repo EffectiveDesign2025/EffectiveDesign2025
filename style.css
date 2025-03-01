@@ -419,19 +419,19 @@ A posição fixa e a transição permitem que o menu deslize da direita. */
 /* CSS */
 
 
-.sidebar-button .open-icon {
+.sidebar-button, .open-icon {
     display: flex; /* Esconde o ícone de fechar por padrão */
 }
 
-.sidebar-button .close-icon {
+.sidebar-button, .close-icon {
     display: none; /* Esconde o ícone de fechar por padrão */
 }
 
-#sidebar-active:checked ~ .sidebar-button .open-icon {
+#sidebar-active:checked ~ .sidebar-button, .open-icon {
     display: none; /* Esconde o ícone de abrir quando o menu está aberto */
 }
 
-#sidebar-active:checked ~ .sidebar-button .close-icon {
+#sidebar-active:checked ~ .sidebar-button, .close-icon {
     display: block; /* Mostra o ícone de fechar quando o menu está aberto */
 }
 
