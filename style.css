@@ -525,7 +525,6 @@ A posição fixa e a transição permitem que o menu deslize da direita. */
 
 
 #servicos {
-	display:flex;
 	flex-direction: column;
 	justify-content: flex-start;
 	width: auto;
