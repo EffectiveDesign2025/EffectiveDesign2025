@@ -76,6 +76,7 @@ nav a:hover {
 	width: 50px; /* Largura do ícone */
 	height: 50px; /* Altura do ícone */
 	font-size: 50px; /* Tamanho do ícone */
+	padding: 10px;
 }
 
 .open-icon {
