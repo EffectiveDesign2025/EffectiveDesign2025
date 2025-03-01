@@ -437,7 +437,7 @@ A animação move as imagens da direita para a esquerda de forma contínua. */
 	
 	.close-icon {
 	    display: none; /* Esconde o ícone de fechar por padrão */
-	    margin-right: 20px;
+	
 	}
 	
 	#sidebar-active:checked ~ .sidebar-button .close-icon {
