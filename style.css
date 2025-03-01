@@ -425,10 +425,6 @@ A animação move as imagens da direita para a esquerda de forma contínua. */
 		padding: 30px;
 	}
 
-	.links-container a {
-		padding: 0 20px;
-	}
-	
 	.sidebar-button {
 		display: block;
 		margin-right: 20px;
