@@ -85,6 +85,8 @@ nav a:hover {
 	font-size: 50px; /* Tamanho do ícone */
 	padding: 5px; /* Espaçamento interno dos botões */
 	margin: 0 auto;
+	cursor: pointer; /* Indica que é clicável */
+	z-index: 20;
 }
 	
 .close-icon {
@@ -95,6 +97,8 @@ nav a:hover {
 	font-size: 50px; /* Tamanho do ícone */
 	padding: 5px; /* Espaçamento interno dos botões */
 	margin: 0 auto;
+	cursor: pointer; /* Indica que é clicável */
+	z-index: 20;
 }
 
 /* Configurações do Bloco de Conteúdo da Logo */
@@ -390,11 +394,10 @@ A animação move as imagens da direita para a esquerda de forma contínua. */
 /* Media query para telas com largura máxima de 767px (geralmente dispositivos móveis) */
 @media (max-width: 767px) {
 
-nav {
-	justify-content: space-around; /* Alinha os itens do nav com espaço entre eles */
 
+nav a {
+	top: 80px;
 }
-
 
 /* .links-container: estiliza o menu de links quando a tela é pequena.
 A posição fixa e a transição permitem que o menu deslize da direita. */
@@ -404,7 +407,7 @@ A posição fixa e a transição permitem que o menu deslize da direita. */
 	justify-content: flex-start; /* Alinha os itens no início do contêiner */
 	align-items: flex-start; /* Alinha os itens à esquerda */
 	position: fixed; /* Fixa o menu na tela */
-	top: 80px; /* Posiciona no topo */
+	top: 0; /* Posiciona no topo */
 	right: -100%; /* Começa fora da tela à direita */
 	z-index: 10; /* Garante que o menu fique acima de outros elementos */
 	width: 300px; /* Largura do menu lateral */
@@ -420,16 +423,11 @@ A posição fixa e a transição permitem que o menu deslize da direita. */
 
 /* Botões de abrir e fechar o menu */
 .open-icon {
-	display: flex; /* Garante que seja um elemento flexível */
-	justify-content: center; /* Centraliza o ícone dentro do botão */
-	align-items: center;
-	cursor: pointer; /* Indica que é clicável */
-	z-index: 20;
+	display: flex; /* Garante que seja um elemento flexível */	
 }
 
 .close-icon {
 	display: none;
-	cursor: pointer;
 }
 
 #sidebar-active:checked ~ .links-container {
@@ -439,6 +437,10 @@ A posição fixa e a transição permitem que o menu deslize da direita. */
 	
 #sidebar-active:checked ~ .close-icon {
     display: block;
+}
+
+#sidebar-active:checked ~ .open-icon {
+    display: none;
 }
 	
 #logo {
