@@ -416,28 +416,18 @@ A posição fixa e a transição permitem que o menu deslize da direita. */
 	box-shadow: -5px 0 5px rgba(0,0,0,0.25); /* Sombra do menu */
 	transition: 0.75s ease-out; /* Animação suave ao abrir e fechar */
 }
-
-.sidebar-button {
-	display: flex;
-}
-.open-icon {
-	display: flex;
+/* CSS */
+.sidebar-button .close-icon {
+    display: none; /* Esconde o ícone de fechar por padrão */
 }
 
-#sidebar-active:checked ~ sidebar-button, .close-icon {
-    display: flex;
+#sidebar-active:checked ~ .sidebar-button .open-icon {
+    display: none; /* Esconde o ícone de abrir quando o menu está aberto */
 }
 
-#sidebar-active:checked ~ .links-container {
-    display: flex; /* Garante que seja um elemento flexível */
-    right: 0;
+#sidebar-active:checked ~ .sidebar-button .close-icon {
+    display: block; /* Mostra o ícone de fechar quando o menu está aberto */
 }
-	
-	
-#sidebar-active:checked ~ .sidebar-button, .open-icon {
-    display: none;
-}
-	
 
 
 	
