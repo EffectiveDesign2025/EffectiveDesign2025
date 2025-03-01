@@ -393,7 +393,7 @@ A animação move as imagens da direita para a esquerda de forma contínua. */
 @media (max-width: 767px) {
 
 nav {
-	justify-content: space-between; /* Alinha os itens do nav com espaço entre eles */
+	justify-content: space-around; /* Alinha os itens do nav com espaço entre eles */
 
 }
 
