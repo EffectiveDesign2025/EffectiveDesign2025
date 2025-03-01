@@ -399,6 +399,10 @@ nav a {
 	margin-left: 15px;
 }
 
+nav .logo {
+	margin-left: -10px;
+}
+
 /* .links-container: estiliza o menu de links quando a tela é pequena.
 A posição fixa e a transição permitem que o menu deslize da direita. */
 .links-container {
