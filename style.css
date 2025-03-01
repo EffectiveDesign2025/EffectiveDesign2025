@@ -428,7 +428,6 @@ A posição fixa e a transição permitem que o menu deslize da direita. */
 	justify-content: center; /* Centraliza o ícone dentro do botão */
 	align-items: center;
 	position: absolute; /* Permite posicionar corretamente */
-	transform: translateY(-50%); /* Ajuste fino para centralizar */
 	cursor: pointer; /* Indica que é clicável */
 	z-index: 20;
 }
