@@ -73,6 +73,7 @@ nav a:hover {
 /* Configurações do Ícone de Menu Hamburguer ABRIR & FECHAR */
 .sidebar-button {
 	display: none; /* Inicialmente escondidos, serão exibidos conforme necessário */
+	posution: absolute;
 	color: #16011e; /* Cor do ícone do menu */
 	width: 50px; /* Largura do ícone */
 	height: 50px; /* Altura do ícone */
