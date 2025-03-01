@@ -467,7 +467,7 @@ A posição fixa e a transição permitem que o menu deslize da direita. */
 	margin-bottom: 50px;
 	padding-bottom: 20px;
 }
-
+	
 #secao-inicial-lado-esquerdo { 
 	width: auto;
 }
@@ -483,6 +483,11 @@ A posição fixa e a transição permitem que o menu deslize da direita. */
 
 #secao-inicial-lado-esquerdo p { 
 	text-align: justify;	
+}
+
+#secao-inicial a { 
+	text-aligm: center;
+	align-items: center;
 }
 
 /* Configuração do Título Principal por ID - Seção Inicial */
