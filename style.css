@@ -71,7 +71,7 @@ nav a:hover {
 }
 
 /* Configurações do Ícone de Menu Hamburguer ABRIR & FECHAR */
-.open-sidebar-button {
+.sidebar-button {
 	display: none; /* Inicialmente escondidos, serão exibidos conforme necessário */
 	color: #16011e; /* Cor do ícone do menu */
 	width: 50px; /* Largura do ícone */
@@ -79,7 +79,17 @@ nav a:hover {
 	font-size: 50px; /* Tamanho do ícone */
 }
 
-.close-sidebar-button {
+.open-icon {
+	display: none; /* Inicialmente escondidos, serão exibidos conforme necessário */
+	color: #16011e; /* Cor do ícone do menu */
+	width: 50px; /* Largura do ícone */
+	height: 50px; /* Altura do ícone */
+	font-size: 50px; /* Tamanho do ícone */
+	padding: 20px; /* Espaçamento interno dos botões */
+	margin: 0 auto;
+}
+	
+.close-icon {
 	display: none; /* Inicialmente escondidos, serão exibidos conforme necessário */
 	color: #16011e; /* Cor do ícone do menu */
 	width: 50px; /* Largura do ícone */
@@ -387,10 +397,6 @@ nav {
 
 }
 
-nav a {
-	top: 80px;
-}
-	
 /* .links-container: estiliza o menu de links quando a tela é pequena.
 A posição fixa e a transição permitem que o menu deslize da direita. */
 .links-container {
@@ -399,7 +405,7 @@ A posição fixa e a transição permitem que o menu deslize da direita. */
 	justify-content: flex-start; /* Alinha os itens no início do contêiner */
 	align-items: flex-start; /* Alinha os itens à esquerda */
 	position: fixed; /* Fixa o menu na tela */
-	top: 0; /* Posiciona no topo */
+	top: 80px; /* Posiciona no topo */
 	right: -100%; /* Começa fora da tela à direita */
 	z-index: 10; /* Garante que o menu fique acima de outros elementos */
 	width: 300px; /* Largura do menu lateral */
@@ -408,9 +414,13 @@ A posição fixa e a transição permitem que o menu deslize da direita. */
 	box-shadow: -5px 0 5px rgba(0,0,0,0.25); /* Sombra do menu */
 	transition: 0.75s ease-out; /* Animação suave ao abrir e fechar */
 }
-	
+
+.sidebar-button {
+	display: flex;
+}
+
 /* Botões de abrir e fechar o menu */
-.open-sidebar-button {
+.open-icon {
 	display: flex; /* Garante que seja um elemento flexível */
 	justify-content: center; /* Centraliza o ícone dentro do botão */
 	align-items: center;
@@ -422,32 +432,20 @@ A posição fixa e a transição permitem que o menu deslize da direita. */
 	z-index: 20;
 }
 
-.close-sidebar-button {
-	display: block;
+.close-icon {
+	display: none;
 	position: absolute;
 	top: 15px;
 	right: 15px;
 	cursor: pointer;
 }
 
-#sidebar-active:checked ~ .links-container .open-sidebar-button {
+#sidebar-active:checked ~ .links-container {
     display: flex; /* Garante que seja um elemento flexível */
-    justify-content: center; /* Centraliza o ícone dentro do botão */
-    align-items: center;
-    position: absolute; /* Permite posicionar corretamente */
-    right: 15px; /* Ajuste para alinhar à direita */
-    top: 50%; /* Centraliza verticalmente */
-    transform: translateY(-50%); /* Ajuste fino para centralizar */
-    cursor: pointer; /* Indica que é clicável */
-    z-index: 20;
 }
-
-#sidebar-active:checked ~ .links-container .close-sidebar-button {
+	
+#sidebar-active:checked ~ .close-icon {
     display: block;
-    position: absolute;
-    top: 15px;
-    right: 15px;
-    cursor: pointer;
 }
 	
 
