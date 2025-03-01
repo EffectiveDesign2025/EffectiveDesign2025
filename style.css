@@ -434,7 +434,7 @@ A posição fixa e a transição permitem que o menu deslize da direita. */
 }
 	
 #sidebar-active:checked ~ .close-icon {
-    display: block;
+    display: flex;
 }
 
 #sidebar-active:checked ~ .open-icon {
