@@ -404,7 +404,7 @@ A posição fixa e a transição permitem que o menu deslize da direita. */
 .links-container {
 	display: none; /* Esconde os links no mobile */
 	flex-direction: column; /* Coloca os links em uma coluna */
-	justify-content: flex-start; /* Alinha os itens no início do contêiner */
+	justify-content: space-around; /* Alinha os itens no início do contêiner */
 	align-items: flex-start; /* Alinha os itens à esquerda */
 	position: fixed; /* Fixa o menu na tela */
 	top: 0; /* Posiciona no topo */
