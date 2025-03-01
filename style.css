@@ -528,7 +528,8 @@ A posição fixa e a transição permitem que o menu deslize da direita. */
 }
 
 .carousel-track {
-	width: auto; /* Ajusta o tamanho no mobile */
+	width: auto;
+	max-width: 767px; /* Ajusta o tamanho no mobile */
 	flex-wrap: nowrap;
 	gap: 5px; /* Reduz o espaçamento entre os itens */
 }
@@ -558,5 +559,13 @@ justify-content: flex-start; /* Alinha os itens no início da coluna */
 
 /* Media query para telas com largura máxima de 417px (dispositivos móveis menores) */
 @media (max-width: 417px) {
+
+	.carousel-track {
+	width: auto;
+	max-width: 417px; /* Ajusta o tamanho no mobile */
+	flex-wrap: nowrap;
+	gap: 5px; /* Reduz o espaçamento entre os itens */
+}
+}
 
 /* Estilos para títulos e parágrafos para garantir legibilidade em telas pequenas */
