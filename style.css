@@ -50,6 +50,7 @@ nav a {
 	text-decoration: none; /* Remove sublinhado dos links */
 	font-weight: 700; /* Define o peso da fonte como negrito */
 	padding: 25px; /* Espaçamento interno dos links */
+	margin-right: 20px;
 	border-radius: 5px; /* Bordas arredondadas para os links */
 	transition: background-color 0.3s; /* Efeito de transição suave para a cor de fundo */
 	color: #16011e; /* Cor do texto dos links */
