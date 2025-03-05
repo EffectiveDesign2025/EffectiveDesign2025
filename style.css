@@ -9,7 +9,8 @@
 /* ---------------------------------------------------------------------------------CORPO -------------->>>>>>>>>>>>>>>>>>>> */
 
 /* Configurações Gerais do Corpo */
-body {
+body {	
+	display: flex;
 	min-height: 100vh;
 	overflow-x: hidden;
 	font-family: 'Lato', sans-serif; /* Define a fonte padrão do corpo como 'Lato' */
@@ -138,8 +139,8 @@ nav .logo {
 
 /* Configuração Geral de Container */
 .container {
-	width: 100%; /* Largura total do container */
 	display: flex; /* Usando flexbox para layout */
+	width: 100%; /* Largura total do container */
 	justify-content: space-between; /* Espaçamento entre os itens */
 	flex-wrap: wrap; /* Permite que os itens se movam para a próxima linha */
 	gap: 30px; /* Espaço entre os itens */
@@ -339,14 +340,15 @@ A animação move as imagens da direita para a esquerda de forma contínua. */
 .container-card {
 	display: flex;
 	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
 	overflow: hidden;
-	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-	transition: transform 0.3s;
-	width: 100%;
-	justify-content: space-around;
+	width: auto;
+	gap: 100px 50px;
+	
 }
 
-.card {
+.container-card .card {
 	position: relative; /* Alterado de absolute para relative */
 	width: 350px;
 	height: 300px;
@@ -356,7 +358,7 @@ A animação move as imagens da direita para a esquerda de forma contínua. */
 	transition: 0.5s;
 }
 
-.card:hover { /* Corrigido */
+container-card .card:hover { /* Corrigido */
 	transform: scale(1.05);
 }
 
