@@ -67,7 +67,7 @@ nav a:hover {
 #sidebar-active {
 	display: none;
 	position: relative; /* Permite o uso de right */
-}tts-floating-icon
+}
 
 /* Configurações do Ícone de Menu Hamburguer ABRIR & FECHAR */
 .sidebar-button {
@@ -282,12 +282,12 @@ nav .logo {
 	padding: 0 5%;
 }
 
-.faixa-secao h2 {
+.faixa-servico h2 {
 	text-align:center;
 	align-items: center;
 }
 
-.faixa-secao h3 {
+.faixa-servico h3 {
 	text-align: justify;
 }
 
