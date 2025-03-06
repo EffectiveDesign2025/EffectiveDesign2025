@@ -357,7 +357,7 @@ A animação move as imagens da direita para a esquerda de forma contínua. */
 	transition: 0.5s;
 }
 
-container-card .card:hover { /* Corrigido */
+.container-card .card:hover { /* Corrigido */
 	transform: scale(1.05);
 }
 
