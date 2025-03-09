@@ -82,7 +82,7 @@ nav a:hover {
 }
 
 .open-icon {
-	display: none; /* Inicialmente escondidos, serão exibidos conforme necessário */
+	display: block; /* Inicialmente escondidos, serão exibidos conforme necessário */
 	position: relative; /* Permite o uso de right */
 	color: #16011e; /* Cor do ícone do menu */
 	width: 50px; /* Largura do ícone */
@@ -91,6 +91,9 @@ nav a:hover {
 	margin: 0 auto;
 	cursor: pointer; /* Indica que é clicável */
 	z-index: 20;
+	background-image: url('https://raw.githubusercontent.com/EffectiveDesign2025/EffectiveDesign2025/main/IMAGENS/ICONES%20MENU/ICONE%20MENU%20HAMBURGUER.svg'); /* Caminho da imagem do botão de fechar */
+    	background-size: contain;
+    	background-repeat: no-repeat;
 }
 	
 .close-icon {
@@ -104,6 +107,9 @@ nav a:hover {
 	cursor: pointer; /* Indica que é clicável */
 	z-index: 20;
 	right: 30px;
+	background-image: url('https://raw.githubusercontent.com/EffectiveDesign2025/EffectiveDesign2025/main/IMAGENS/ICONES%20MENU/ICONE%20FECHAR.svg'); /* Caminho da imagem do botão de fechar */
+    	background-size: contain;
+    	background-repeat: no-repeat;
 }
 
 /* Configurações do Bloco de Conteúdo da Logo */
