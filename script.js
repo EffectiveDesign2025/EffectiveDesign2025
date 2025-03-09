@@ -1,20 +1,3 @@
-<script>
-  document.addEventListener("DOMContentLoaded", function() {
-    const menuButton = document.querySelector(".sidebar-button");
-    const menu = document.querySelector(".links-container");
-
-    menuButton.addEventListener("click", function() {
-      const isExpanded = menuButton.getAttribute("aria-expanded") === "true";
-      menuButton.setAttribute("aria-expanded", !isExpanded);
-      menu.style.right = isExpanded ? "-100%" : "0";
-
-      // Alterna os ícones
-      document.querySelector(".open-icon").style.display = isExpanded ? "block" : "none";
-      document.querySelector(".close-icon").style.display = isExpanded ? "none" : "block";
-    });
-  });
-</script>
-
 /* -------------------------------------JAVA SCRIPT GRADIENTE --------------------------- >>>>>>>>>>>>>> */
 
 /* Configuração de Gradiente | Alternar gradiente em 15 segundos. */
