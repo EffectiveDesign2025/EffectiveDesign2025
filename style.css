@@ -3,7 +3,7 @@
 /* Configurações de Fonts */
 @font-face {
 	font-family: 'Caviar Dreams'; /* Define uma fonte personalizada chamada 'Caviar Dreams' */
-	@import url('https://raw.githubusercontent.com/EffectiveDesign2025/EffectiveDesign2025/main/fonts/CaviarDreams.ttf') format('truetype'); /* Importa a fonte a partir de uma URL */ 
+	src: url('https://raw.githubusercontent.com/EffectiveDesign2025/EffectiveDesign2025/main/fonts/CaviarDreams.ttf') format('truetype'); /* Importa a fonte a partir de uma URL */ 
 }
 
 /* ---------------------------------------------------------------------------------CORPO -------------->>>>>>>>>>>>>>>>>>>> */
