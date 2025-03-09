@@ -127,11 +127,8 @@ nav .logo {
 
 /* Configurações do Efeito Flutuante da Logo */
 @keyframes flutuante {
-	0% { transform: translateY(0px) rotate(0deg); } /* Posição inicial */
-	25% { transform: translateY(-4px) rotate(-1deg); } /* Movimento para cima e rotação */
-	50% { transform: translateY(0px) rotate(1deg); } /* Posição central */
-	75% { transform: translateY(4px) rotate(-1deg); } /* Movimento para baixo e rotação */
-	100% { transform: translateY(0px) rotate(0deg); } /* Retorna à posição inicial */
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-3px); }
 }
 
 /* ----------------------------------------------------------------------------SEÇÃO INICIAL------------------------------>>>>>>>>>>>>>>>> */
