@@ -52,7 +52,7 @@ nav a {
 	padding: 25px; /* Espaçamento interno dos links */
 	margin-right: 20px;
 	border-radius: 5px; /* Bordas arredondadas para os links */
-	transition: background-color 0.3s; /* Efeito de transição suave para a cor de fundo */
+	transition: color 0.3s ease, background-color 0.3s ease;
 	color: #16011e; /* Cor do texto dos links */
 	font-size: 20px; /* Tamanho da fonte dos links */
 }
