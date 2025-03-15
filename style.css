@@ -352,6 +352,7 @@ A animação move as imagens da direita para a esquerda de forma contínua. */
 	width: auto;
 	gap: 100px 50px;
 	padding: 100px 50px;
+	background: yellow;
 }
 
 .container-card .card {
