@@ -397,9 +397,9 @@ A animação move as imagens da direita para a esquerda de forma contínua. */
 	width: 100%;
 	height: 35px;
 	text-align: center;
-	padding: 0 25px;
+	padding: 0 30px;
 	overflow: hidden;
-	transiton: .5s;
+	transition: .5s;
 }
 
 .container-card .card:hover .conteudo {
