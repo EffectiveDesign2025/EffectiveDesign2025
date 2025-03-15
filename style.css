@@ -351,7 +351,7 @@ A animação move as imagens da direita para a esquerda de forma contínua. */
 	overflow: hidden;
 	width: auto;
 	gap: 100px 50px;
-	
+	padding: 100px 50px;
 }
 
 .container-card .card {
@@ -378,6 +378,7 @@ A animação move as imagens da direita para a esquerda de forma contínua. */
 	height: 220px;
 	border-radius: 12px;
 	overflow: hidden;
+	transition: .5s;
 }
 
 .container-card .card .caixa-img img {
@@ -394,9 +395,49 @@ A animação move as imagens da direita para a esquerda de forma contínua. */
 	top: 250px;
 	width: 100%;
 	height: 35px;
+	text-align: center;
+	padding: 0 25px;
 	overflow: hidden;
+	transiton: .5s;
 }
 
+.container-card .card:hover .conteudo {
+	top: 150px;
+	height:  250px;
+	
+}
+
+.container-card .card:hover .caixa-img {
+	top: -100px;
+	scale: .75;
+	box-shadow: 0 15px 45px rgba(0,0,0,.2);
+}
+
+.container-card .card .conteudo h2 {
+	font-size: 1.5rem;
+	font-weight: 700;
+	line-height: 3rem;
+}
+
+.container-card .card .conteudo p {
+	color: #333;
+}
+
+.container-card .card .conteudo a {
+	display: inline-block;
+	margin-top: 15px;
+	padding: 10px 20px;
+	text-decoration: none;
+	font-weight: 500;
+	border-radiuns: 8px;
+	background: var(--cor);
+	color: #ffffff;	
+}
+
+.container-card .card .conteudo a:hover {
+	background: #1ebe5d;
+	transition: 0.5s;
+	
 /*--------------------------------------------------------------------------------------------------------------------------------------*/
 /*--------------------------------------------------------------------------------------------------------------------------------------*/
 /*--------------------------------------------------------------------------------------------------------------------------------------*/
