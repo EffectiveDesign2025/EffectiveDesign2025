@@ -418,7 +418,7 @@ A animação move as imagens da direita para a esquerda de forma contínua. */
 	font-size: 1.5rem;
 	font-weight: 700;
 	line-height: 3rem;
-	cor: var(--cor);
+	color: var(--cor);
 }
 
 .container-card .card .conteudo p {
@@ -431,7 +431,7 @@ A animação move as imagens da direita para a esquerda de forma contínua. */
 	padding: 10px 20px;
 	text-decoration: none;
 	font-weight: 500;
-	border-radiuns: 8px;
+	border-radius: 8px;
 	background: var(--cor);
 	color: #ffffff;	
 }
