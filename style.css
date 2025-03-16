@@ -626,7 +626,13 @@ A animação move as imagens da direita para a esquerda de forma contínua. */
 	}
 	
 	/*--------------------------------------------------------------------------------------------------------------------------------------*/
-		
+
+	.container-card {
+ 	display: flex; /* Garante que o contêiner se comporte como um flex container */
+ 	flex-direction: column; /* Alinha os itens em uma coluna */
+ 	justify-content: flex-start; /* Alinha os itens no início da coluna */
+ 	}
+	
 	.carousel-track {
 		width: auto;
 		max-width: 767px; /* Ajusta o tamanho no mobile */
