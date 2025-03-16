@@ -628,10 +628,6 @@ A animação move as imagens da direita para a esquerda de forma contínua. */
 	 	justify-content: flex-start; /* Alinha os itens no início da coluna */
  	}
 
-	.container-card:hover {
-		
-	}
-
 	.container-card .card {
 		width: auto;
 	}
@@ -643,6 +639,7 @@ A animação move as imagens da direita para a esquerda de forma contínua. */
 	.container-card .card:hover .conteudo {
 		height:  330px;	
 	}
+	
 	.carousel-track {
 		width: auto;
 		max-width: 767px; /* Ajusta o tamanho no mobile */
@@ -666,10 +663,10 @@ A animação move as imagens da direita para a esquerda de forma contínua. */
 	}
 	
 }
-	/* ----------------------------------------------------------------------- RESPONSIVIDADE - 417 PX ------------------------------>>>>>>>>>>>>>>>> */
+	/* ----------------------------------------------------------------------- RESPONSIVIDADE - 413 PX ------------------------------>>>>>>>>>>>>>>>> */
 	
 /* Media query para telas com largura máxima de 417px (dispositivos móveis menores) */
-@media (max-width: 417px) {
+@media (max-width: 413px) {
 	
 		.carousel-track {
 		width: auto;
@@ -677,6 +674,17 @@ A animação move as imagens da direita para a esquerda de forma contínua. */
 		flex-wrap: nowrap;
 		gap: 5px; /* Reduz o espaçamento entre os itens */
 	}
+
+	.container-card .card:hover { 
+		height: 480px;
 	}
+
+	.container-card .card:hover .conteudo {
+		height:  345px;	
+	}
+	
+
+	
+}
 	
 	/* Estilos para títulos e parágrafos para garantir legibilidade em telas pequenas */
