@@ -283,8 +283,6 @@ nav .logo {
 /* ----------------------------------------------------------------------------SEÇÃO DE SERVIÇOS ------------------------------>>>>>>>>>>>>>>>> */
 
 #servicos {
-	display:flex;
-	justify-content: flex-start;
 	width: auto;
 	padding: 0 5%;
 }
@@ -362,7 +360,6 @@ A animação move as imagens da direita para a esquerda de forma contínua. */
 	width: 30%;
 	height: 300px;
 	border-radius: 20px; /* Corrigido */
-	backdrop-filter: blur(20px); /* Efeito de desfoque de fundo */
 	box-shadow: 0 35px 80px rgba(0, 0, 0, 0.15);
 	transition: 0.5s;
 }
@@ -628,10 +625,14 @@ A animação move as imagens da direita para a esquerda de forma contínua. */
 	/*--------------------------------------------------------------------------------------------------------------------------------------*/
 
 	.container-card {
- 	display: flex; /* Garante que o contêiner se comporte como um flex container */
- 	flex-direction: column; /* Alinha os itens em uma coluna */
- 	justify-content: flex-start; /* Alinha os itens no início da coluna */
+	 	flex-direction: column; /* Alinha os itens em uma coluna */
+	 	justify-content: flex-start; /* Alinha os itens no início da coluna */
  	}
+
+	.container-card .card {
+	width: auto;
+
+}
 	
 	.carousel-track {
 		width: auto;
