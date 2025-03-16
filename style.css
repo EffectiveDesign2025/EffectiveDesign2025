@@ -628,12 +628,16 @@ A animação move as imagens da direita para a esquerda de forma contínua. */
 	 	justify-content: flex-start; /* Alinha os itens no início da coluna */
  	}
 
+	.container-card:hover {
+		
+	}
+
 	.container-card .card {
 		width: auto;
 	}
 
 	.container-card .card:hover { 
-		height: 650px;
+		height: 550px;
 	}
 
 	.container-card .card:hover .conteudo {
