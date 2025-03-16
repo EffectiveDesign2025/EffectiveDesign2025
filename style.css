@@ -630,10 +630,12 @@ A animação move as imagens da direita para a esquerda de forma contínua. */
  	}
 
 	.container-card .card {
-	width: auto;
+		width: auto;
+	}
 
-}
-	
+	.container-card .card:hover { 
+		height: 450px;
+	}
 	.carousel-track {
 		width: auto;
 		max-width: 767px; /* Ajusta o tamanho no mobile */
