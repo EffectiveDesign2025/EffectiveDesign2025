@@ -361,7 +361,7 @@ A animação move as imagens da direita para a esquerda de forma contínua. */
 	display: flex;
 	justify-content: center;
 	align-items: flex-start;
-	width: 350px;
+	width: 30%;
 	height: 300px;
 	border-radius: 20px; /* Corrigido */
 	background: #ffffff;
