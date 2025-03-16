@@ -286,7 +286,6 @@ nav .logo {
 	display:flex;
 	justify-content: flex-start;
 	width: auto;
-	max-width: 100%;
 	padding: 0 5%;
 }
 
@@ -484,7 +483,6 @@ A animação move as imagens da direita para a esquerda de forma contínua. */
 	/* .links-container: estiliza o menu de links quando a tela é pequena.
 	A posição fixa e a transição permitem que o menu deslize da direita. */
 	.links-container {
-		
 		flex-direction: column; /* Coloca os links em uma coluna */
 		justify-content: flex-start;
 		align-items: flex-start; /* Alinha os itens à esquerda */
@@ -628,15 +626,7 @@ A animação move as imagens da direita para a esquerda de forma contínua. */
 	}
 	
 	/*--------------------------------------------------------------------------------------------------------------------------------------*/
-	
-	
-	#servicos {
-		flex-direction: column;
-		justify-content: flex-start;
-		width: auto;
-		padding: 0 5%;
-	}
-	
+		
 	.carousel-track {
 		width: auto;
 		max-width: 767px; /* Ajusta o tamanho no mobile */
@@ -653,18 +643,13 @@ A animação move as imagens da direita para a esquerda de forma contínua. */
 	@keyframes scroll {
 		from {
 			transform: translateX(0%);
-			}
+		}
 		to {
 			transform: translateX(-50%);
-	}
+		}
 	}
 	
-	.container-card {
-	display: flex; /* Garante que o contêiner se comporte como um flex container */
-	flex-direction: column; /* Alinha os itens em uma coluna */
-	justify-content: flex-start; /* Alinha os itens no início da coluna */
-	}
-	}
+}
 	/* ----------------------------------------------------------------------- RESPONSIVIDADE - 417 PX ------------------------------>>>>>>>>>>>>>>>> */
 	
 /* Media query para telas com largura máxima de 417px (dispositivos móveis menores) */
