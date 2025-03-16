@@ -394,7 +394,7 @@ A animação move as imagens da direita para a esquerda de forma contínua. */
 
 .container-card .card .conteudo {
 	position: relative;
-	top: 250px;
+	top: 240px;
 	width: 100%;
 	height: 35px;
 	text-align: center;
