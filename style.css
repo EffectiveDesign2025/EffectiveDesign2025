@@ -626,7 +626,6 @@ A animação move as imagens da direita para a esquerda de forma contínua. */
 	.container-card {
 	 	flex-direction: column; /* Alinha os itens em uma coluna */
 	 	justify-content: flex-start; /* Alinha os itens no início da coluna */
-		height: 350px;
  	}
 
 	.container-card .card {
