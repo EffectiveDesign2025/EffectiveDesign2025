@@ -633,11 +633,11 @@ A animação move as imagens da direita para a esquerda de forma contínua. */
 	}
 
 	.container-card .card:hover { 
-		height: 475px;
+		height: 510px;
 	}
 
 	.container-card .card:hover .conteudo {
-		height:  330px;	
+		height:  345px;	
 	}
 	
 	.carousel-track {
@@ -674,16 +674,6 @@ A animação move as imagens da direita para a esquerda de forma contínua. */
 		flex-wrap: nowrap;
 		gap: 5px; /* Reduz o espaçamento entre os itens */
 	}
-
-	.container-card .card:hover { 
-		height: 480px;
-	}
-
-	.container-card .card:hover .conteudo {
-		height:  345px;	
-	}
-	
-
 	
 }
 	
