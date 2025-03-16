@@ -349,7 +349,6 @@ A animação move as imagens da direita para a esquerda de forma contínua. */
 	flex-wrap: wrap;
 	justify-content: center;
 	align-items: center;
-	overflow: hidden;
 	width: 100%;
 	gap: 100px 50px;
 	padding: 100px 0;
