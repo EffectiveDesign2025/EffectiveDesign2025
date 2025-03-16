@@ -365,6 +365,7 @@ A animação move as imagens da direita para a esquerda de forma contínua. */
 	height: 300px;
 	border-radius: 20px; /* Corrigido */
 	background: #ffffff;
+	backdrop-filter: blur(10px); /* Efeito de desfoque de fundo */
 	box-shadow: 0 35px 80px rgba(0, 0, 0, 0.15);
 	transition: 0.5s;
 }
