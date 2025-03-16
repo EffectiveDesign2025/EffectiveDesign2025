@@ -435,7 +435,8 @@ A animação move as imagens da direita para a esquerda de forma contínua. */
 	font-weight: 500;
 	border-radius: 8px;
 	background: var(--cor);
-	color: #ffffff;	
+	color: #ffffff;
+	cursor: pointer;
 }
 
 .container-card .card .conteudo a:hover {
