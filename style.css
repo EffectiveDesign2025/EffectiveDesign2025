@@ -392,7 +392,7 @@ A animação move as imagens da direita para a esquerda de forma contínua. */
 	position: relative;
 	top: 225px;
 	width: auto;
-	height: 90px;
+	height: 70px;
 	text-align: center;
 	padding: 0 30px;
 	overflow: hidden;
@@ -401,7 +401,7 @@ A animação move as imagens da direita para a esquerda de forma contínua. */
 
 .container-card .card:hover .conteudo {
 	top: 150px;
-	height:  250px;
+	height:  270px;
 	
 }
 
