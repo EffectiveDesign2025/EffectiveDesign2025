@@ -424,6 +424,7 @@ A animação move as imagens da direita para a esquerda de forma contínua. */
 
 .container-card .card .conteudo p {
 	color: #333;
+	text-align: justify;
 }
 
 .container-card .card .conteudo a {
