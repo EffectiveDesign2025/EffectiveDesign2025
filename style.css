@@ -367,6 +367,7 @@ A animação move as imagens da direita para a esquerda de forma contínua. */
 .container-card .card:hover { /* Corrigido */
 	height: 430px;
 	transform: scale(1.05);
+	margin-top: 50px;
 }
 
 .container-card .card .caixa-img {
@@ -634,7 +635,6 @@ A animação move as imagens da direita para a esquerda de forma contínua. */
 
 	.container-card .card:hover { 
 		height: 510px;
-		margin-top: 50px;
 	}
 
 	.container-card .card:hover .conteudo {
