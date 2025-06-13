@@ -39,5 +39,5 @@ setInterval(setRandomGradient, 10000);
         renderer: 'svg',
         loop: true,
         autoplay: true,
-        path: '/animacao/analise%20de%20projeto.json'
+        path: 'https://raw.githubusercontent.com/EffectiveDesign2025/effectivedesign.github.io/refs/heads/main/animacao/analise%20de%20projeto'
     });
