@@ -39,5 +39,5 @@ setInterval(setRandomGradient, 10000);
         renderer: 'svg',
         loop: true,
         autoplay: true,
-        path: 'animacao/analise de projeto.json'
+        path: 'animacao/analise-de-projeto.json'
     });
